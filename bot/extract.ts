@@ -64,17 +64,44 @@ function normalize(text: string): string {
   return text.replace(/\r\n/g, "\n").replace(/[ \t]+$/gm, "").trim();
 }
 
-/** Minimal YAML frontmatter reader — only top-level scalar keys. */
+/**
+ * Minimal YAML frontmatter reader — top-level scalars, including block scalars.
+ *
+ * Block scalars matter: `description: |` followed by indented lines is common,
+ * and naive `key: (.*)` capture yields the literal "|" as the description.
+ * That shipped once and put "|" on real listings.
+ */
 export function parseFrontmatter(text: string): Record<string, string> {
   const m = /^---\r?\n([\s\S]*?)\r?\n---/.exec(text);
   if (!m) return {};
   const out: Record<string, string> = {};
-  for (const line of m[1].split("\n")) {
-    const kv = /^([A-Za-z_][\w-]*)\s*:\s*(.*)$/.exec(line);
+  const lines = m[1].split("\n");
+
+  for (let i = 0; i < lines.length; i++) {
+    const kv = /^([A-Za-z_][\w-]*)\s*:\s*(.*)$/.exec(lines[i]);
     if (!kv) continue;
+    const key = kv[1];
     let v = kv[2].trim();
-    v = v.replace(/^["'](.*)["']$/, "$1");
-    if (v) out[kv[1]] = v;
+
+    // Block scalar: | literal, > folded, with optional chomping indicators.
+    if (/^[|>][+-]?\d*$/.test(v)) {
+      const folded = v.startsWith(">");
+      const body: string[] = [];
+      for (let j = i + 1; j < lines.length; j++) {
+        const next = lines[j];
+        if (next.trim() === "") { body.push(""); continue; }
+        if (!/^\s+/.test(next)) break;          // dedent ends the block
+        body.push(next.replace(/^\s{1,8}/, ""));
+        i = j;
+      }
+      v = folded
+        ? body.join(" ").replace(/\s+/g, " ").trim()
+        : body.join("\n").trim();
+    } else {
+      v = v.replace(/^["'](.*)["']$/, "$1");
+    }
+
+    if (v) out[key] = v;
   }
   return out;
 }

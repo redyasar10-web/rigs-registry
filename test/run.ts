@@ -73,6 +73,31 @@ ok("token in URL query caught", u !== null, u ? `→ ${u.kind}` : "");
 ok("URL finding hides value", !JSON.stringify(u).includes("7f3a9c2e"));
 ok("placeholder URL passes", scanUrl("https://x/sse?api_key=${TOKEN}", ".mcp.json", "u") === null);
 
+
+console.log("\n── frontmatter block scalars ──");
+import { parseFrontmatter } from "../bot/extract.ts";
+const literal = parseFrontmatter(`---
+name: thing
+description: |
+  First line of the description.
+  Second line.
+---
+body`);
+ok("literal block scalar parsed", literal.description?.startsWith("First line"), JSON.stringify(literal.description ?? "").slice(0, 46));
+ok("literal is not the pipe char", literal.description !== "|");
+const folded = parseFrontmatter(`---
+description: >
+  folded across
+  two lines
+---`);
+ok("folded block scalar joined", folded.description === "folded across two lines", folded.description ?? "");
+const plain = parseFrontmatter(`---
+name: x
+description: "quoted value"
+---`);
+ok("quoted scalar unwrapped", plain.description === "quoted value");
+ok("plain key still works", plain.name === "x");
+
 console.log("\n── extraction against a real rig ──");
 const REAL = "/Users/red/.claude/plugins/marketplaces/everything-claude-code";
 if (existsSync(REAL)) {
