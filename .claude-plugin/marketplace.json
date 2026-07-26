@@ -3,21 +3,22 @@
   "name": "rigs",
   "description": "Community registry of complete Claude Code setups. See how people actually run Claude.",
   "owner": {
-    "name": "Rigs"
+    "name": "Rigs",
+    "url": "https://github.com/rigs-dev/registry"
   },
   "plugins": [
     {
-      "name": "everything-claude-code",
-      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "name": "ai-plugins",
+      "description": "Public distribution repository for Endor Labs Agent Kit packages across Claude",
       "author": {
-        "name": "affaan-m",
-        "url": "https://github.com/affaan-m"
+        "name": "endorlabs",
+        "url": "https://github.com/endorlabs"
       },
-      "homepage": "https://github.com/affaan-m/everything-claude-code",
+      "homepage": "https://github.com/endorlabs/ai-plugins",
       "source": {
         "source": "url",
-        "url": "https://github.com/affaan-m/everything-claude-code.git",
-        "sha": "6a9f075cd97c139a5f7e84e1e3f2c9ab095adf64"
+        "url": "https://github.com/endorlabs/ai-plugins.git",
+        "sha": "350353a785f50f75b5d36470a0f7b531ee7433ff"
       }
     },
     {
@@ -35,59 +36,17 @@
       }
     },
     {
-      "name": "agentforce-adlc",
-      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
+      "name": "everything-claude-code",
+      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "author": {
-        "name": "SalesforceAIResearch",
-        "url": "https://github.com/SalesforceAIResearch"
+        "name": "affaan-m",
+        "url": "https://github.com/affaan-m"
       },
-      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
+      "homepage": "https://github.com/affaan-m/everything-claude-code",
       "source": {
         "source": "url",
-        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
-        "sha": "74e7c25b9b0141b57f1c04300b15e7b3ff139647"
-      }
-    },
-    {
-      "name": "ai-plugins",
-      "description": "Public distribution repository for Endor Labs Agent Kit packages across Claude",
-      "author": {
-        "name": "endorlabs",
-        "url": "https://github.com/endorlabs"
-      },
-      "homepage": "https://github.com/endorlabs/ai-plugins",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/endorlabs/ai-plugins.git",
-        "sha": "350353a785f50f75b5d36470a0f7b531ee7433ff"
-      }
-    },
-    {
-      "name": "aikido-claude-plugin",
-      "description": "Aikido Security for Claude Code: scan code (SAST, secrets, IaC) and list all issues from your Aikido feed powered by the Aikido MCP server.",
-      "author": {
-        "name": "AikidoSec",
-        "url": "https://github.com/AikidoSec"
-      },
-      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
-        "sha": "621557d37e4e1f28db40a57653577d3400880e70"
-      }
-    },
-    {
-      "name": "alloydb",
-      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
-      "author": {
-        "name": "gemini-cli-extensions",
-        "url": "https://github.com/gemini-cli-extensions"
-      },
-      "homepage": "https://github.com/gemini-cli-extensions/alloydb",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/gemini-cli-extensions/alloydb.git",
-        "sha": "3ce1fe143644c31c0ffeb904b31634f8cea06e0c"
+        "url": "https://github.com/affaan-m/everything-claude-code.git",
+        "sha": "6a9f075cd97c139a5f7e84e1e3f2c9ab095adf64"
       }
     },
     {
@@ -105,6 +64,20 @@
       }
     },
     {
+      "name": "alloydb",
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "author": {
+        "name": "gemini-cli-extensions",
+        "url": "https://github.com/gemini-cli-extensions"
+      },
+      "homepage": "https://github.com/gemini-cli-extensions/alloydb",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gemini-cli-extensions/alloydb.git",
+        "sha": "3ce1fe143644c31c0ffeb904b31634f8cea06e0c"
+      }
+    },
+    {
       "name": "apollo-mcp-plugin",
       "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
       "author": {
@@ -116,6 +89,34 @@
         "source": "url",
         "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
         "sha": "2adde980e45f421b7e9383d92870455627936bce"
+      }
+    },
+    {
+      "name": "agentforce-adlc",
+      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
+      "author": {
+        "name": "SalesforceAIResearch",
+        "url": "https://github.com/SalesforceAIResearch"
+      },
+      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
+        "sha": "74e7c25b9b0141b57f1c04300b15e7b3ff139647"
+      }
+    },
+    {
+      "name": "aikido-claude-plugin",
+      "description": "Aikido Security for Claude Code: scan code (SAST, secrets, IaC) and list all issues from your Aikido feed powered by the Aikido MCP server.",
+      "author": {
+        "name": "AikidoSec",
+        "url": "https://github.com/AikidoSec"
+      },
+      "homepage": "https://github.com/AikidoSec/aikido-claude-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
+        "sha": "621557d37e4e1f28db40a57653577d3400880e70"
       }
     }
   ]

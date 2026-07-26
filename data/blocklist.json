@@ -1,0 +1,6 @@
+{
+  "_comment": "Subtractive only. A human can always remove; a human never approves. This is what keeps the registry free of an approval queue — approval queues scale with submissions and collapse, removal queues scale with abuse and stay small. Also the takedown mechanism.",
+  "repos": {},
+  "owners": {},
+  "slugs": {}
+}

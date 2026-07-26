@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Rigs — the community registry for Claude Code setups. Indexes metadata only; rigs stay in their authors' repos.",
+  "description": "Rigs \u2014 the community registry for Claude Code setups. Indexes metadata only; rigs stay in their authors' repos.",
   "scripts": {
     "index": "node --experimental-strip-types bot/main.ts",
-    "test": "node --experimental-strip-types test/run.ts"
+    "test": "node --experimental-strip-types test/run.ts && node --experimental-strip-types test/state.test.ts"
   },
   "engines": {
     "node": ">=22"

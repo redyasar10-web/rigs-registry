@@ -1,0 +1,78 @@
+name: index
+
+on:
+  schedule:
+    # Every 6 hours, offset off the hour to avoid GitHub's cron stampede.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "sources/**"
+      - "data/blocklist.json"
+      - "bot/**"
+
+# Never let two indexer runs write the repo at once.
+concurrency:
+  group: index
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Pinned deliberately. The indexer gates on `claude plugin validate`, so
+      # an unpinned upgrade could change validation behaviour and mass-delist
+      # the corpus overnight. Bump this on purpose, never implicitly.
+      - name: Install Claude Code CLI
+        run: npm i -g @anthropic-ai/claude-code@2.1.186
+
+      - name: Verify the validator is usable headlessly
+        run: |
+          claude plugin validate --help > /dev/null
+          echo "validator OK"
+
+      - name: Run tests
+        run: npm test
+
+      - name: Index
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BATCH_SIZE: "120"
+        run: npm run index
+
+      # Exit 3 is the canary: the run would have delisted >20% of the corpus,
+      # so it refused to write. Surface it loudly instead of failing silently.
+      - name: Handle canary abort
+        if: failure()
+        run: |
+          echo "::warning::Indexer aborted or failed. If this was the canary (exit 3),"
+          echo "::warning::a tooling change is the likely cause. Nothing was committed."
+
+      - name: Commit index
+        run: |
+          git config user.name  "rigs-bot"
+          git config user.email "rigs-bot@users.noreply.github.com"
+          git add .claude-plugin/marketplace.json data/
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "index: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: Trigger site rebuild
+        if: success() && env.DEPLOY_HOOK != ''
+        env:
+          DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: curl -fsS -X POST "$DEPLOY_HOOK"
