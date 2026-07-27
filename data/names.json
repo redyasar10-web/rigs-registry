@@ -6,5 +6,6 @@
   "aikido-claude-plugin": "AikidoSec/aikido-claude-plugin",
   "alloydb": "gemini-cli-extensions/alloydb",
   "alloydb-omni": "gemini-cli-extensions/alloydb-omni",
-  "apollo-mcp-plugin": "apolloio/apollo-mcp-plugin"
+  "apollo-mcp-plugin": "apolloio/apollo-mcp-plugin",
+  "ecc": "affaan-m/ECC"
 }
