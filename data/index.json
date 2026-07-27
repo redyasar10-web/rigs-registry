@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T04:45:16.670Z",
+  "generatedAt": "2026-07-27T04:46:07.163Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -2641,7 +2641,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 233724,
+      "stars": 233725,
       "pushedAt": "2026-07-26T10:26:33Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
