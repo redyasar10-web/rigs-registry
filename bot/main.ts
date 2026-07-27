@@ -421,7 +421,11 @@ async function main(): Promise<void> {
 
   const seeded: DiscoveredRepo[] = [];
   for (const repo of seedRepos) {
-    const meta = token ? await fetchRepoMeta(repo, token) : null;
+    // Try regardless of token. The unauthenticated budget is 60/hr, ample for
+    // a seed list, and skipping the fetch was publishing stars: 0 over real
+    // data — the homepage claims rigs are ranked by stars, so stub zeros make
+    // the stated sort order a lie.
+    const meta = await fetchRepoMeta(repo, token);
     // Offline fallback: reuse the last push marker we recorded rather than
     // stamping "now", otherwise nothing ever looks unchanged and every local
     // run re-clones the entire corpus.
