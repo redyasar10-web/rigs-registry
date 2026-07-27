@@ -128,6 +128,40 @@ export async function fetchRepoMeta(
   };
 }
 
+/**
+ * Resolve a repo to the name GitHub currently knows it by, following the 301 a
+ * rename leaves behind. Returns the input unchanged when there was no rename,
+ * and null when the repo is gone for good.
+ *
+ * Deliberately the HTML endpoint rather than /repos/{owner}/{repo}: it needs no
+ * token and spends none of the 60/hour unauthenticated API budget, and the
+ * indexer must keep working unauthenticated. `git remote get-url origin` after
+ * a clone is NOT an option — git follows the redirect silently but records the
+ * URL it was handed, so it reports the stale name.
+ *
+ * Never throws: an unreachable network must not turn a rename check into a
+ * failed run. On any error the caller sees the name it already had.
+ */
+export async function resolveCanonicalRepo(repo: string): Promise<string | null> {
+  let res: Response;
+  try {
+    res = await fetch(`https://github.com/${repo}`, {
+      method: "HEAD",
+      redirect: "manual",
+      headers: { "User-Agent": "rigs-indexer" },
+    });
+  } catch {
+    return repo;
+  }
+
+  if (res.status === 404 || res.status === 410) return null;
+  if (res.status !== 301 && res.status !== 302 && res.status !== 308) return repo;
+
+  const location = res.headers.get("location");
+  const moved = location && /^https:\/\/github\.com\/([^/?#]+\/[^/?#]+?)(?:\.git)?\/?$/.exec(location);
+  return moved ? moved[1] : repo;
+}
+
 /** Union topic results with seeds; seeds win on conflict so overrides stick. */
 export function mergeSources(
   topicRepos: DiscoveredRepo[],

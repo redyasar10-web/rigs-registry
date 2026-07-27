@@ -102,7 +102,21 @@ approval path, by design.
 | `cli/pack.ts` | `rigs pack`: allowlist, hard-deny, scan, then write |
 | `.claude-plugin/marketplace.json` | generated. What Claude Code consumes |
 
+A rig's identity is its **slug**, not its `owner/repo` string — the slug is what
+`plugin install` keys on, so it can never change once published. GitHub renames
+are free, so `data/names.json` maps each slug to its current repo plus every repo
+it used to be, and the indexer follows renames rather than minting a second slug.
+
+### Site rebuilds
+
+The site renders `data/index.json` as committed here, so indexing a change is
+only half the job — something has to redeploy the site or it keeps serving the
+previous snapshot. Set a repository secret **`VERCEL_DEPLOY_HOOK`** to a Vercel
+deploy-hook URL and the indexer POSTs it after every successful commit. Until
+it is set, each run logs a `::warning::` saying the site is stale; the indexing
+itself is unaffected.
+
 ```bash
-npm test          # 128 checks
+npm test          # 181 checks
 npm run index     # rebuild the index from sources/seed.jsonl
 ```

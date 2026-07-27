@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T23:33:45.359Z",
+  "generatedAt": "2026-07-27T04:33:12.595Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -949,9 +949,9 @@
     },
     {
       "slug": "everything-claude-code",
-      "repo": "affaan-m/everything-claude-code",
+      "repo": "affaan-m/ECC",
       "owner": "affaan-m",
-      "name": "everything-claude-code",
+      "name": "ECC",
       "tier": "A",
       "listable": true,
       "publishSha": "6a9f075cd97c139a5f7e84e1e3f2c9ab095adf64",
@@ -3308,7 +3308,7 @@
         }
       ],
       "stars": 0,
-      "pushedAt": "2026-07-26T23:33:45.359Z",
+      "pushedAt": "2026-07-27T04:31:12.328Z",
       "createdAt": "2026-07-26T23:33:45.359Z",
       "license": null,
       "isFork": false,

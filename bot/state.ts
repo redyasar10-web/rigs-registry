@@ -170,3 +170,16 @@ export function selectBatch(
 export function isUnchanged(s: RepoState | undefined, pushedAt: string): boolean {
   return !!s && s.health === "ok" && s.lastSeenPush === pushedAt && !!s.lastGoodSha;
 }
+
+/**
+ * Carry a renamed repo's health across to its new name. Without this a rename
+ * looks like a brand new rig: no lastGoodSha, so the one commit we know is good
+ * stops being published the moment the author renames.
+ */
+export function renameRepoKey(state: IndexState, from: string, to: string): IndexState {
+  const carried = state.repos[from];
+  if (!carried || from === to) return state;
+  const repos = { ...state.repos, [to]: state.repos[to] ?? carried };
+  delete repos[from];
+  return { ...state, repos };
+}

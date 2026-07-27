@@ -1,10 +1,29 @@
 {
-  "everything-claude-code": "affaan-m/everything-claude-code",
-  "marketingskills": "coreyhaines31/marketingskills",
-  "agentforce-adlc": "SalesforceAIResearch/agentforce-adlc",
-  "ai-plugins": "endorlabs/ai-plugins",
-  "aikido-claude-plugin": "AikidoSec/aikido-claude-plugin",
-  "alloydb": "gemini-cli-extensions/alloydb",
-  "alloydb-omni": "gemini-cli-extensions/alloydb-omni",
-  "apollo-mcp-plugin": "apolloio/apollo-mcp-plugin"
+  "everything-claude-code": {
+    "repo": "affaan-m/ECC",
+    "aliases": [
+      "affaan-m/everything-claude-code"
+    ]
+  },
+  "marketingskills": {
+    "repo": "coreyhaines31/marketingskills"
+  },
+  "agentforce-adlc": {
+    "repo": "SalesforceAIResearch/agentforce-adlc"
+  },
+  "ai-plugins": {
+    "repo": "endorlabs/ai-plugins"
+  },
+  "aikido-claude-plugin": {
+    "repo": "AikidoSec/aikido-claude-plugin"
+  },
+  "alloydb": {
+    "repo": "gemini-cli-extensions/alloydb"
+  },
+  "alloydb-omni": {
+    "repo": "gemini-cli-extensions/alloydb-omni"
+  },
+  "apollo-mcp-plugin": {
+    "repo": "apolloio/apollo-mcp-plugin"
+  }
 }

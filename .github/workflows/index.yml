@@ -71,8 +71,23 @@ jobs:
             git push
           fi
 
+      # The site renders data/index.json as committed here, so a freshly indexed
+      # change stays invisible until something redeploys it. With no hook that is
+      # silent staleness — the second half of the incident where the marketplace
+      # and the site disagreed for days. Say so loudly rather than skipping quietly.
+      #
+      # The guard lives inside `run:` on purpose. It used to be
+      # `if: success() && env.DEPLOY_HOOK != ''`, but step-level `env` is not in
+      # scope for that same step's `if`, so the condition read an empty string and
+      # the step never fired even when the secret WAS set.
       - name: Trigger site rebuild
-        if: success() && env.DEPLOY_HOOK != ''
+        if: success()
         env:
           DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
-        run: curl -fsS -X POST "$DEPLOY_HOOK"
+        run: |
+          if [ -z "$DEPLOY_HOOK" ]; then
+            echo "::warning::VERCEL_DEPLOY_HOOK is not configured, so the site will keep serving a stale index until it is set. See 'Site rebuilds' in README.md."
+            exit 0
+          fi
+          curl -fsS -X POST "$DEPLOY_HOOK"
+          echo "site rebuild triggered"

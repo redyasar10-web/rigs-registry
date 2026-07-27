@@ -21,11 +21,18 @@ import { tmpdir } from "node:os";
 import { fileURLToPath } from "node:url";
 import { extract } from "./extract.ts";
 import { scanJsonTree, scanText, scanUrl, formatFinding, type SecretFinding } from "./rules/secrets.ts";
-import { searchTopic, fetchRepoMeta, mergeSources, DISCOVERY_TOPIC, type DiscoveredRepo } from "./discover.ts";
+import {
+  searchTopic, fetchRepoMeta, mergeSources, resolveCanonicalRepo,
+  DISCOVERY_TOPIC, type DiscoveredRepo,
+} from "./discover.ts";
 import {
   EMPTY_STATE, initRepo, applyOutcome, markWithdrawn, selectBatch, isUnchanged,
-  tombstoneExpired, type IndexState, type RepoState,
+  tombstoneExpired, renameRepoKey, type IndexState, type RepoState,
 } from "./state.ts";
+import {
+  loadNames, allocateSlug, findSlug, recordRename, serializeNames, checkEmitAgrees,
+  type NameRegistry,
+} from "./names.ts";
 import { trustScore, isStale, detectDerivative, applyOwnerQuota } from "./score.ts";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -80,17 +87,6 @@ function sh(cmd: string, args: string[], cwd?: string): string {
 function slugify(s: string): string {
   const out = s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
   return /^[a-z]/.test(out) ? out : `rig-${out}`;
-}
-
-/** Append-only. A published name can never change — installs key on it. */
-function allocateSlug(names: Record<string, string>, repo: string, preferred: string): string {
-  for (const [slug, r] of Object.entries(names)) if (r === repo) return slug;
-  let slug = preferred;
-  if (names[slug]) slug = `${preferred}-${repo.split("/")[0].toLowerCase()}`;
-  let n = 2;
-  while (names[slug]) slug = `${preferred}-${n++}`;
-  names[slug] = repo;
-  return slug;
 }
 
 const LINT_TARGET_JSON = /(^|\/)(settings[^/]*\.json|\.claude\.json|\.mcp\.json|mcp[^/]*\.json)(\.bak)?$/;
@@ -260,9 +256,15 @@ function emptyProcessed(): Processed {
   };
 }
 
-/** Reuse the previous run's extracted data for a rig we deliberately skipped. */
-function carriedProcessed(prevIndex: { rigs: RigRecord[] }, repo: string): Processed {
-  const found = prevIndex.rigs.find((r) => r.repo === repo);
+/**
+ * Reuse the previous run's extracted data for a rig we deliberately skipped.
+ * Falls back to matching on the slug, because the previous index still names a
+ * renamed rig by the repo string it moved off — and missing here would zero its
+ * component count and quietly delist it on the very run that renamed it.
+ */
+function carriedProcessed(prevIndex: { rigs: RigRecord[] }, repo: string, names: NameRegistry): Processed {
+  const slug = findSlug(names, repo);
+  const found = prevIndex.rigs.find((r) => r.repo === repo || (slug !== undefined && r.slug === slug));
   if (!found) return emptyProcessed();
   return {
     passed: true, headSha: found.headSha, vanished: false,
@@ -277,7 +279,7 @@ function carriedProcessed(prevIndex: { rigs: RigRecord[] }, repo: string): Proce
 function buildRecord(a: {
   disc: DiscoveredRepo; owner: string; name: string; prev: RepoState;
   publishSha: string | null; listable: boolean; servingStale: boolean;
-  proc: Processed; names: Record<string, string>;
+  proc: Processed; names: NameRegistry;
   knownHashes: Record<string, { hashes: string[]; firstIndexedAt: string }>;
   now: Date; note?: string;
 }): RigRecord {
@@ -328,6 +330,63 @@ function buildRecord(a: {
   };
 }
 
+/**
+ * Reconcile repo renames before anything keys on a repo string.
+ *
+ * Two directions, because a rename surfaces from either end:
+ *  - forward: a seed still names a repo that has since moved. Checked only for
+ *    repos we have never indexed — the topic search already reports GitHub's
+ *    canonical full_name, and an authenticated fetchRepoMeta follows the 301
+ *    itself. Getting it right matters most here, because this is the run that
+ *    mints the slug and after that the name is permanent.
+ *  - reverse: a rig we already published has dropped out of discovery because
+ *    discovery found it under its NEW name. This is the one that broke
+ *    production: the lookup missed, a second slug was minted, and everyone on
+ *    the first one was silently orphaned.
+ *
+ * Bounded on purpose — one HEAD per unresolved repo, never one per rig per run.
+ */
+async function reconcileRenames(
+  all: DiscoveredRepo[],
+  names: NameRegistry,
+  state: IndexState,
+): Promise<{ all: DiscoveredRepo[]; state: IndexState }> {
+  // Nothing to carry in this direction: we only look when the repo is unknown
+  // to both names.json and state.json, so there is no history under either name.
+  const resolved: DiscoveredRepo[] = [];
+  for (const disc of all) {
+    if (findSlug(names, disc.repo) || state.repos[disc.repo]) {
+      resolved.push(disc);
+      continue;
+    }
+    const canonical = await resolveCanonicalRepo(disc.repo);
+    if (canonical && canonical !== disc.repo) {
+      console.log(`  rename: ${disc.repo} -> ${canonical} (before first index)`);
+      resolved.push({ ...disc, repo: canonical });
+    } else {
+      resolved.push(disc);
+    }
+  }
+
+  let next = state;
+
+  // Canonicalising can collapse two discovery entries onto one repo; seeds win.
+  const deduped = new Map<string, DiscoveredRepo>();
+  for (const r of resolved) if (!deduped.has(r.repo) || r.seeded) deduped.set(r.repo, r);
+  const discovered = new Set(deduped.keys());
+
+  for (const entry of Object.values(names)) {
+    if (discovered.has(entry.repo)) continue;
+    const canonical = await resolveCanonicalRepo(entry.repo);
+    if (!canonical || canonical === entry.repo || !discovered.has(canonical)) continue;
+    const slug = recordRename(names, entry.repo, canonical);
+    next = renameRepoKey(next, entry.repo, canonical);
+    console.log(`  rename: ${entry.repo} -> ${canonical} (slug ${slug} preserved)`);
+  }
+
+  return { all: [...deduped.values()], state: next };
+}
+
 async function main(): Promise<void> {
   const token = process.env.GITHUB_TOKEN;
   const now = new Date();
@@ -335,8 +394,8 @@ async function main(): Promise<void> {
 
   const statePath = join(ROOT, "data", "state.json");
   const namesPath = join(ROOT, "data", "names.json");
-  const state = readJson<IndexState>(statePath, EMPTY_STATE);
-  const names = readJson<Record<string, string>>(namesPath, {});
+  let state = readJson<IndexState>(statePath, EMPTY_STATE);
+  const names = loadNames(readJson<unknown>(namesPath, {}));
   const blocklist = readJson<Blocklist>(join(ROOT, "data", "blocklist.json"), {});
   const previousIndex = readJson<{ rigs: RigRecord[] }>(join(ROOT, "data", "index.json"), { rigs: [] });
 
@@ -384,6 +443,11 @@ async function main(): Promise<void> {
   all = all.filter((r) => !blockedRepos.has(r.repo) && !blockedOwners.has(r.repo.split("/")[0]));
   if (before !== all.length) console.log(`blocklist: removed ${before - all.length}`);
 
+  // ── renames: before anything keys on a repo string ──────────────────────
+  // Must precede the withdrawal sweep below, or a rig that was merely renamed
+  // gets tombstoned under the name it moved off.
+  ({ all, state } = await reconcileRenames(all, names, state));
+
   // ── withdrawals: known to us but no longer discoverable ─────────────────
   const discoveredSet = new Set(all.map((r) => r.repo));
   for (const [repo, s] of Object.entries(state.repos)) {
@@ -416,7 +480,7 @@ async function main(): Promise<void> {
       records.push(buildRecord({
         disc, owner, name, prev, publishSha: prev.lastGoodSha,
         listable: prev.health === "ok", servingStale: prev.health !== "ok",
-        proc: carriedProcessed(previousIndex, repo), names, knownHashes, now,
+        proc: carriedProcessed(previousIndex, repo, names), names, knownHashes, now,
       }));
       state.repos[repo] = { ...prev, lastSeenPush: disc.pushedAt };
       continue;
@@ -516,10 +580,22 @@ async function main(): Promise<void> {
     rigs: visible,
   };
 
+  // ── consistency: the two artefacts must describe the same install set ───
+  // Checked before a single byte is written, so a disagreement leaves the last
+  // known-good pair on disk rather than a half-corrected one. A slug present in
+  // only one of them is a dead link or a broken install — both have shipped.
+  const problems = checkEmitAgrees(index.rigs, marketplace.plugins);
+  if (problems.length) {
+    console.error(`\n\x1b[31mABORT\x1b[0m data/index.json and marketplace.json disagree:`);
+    for (const p of problems) console.error(`  ${p}`);
+    console.error("\nNothing was written. This is a bug in the indexer, not in the rigs.");
+    process.exit(1);
+  }
+
   writeFileSync(join(ROOT, ".claude-plugin", "marketplace.json"), JSON.stringify(marketplace, null, 2) + "\n");
   writeFileSync(join(ROOT, "data", "index.json"), JSON.stringify(index, null, 2) + "\n");
   writeFileSync(statePath, JSON.stringify(state, null, 2) + "\n");
-  writeFileSync(namesPath, JSON.stringify(names, null, 2) + "\n");
+  writeFileSync(namesPath, JSON.stringify(serializeNames(names), null, 2) + "\n");
 
   const tierB = visible.filter((r) => r.listable && r.tier === "B").length;
   console.log(
