@@ -10,7 +10,7 @@ actually use. Not one polished plugin. The whole rig.
 ## Use a rig
 
 ```bash
-claude plugin marketplace add rigs-dev/registry
+claude plugin marketplace add redyasar10-web/rigs-registry
 claude plugin install <slug>@rigs
 ```
 

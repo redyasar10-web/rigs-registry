@@ -210,9 +210,9 @@ export function pack(
   const kept = [...new Set(included.map((r) => r.split("/")[0]))];
   writeFileSync(
     join(dest, "README.md"),
-    `# ${slug}\n\nMy Claude Code rig, published with [Rigs](https://github.com/rigs-dev/registry).\n\n` +
+    `# ${slug}\n\nMy Claude Code rig, published with [Rigs](https://github.com/redyasar10-web/rigs-registry).\n\n` +
       `Contains: ${kept.join(", ")}\n\n## Install\n\n` +
-      "```bash\nclaude plugin marketplace add rigs-dev/registry\n" +
+      "```bash\nclaude plugin marketplace add redyasar10-web/rigs-registry\n" +
       `claude plugin install ${slug}@rigs\n\`\`\`\n`,
   );
 

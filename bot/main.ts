@@ -30,7 +30,7 @@ import { trustScore, isStale, detectDerivative, applyOwnerQuota } from "./score.
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MARKETPLACE_NAME = "rigs";
-const REGISTRY_REPO = "rigs-dev/registry";
+const REGISTRY_REPO = "redyasar10-web/rigs-registry";
 const BATCH_SIZE = Number(process.env.BATCH_SIZE ?? "120");
 /** Abort rather than commit if a run would delist more than this share. */
 const CANARY_DELIST_RATIO = 0.2;

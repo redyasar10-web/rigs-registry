@@ -4,7 +4,7 @@
   "description": "Community registry of complete Claude Code setups. See how people actually run Claude.",
   "owner": {
     "name": "Rigs",
-    "url": "https://github.com/rigs-dev/registry"
+    "url": "https://github.com/redyasar10-web/rigs-registry"
   },
   "plugins": [
     {
