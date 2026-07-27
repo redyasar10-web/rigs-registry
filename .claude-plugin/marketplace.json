@@ -8,6 +8,20 @@
   },
   "plugins": [
     {
+      "name": "ai-plugins",
+      "description": "Public distribution repository for Endor Labs Agent Kit packages across Claude",
+      "author": {
+        "name": "endorlabs",
+        "url": "https://github.com/endorlabs"
+      },
+      "homepage": "https://github.com/endorlabs/ai-plugins",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/endorlabs/ai-plugins.git",
+        "sha": "350353a785f50f75b5d36470a0f7b531ee7433ff"
+      }
+    },
+    {
       "name": "marketingskills",
       "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
       "author": {
@@ -22,11 +36,11 @@
       }
     },
     {
-      "name": "ai-plugins",
-      "description": "Public distribution repository for Endor Labs Agent Kit packages across Claude",
+      "name": "everything-claude-code",
+      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "author": {
-        "name": "endorlabs",
-        "url": "https://github.com/endorlabs"
+        "name": "affaan-m",
+        "url": "https://github.com/affaan-m"
       },
       "homepage": "https://github.com/affaan-m/ECC",
       "source": {
@@ -64,20 +78,6 @@
       }
     },
     {
-      "name": "agentforce-adlc",
-      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
-      "author": {
-        "name": "SalesforceAIResearch",
-        "url": "https://github.com/SalesforceAIResearch"
-      },
-      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
-        "sha": "74e7c25b9b0141b57f1c04300b15e7b3ff139647"
-      }
-    },
-    {
       "name": "apollo-mcp-plugin",
       "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
       "author": {
@@ -92,17 +92,17 @@
       }
     },
     {
-      "name": "alloydb-omni",
-      "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
+      "name": "agentforce-adlc",
+      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
       "author": {
-        "name": "gemini-cli-extensions",
-        "url": "https://github.com/gemini-cli-extensions"
+        "name": "SalesforceAIResearch",
+        "url": "https://github.com/SalesforceAIResearch"
       },
-      "homepage": "https://github.com/gemini-cli-extensions/alloydb-omni",
+      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
       "source": {
         "source": "url",
-        "url": "https://github.com/gemini-cli-extensions/alloydb-omni.git",
-        "sha": "66a264765956d2b400c79044b8b92aed34688bf8"
+        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
+        "sha": "74e7c25b9b0141b57f1c04300b15e7b3ff139647"
       }
     },
     {
@@ -117,20 +117,6 @@
         "source": "url",
         "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
         "sha": "621557d37e4e1f28db40a57653577d3400880e70"
-      }
-    },
-    {
-      "name": "ecc",
-      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
-      "author": {
-        "name": "affaan-m",
-        "url": "https://github.com/affaan-m"
-      },
-      "homepage": "https://github.com/affaan-m/ECC",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/affaan-m/ECC.git",
-        "sha": "6a9f075cd97c139a5f7e84e1e3f2c9ab095adf64"
       }
     }
   ]
