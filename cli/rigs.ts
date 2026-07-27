@@ -16,8 +16,10 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, statSync } from "node:fs";
 import { join, basename, resolve } from "node:path";
+import { execFileSync } from "node:child_process";
 import { scanJsonTree, scanText, scanUrl, type SecretFinding } from "../bot/rules/secrets.ts";
 import { extract } from "../bot/extract.ts";
+import { pack } from "./pack.ts";
 
 const DIM = "\x1b[2m", RED = "\x1b[31m", YEL = "\x1b[33m", GRN = "\x1b[32m", BLD = "\x1b[1m", OFF = "\x1b[0m";
 
@@ -126,6 +128,74 @@ function cmdInit(dir: string): number {
   return 0;
 }
 
+/** Returns skill directory names that `claude plugin validate` errors on. */
+function validateAndCollectFailures(dir: string): string[] {
+  let out = "";
+  try {
+    execFileSync("claude", ["plugin", "validate", dir], { encoding: "utf8", stdio: "pipe" });
+    return [];
+  } catch (e) {
+    const err = e as { stdout?: string; stderr?: string };
+    out = (err.stdout ?? "") + (err.stderr ?? "");
+  }
+  const failures: string[] = [];
+  const lines = out.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const m = /Validating skill: (.+SKILL\.md)\s*$/.exec(lines[i]);
+    if (!m) continue;
+    // An error for this skill appears in the following few lines.
+    if (lines.slice(i + 1, i + 5).some((l) => l.includes("error"))) {
+      const rel = m[1].slice(dir.length).replace(/^\/+/, "");
+      failures.push(rel.slice(0, rel.length - "/SKILL.md".length));
+    }
+  }
+  return failures;
+}
+
+function cmdPack(source: string): number {
+  const slug = (process.argv[4] || "my-rig").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  const dest = resolve(process.cwd(), slug);
+  console.log(`\n${BLD}Packing ${source}${OFF}\n`);
+
+  let r = pack(source, dest, slug);
+
+  // Use the authoritative validator rather than reimplementing YAML: pack,
+  // ask `claude plugin validate` what it rejects, drop exactly those skills,
+  // repack. A rig that does not install is worse than no rig.
+  if (r.written) {
+    const bad = validateAndCollectFailures(dest);
+    if (bad.length) {
+      console.log(`  ${DIM}dropping ${bad.length} component(s) the validator rejects${OFF}`);
+      r = pack(source, dest, slug, bad);
+    }
+  }
+  const kept = [...new Set(r.included.map((f) => f.split("/")[0]))];
+
+  console.log(`  ${GRN}included${OFF}  ${r.included.length} files  ${DIM}${kept.join(", ")}${OFF}`);
+  console.log(`  ${DIM}${(r.bytes / 1024 / 1024).toFixed(1)} MB${OFF}\n`);
+
+  const sensitive = r.excluded.filter((e) => e.reason.startsWith("never published"));
+  const ignored = r.excluded.filter((e) => e.reason.includes(".rigsignore"));
+  console.log(`  ${YEL}filtered out${OFF}  ${sensitive.length} sensitive, ${ignored.length} via .rigsignore`);
+  for (const e of sensitive.slice(0, 10)) console.log(`    ${DIM}${e.path}${OFF}`);
+  if (sensitive.length > 10) console.log(`    ${DIM}... and ${sensitive.length - 10} more${OFF}`);
+
+  const blocking = r.findings.filter((f) => f.severity === "reject");
+  console.log();
+  if (blocking.length) {
+    console.log(`${RED}${BLD}  x refused to write - ${blocking.length} credential(s) survived the filter${OFF}\n`);
+    for (const f of blocking) console.log(`    ${RED}${f.file}${OFF} ${f.location} - ${f.kind}`);
+    console.log(`\n  ${DIM}Nothing was written. Rotate the credential, then re-run.${OFF}\n`);
+    return 1;
+  }
+
+  console.log(`${GRN}  ok - no credentials in the packed rig${OFF}`);
+  console.log(`\n  ${BLD}Wrote ./${slug}/${OFF}\n`);
+  console.log(`  ${DIM}cd ${slug} && git init && git add -A && git commit -m "my rig"${OFF}`);
+  console.log(`  ${DIM}then push it public and add the topic 'claude-rig'${OFF}\n`);
+  return 0;
+}
+
 function cmdPublish(dir: string): number {
   const code = cmdCheck(dir);
   if (code !== 0) {
@@ -153,6 +223,7 @@ if (!existsSync(dir)) {
 
 switch (cmd) {
   case "check": process.exit(cmdCheck(dir));
+  case "pack": process.exit(cmdPack(dir));
   case "init": process.exit(cmdInit(dir));
   case "publish": process.exit(cmdPublish(dir));
   default:

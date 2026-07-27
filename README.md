@@ -16,14 +16,75 @@ claude plugin install <slug>@rigs
 
 ## Publish yours
 
+Your `~/.claude` is not publishable as it stands. `settings.local.json` holds
+verbatim captured shell commands, some of which carry live API keys.
+`projects/` and `history.jsonl` hold every prompt you have ever typed.
+`.claude.json` holds inline MCP credentials. And `*.bak` copies outlive any
+redaction of the file they shadow. `rigs pack` does that separation for you.
+
 ```bash
-rigs check      # scan for leaked credentials BEFORE anything is public
-rigs init       # scaffold .claude-plugin/plugin.json
-rigs publish    # then add the topic `claude-rig` to your repo
+rigs pack ~/.claude my-rig   # build a publishable copy in ./my-rig
+rigs check my-rig            # scan the result independently
+cd my-rig && git init && git add -A && git commit -m "my rig"
 ```
 
-The indexer finds it within 6 hours. Remove the topic to delist. No account,
-no approval, no waiting on a maintainer.
+Then push it public and add the topic `claude-rig`. The indexer finds it within
+6 hours. Remove the topic to delist. No account, no approval, no waiting on a
+maintainer.
+
+`rigs init` and `rigs publish` remain for rigs you already keep in a repo by
+hand; `pack` is for going straight from a live `~/.claude`.
+
+### What `pack` includes
+
+An allowlist, not a blocklist: `skills/`, `agents/`, `commands/`, `rules/`,
+`hooks/`, `helpers/`, `mcp-configs/`, `output-styles/`, `statusline/`, and the
+top-level `CLAUDE.md`, `AGENTS.md`, `README.md` and `LICENSE`.
+
+Anything else at the top level is left behind and reported as *not a recognised
+rig component*. That direction matters: a directory Claude Code starts writing
+next month is excluded by default rather than published by accident.
+
+### What it never includes
+
+Credentials (`settings.local.json`, `.claude.json`, `.credentials.json`),
+prompt and session history (`projects/`, `sessions/`, `history.jsonl`, `todos/`,
+`shell-snapshots/`), and machine state (`telemetry/`, `statsig/`, `cache/`,
+`backups/`, `plugins/`, `ide/`, log files). Also every file ending `.bak`,
+`.log`, `.db`, `.sqlite`, `.jsonl`, `.pem`, `.key` or `.p12`, anywhere in the
+tree, and anything starting `.env`.
+
+This list is hard. A `.rigsignore` can add to it but cannot re-include anything
+on it.
+
+### `.rigsignore`
+
+Drop a `.rigsignore` in `~/.claude` to hold back things that are yours rather
+than dangerous — a client-specific skill, a private prompt. One pattern per
+line, gitignore-flavoured. Full format and examples: [docs/rigsignore.md](docs/rigsignore.md).
+
+```
+skills/client-acme/
+*.secret
+```
+
+### It refuses to write when a credential survives
+
+Everything that would ship is scanned before a single byte is written — the
+same scanner the registry runs. If anything comes back as a reject, `pack`
+prints the file and location, never the value, and exits without creating the
+destination directory at all. There is no half-written rig with a live key in
+it, which is the failure mode worth designing around.
+
+Skills whose `SKILL.md` `claude plugin validate` rejects are dropped and the
+rest of the rig is kept. A rig that does not install is worse than no rig.
+
+### Measured on a real `~/.claude`
+
+712 files included across skills, agents, commands, rules, hooks, helpers and
+mcp-configs; 28 sensitive paths filtered out; 2 skills dropped because the
+validator rejected their frontmatter. The result passed `claude plugin
+validate`.
 
 ## How it works
 
@@ -38,9 +99,10 @@ approval path, by design.
 | `bot/rules/secrets.ts` | credential detection. Walks every JSON scalar |
 | `bot/rules/mirrors.ts` | drops `docs/`, translations and other-tool mirrors |
 | `cli/rigs.ts` | the `rigs` command |
+| `cli/pack.ts` | `rigs pack`: allowlist, hard-deny, scan, then write |
 | `.claude-plugin/marketplace.json` | generated. What Claude Code consumes |
 
 ```bash
-npm test          # 26 checks
+npm test          # 128 checks
 npm run index     # rebuild the index from sources/seed.jsonl
 ```

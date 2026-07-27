@@ -6,7 +6,7 @@
   "description": "Rigs \u2014 the community registry for Claude Code setups. Indexes metadata only; rigs stay in their authors' repos.",
   "scripts": {
     "index": "node --experimental-strip-types bot/main.ts",
-    "test": "node --experimental-strip-types test/run.ts && node --experimental-strip-types test/state.test.ts"
+    "test": "node --experimental-strip-types test/run.ts && node --experimental-strip-types test/state.test.ts && node --experimental-strip-types test/pack.test.ts"
   },
   "engines": {
     "node": ">=22"

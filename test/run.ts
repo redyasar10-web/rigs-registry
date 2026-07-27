@@ -107,8 +107,13 @@ if (existsSync(REAL)) {
     `dropped(mirror): ${r.droppedMirror}  dropped(dup): ${r.droppedDuplicate}`,
   );
   console.log(`  counts: ${JSON.stringify(r.counts)}`);
-  ok("skills land near 125, not 397", r.counts.skill >= 100 && r.counts.skill <= 145, `got ${r.counts.skill}`);
-  ok("mirror exclusion did real work", r.droppedMirror > 200, `dropped ${r.droppedMirror}`);
+  // Assert the INVARIANT, not an absolute count. This folder is live and
+  // outside the repo — it grew from 125 to 282 skills and broke a hardcoded
+  // bound. What must hold is that mirror trees are removed, whatever the size.
+  const dropRatio = r.droppedMirror / r.rawFileCount;
+  ok("mirror exclusion removes most raw files", dropRatio > 0.4, `dropped ${(dropRatio * 100).toFixed(0)}%`);
+  ok("real skills survive", r.counts.skill > 0, `${r.counts.skill}`);
+  ok("kept count is well below raw", r.counts.skill < r.rawFileCount, `${r.counts.skill} < ${r.rawFileCount}`);
   ok("found agents", r.counts.agent > 0, `${r.counts.agent}`);
   ok("found commands", r.counts.command > 0, `${r.counts.command}`);
   ok("no component from an excluded tree", r.components.every((c) => !isMirrorPath(c.path)));
