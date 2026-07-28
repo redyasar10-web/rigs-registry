@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T19:54:14.667Z",
+  "generatedAt": "2026-07-28T03:34:46.939Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 41952,
+      "stars": 41984,
       "pushedAt": "2026-07-27T19:00:31Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,8 +293,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "86c786e8bb3ff70e4d5ea6570ec3fcec0b6a93df",
-      "headSha": "86c786e8bb3ff70e4d5ea6570ec3fcec0b6a93df",
+      "publishSha": "4e973d3eaf92d97f8d2e2d8abb39d8bdc8711b38",
+      "headSha": "4e973d3eaf92d97f8d2e2d8abb39d8bdc8711b38",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2646,8 +2646,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 234053,
-      "pushedAt": "2026-07-27T19:25:34Z",
+      "stars": 234246,
+      "pushedAt": "2026-07-27T20:45:18Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3313,13 +3313,13 @@
         }
       ],
       "stars": 9,
-      "pushedAt": "2026-07-26T02:40:57Z",
+      "pushedAt": "2026-07-28T02:47:46Z",
       "createdAt": "2026-03-02T17:25:07Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.719
+      "score": 0.72
     },
     {
       "slug": "alloydb",
@@ -3389,7 +3389,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.696
+      "score": 0.695
     },
     {
       "slug": "agentforce-adlc",
@@ -3468,7 +3468,7 @@
         }
       ],
       "stars": 93,
-      "pushedAt": "2026-07-27T16:24:11Z",
+      "pushedAt": "2026-07-28T02:15:05Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
