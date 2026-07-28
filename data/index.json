@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T14:36:45.901Z",
+  "generatedAt": "2026-07-28T19:53:10.555Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,14 +277,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 42087,
+      "stars": 42131,
       "pushedAt": "2026-07-27T19:00:31Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.894
+      "score": 0.893
     },
     {
       "slug": "everything-claude-code",
@@ -2646,7 +2646,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 234536,
+      "stars": 234684,
       "pushedAt": "2026-07-27T20:45:18Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3468,7 +3468,7 @@
         }
       ],
       "stars": 93,
-      "pushedAt": "2026-07-28T02:15:05Z",
+      "pushedAt": "2026-07-28T19:28:23Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
