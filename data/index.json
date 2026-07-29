@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T19:53:10.555Z",
+  "generatedAt": "2026-07-29T03:38:20.790Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 42131,
+      "stars": 42177,
       "pushedAt": "2026-07-27T19:00:31Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,8 +293,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "4e973d3eaf92d97f8d2e2d8abb39d8bdc8711b38",
-      "headSha": "4e973d3eaf92d97f8d2e2d8abb39d8bdc8711b38",
+      "publishSha": "591ab5cbd3f2f65860ea91c226e410b1502c8e2e",
+      "headSha": "591ab5cbd3f2f65860ea91c226e410b1502c8e2e",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2646,8 +2646,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 234684,
-      "pushedAt": "2026-07-27T20:45:18Z",
+      "stars": 234941,
+      "pushedAt": "2026-07-29T01:37:41Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3313,7 +3313,7 @@
         }
       ],
       "stars": 9,
-      "pushedAt": "2026-07-28T02:47:46Z",
+      "pushedAt": "2026-07-28T22:14:16Z",
       "createdAt": "2026-03-02T17:25:07Z",
       "license": "MIT",
       "isFork": false,
@@ -3392,91 +3392,6 @@
       "score": 0.695
     },
     {
-      "slug": "agentforce-adlc",
-      "repo": "SalesforceAIResearch/agentforce-adlc",
-      "owner": "SalesforceAIResearch",
-      "name": "agentforce-adlc",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "74e7c25b9b0141b57f1c04300b15e7b3ff139647",
-      "headSha": "74e7c25b9b0141b57f1c04300b15e7b3ff139647",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
-      "counts": {
-        "skill": 4,
-        "agent": 5,
-        "command": 0,
-        "hook": 1,
-        "mcp": 0
-      },
-      "componentTotal": 10,
-      "rawFileCount": 10,
-      "droppedMirror": 0,
-      "warnings": [
-        "LIC-01 no LICENSE file"
-      ],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "agent",
-          "name": "adlc-author",
-          "description": "Writes Agentforce Agent Script (.agent) files from requirements"
-        },
-        {
-          "kind": "agent",
-          "name": "adlc-engineer",
-          "description": "Platform engineer — scaffolds Flow/Apex metadata and deploys agent bundles"
-        },
-        {
-          "kind": "agent",
-          "name": "adlc-orchestrator",
-          "description": "Plan-mode orchestrator for the Agent Development Life Cycle"
-        },
-        {
-          "kind": "agent",
-          "name": "adlc-qa",
-          "description": "Tests Agentforce agents and optimizes based on session trace analysis"
-        },
-        {
-          "kind": "hook",
-          "name": "hooks"
-        },
-        {
-          "kind": "skill",
-          "name": "agentforce-generate",
-          "description": "Build, modify, optimize, debug, and deploy agents with Agentforce Agent Script. TRIGGER when: user creates, modifies, optimizes, or asks about .agent files or aiAuthoringBundle metadata; changes agent behavior, responses, or conversation logic; designs agent actions, tools, subagents, or flow control; writes or reviews an Agent Spec; wants to optimize, improve, or refactor an agent; previews, debugs, deploys, publishes, or tests agents; uses Agent Script CLI commands (sf agent generate/preview/publish/test). DO NOT TRIGGER when: Apex development, Flow building, Prompt Template authoring, Experience Cloud configuration, or general Salesforce CLI tasks unrelated to Agent Script."
-        },
-        {
-          "kind": "skill",
-          "name": "agentforce-observe",
-          "description": "Analyze production Agentforce agent behavior using session traces and Data Cloud. TRIGGER when: user queries STDM session data or Data Cloud trace records; investigates production agent failures, regressions, or performance issues; asks about session traces, conversation logs, or agent metrics; wants to reproduce a reported production issue in preview; runs findSessions or trace analysis queries. DO NOT TRIGGER when: user creates, modifies, or debugs .agent files during development (use agentforce-generate); writes or runs test specs (use agentforce-test); uses sf agent preview for local development iteration; deploys or publishes agents."
-        },
-        {
-          "kind": "skill",
-          "name": "agentforce-secure",
-          "description": "Run OWASP LLM Top 10 security assessments against live Agentforce agents. TRIGGER when: user asks for security testing, OWASP scan, red-teaming, penetration testing, security grade, vulnerability assessment, prompt injection test, data leakage test, excessive agency test, security posture check, or hardening recommendations. DO NOT TRIGGER when: user runs functional smoke tests or batch tests (use agentforce-test); performs static safety review of .agent file content (use agentforce-generate Section 15); analyzes production session traces (use agentforce-observe); writes or modifies .agent files."
-        },
-        {
-          "kind": "skill",
-          "name": "agentforce-test",
-          "description": "Write, run, and analyze structured test suites for Agentforce agents. TRIGGER when: user writes or modifies test spec YAML (AiEvaluationDefinition); runs sf agent test create, run, run-eval, or results commands; asks about test coverage strategy, metric selection, or custom evaluations; interprets test results or diagnoses test failures; asks about batch testing, regression suites, or CI/CD test integration. DO NOT TRIGGER when: user creates, modifies, previews, or debugs .agent files (use agentforce-generate); deploys or publishes agents; writes Agent Script code; uses sf agent preview for development iteration; analyzes production session traces (use agentforce-observe); requests OWASP, security, or red-team testing (use agentforce-secure)."
-        },
-        {
-          "kind": "agent",
-          "name": "README"
-        }
-      ],
-      "stars": 93,
-      "pushedAt": "2026-07-28T19:28:23Z",
-      "createdAt": "2026-04-10T17:11:28Z",
-      "license": "NOASSERTION",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.655
-    },
-    {
       "slug": "apollo-mcp-plugin",
       "repo": "apolloio/apollo-mcp-plugin",
       "owner": "apolloio",
@@ -3534,6 +3449,86 @@
       "isDerivative": false,
       "stale": false,
       "score": 0.654
+    },
+    {
+      "slug": "agentforce-adlc",
+      "repo": "SalesforceAIResearch/agentforce-adlc",
+      "owner": "SalesforceAIResearch",
+      "name": "agentforce-adlc",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2e735ab70a33d83aeea5ce10b6d61a99a978dc68",
+      "headSha": "2e735ab70a33d83aeea5ce10b6d61a99a978dc68",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
+      "counts": {
+        "skill": 3,
+        "agent": 5,
+        "command": 0,
+        "hook": 1,
+        "mcp": 0
+      },
+      "componentTotal": 9,
+      "rawFileCount": 9,
+      "droppedMirror": 0,
+      "warnings": [
+        "LIC-01 no LICENSE file"
+      ],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "agent",
+          "name": "adlc-author",
+          "description": "Writes Agentforce Agent Script (.agent) files from requirements"
+        },
+        {
+          "kind": "agent",
+          "name": "adlc-engineer",
+          "description": "Platform engineer — scaffolds Flow/Apex metadata and deploys agent bundles"
+        },
+        {
+          "kind": "agent",
+          "name": "adlc-orchestrator",
+          "description": "Plan-mode orchestrator for the Agent Development Life Cycle"
+        },
+        {
+          "kind": "agent",
+          "name": "adlc-qa",
+          "description": "Tests Agentforce agents and optimizes based on session trace analysis"
+        },
+        {
+          "kind": "hook",
+          "name": "hooks"
+        },
+        {
+          "kind": "skill",
+          "name": "agentforce-generate",
+          "description": "Build, modify, optimize, debug, and deploy agents with Agentforce Agent Script. TRIGGER when: user creates, modifies, optimizes, or asks about .agent files or aiAuthoringBundle metadata; changes agent behavior, responses, or conversation logic; designs agent actions, tools, subagents, or flow control; writes or reviews an Agent Spec; wants to optimize, improve, or refactor an agent; previews, debugs, deploys, publishes, or tests agents; uses Agent Script CLI commands (sf agent generate/preview/publish/test); registers/creates/lists/updates/deletes MCP servers, whitelists/approves MCP tools, fetches MCP assets, or configures MCP authentication (sf agent mcp). DO NOT TRIGGER when: Apex development, Flow building, Prompt Template authoring, Experience Cloud configuration, or general Salesforce CLI tasks unrelated to Agent Script."
+        },
+        {
+          "kind": "skill",
+          "name": "agentforce-observe",
+          "description": "Analyze production Agentforce agent behavior using session traces and Data Cloud. TRIGGER when: user queries STDM session data or Data Cloud trace records; investigates production agent failures, regressions, or performance issues; asks about session traces, conversation logs, or agent metrics; wants to reproduce a reported production issue in preview; runs findSessions or trace analysis queries. DO NOT TRIGGER when: user creates, modifies, or debugs .agent files during development (use agentforce-generate); writes or runs test specs (use agentforce-test); uses sf agent preview for local development iteration; deploys or publishes agents."
+        },
+        {
+          "kind": "skill",
+          "name": "agentforce-test",
+          "description": "Write, run, and analyze structured test suites for Agentforce agents — functional AND security. TRIGGER when: user writes or modifies test spec YAML (AiEvaluationDefinition); runs sf agent test create, run, run-eval, or results commands; asks about test coverage strategy, metric selection, or custom evaluations; interprets test results or diagnoses test failures; asks about batch testing, regression suites, or CI/CD test integration; requests security testing, OWASP LLM Top 10, red-teaming, penetration testing, prompt-injection tests, a security grade, or a vulnerability assessment of an agent. DO NOT TRIGGER when: user creates, modifies, previews, or debugs .agent files (use agentforce-generate); deploys or publishes agents; writes Agent Script code; uses sf agent preview for development iteration; analyzes production session traces (use agentforce-observe); performs a static safety review of .agent file content (use agentforce-generate Section 15)."
+        },
+        {
+          "kind": "agent",
+          "name": "README"
+        }
+      ],
+      "stars": 93,
+      "pushedAt": "2026-07-28T22:50:44Z",
+      "createdAt": "2026-04-10T17:11:28Z",
+      "license": "NOASSERTION",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.652
     },
     {
       "slug": "alloydb-omni",
