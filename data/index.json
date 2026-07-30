@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T03:28:01.409Z",
+  "generatedAt": "2026-07-30T08:49:56.276Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 42335,
+      "stars": 42362,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2646,7 +2646,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 235675,
+      "stars": 235873,
       "pushedAt": "2026-07-29T18:11:01Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3389,7 +3389,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.695
+      "score": 0.694
     },
     {
       "slug": "apollo-mcp-plugin",
@@ -3457,8 +3457,8 @@
       "name": "agentforce-adlc",
       "tier": "A",
       "listable": true,
-      "publishSha": "2e735ab70a33d83aeea5ce10b6d61a99a978dc68",
-      "headSha": "2e735ab70a33d83aeea5ce10b6d61a99a978dc68",
+      "publishSha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8",
+      "headSha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8",
       "servingStale": false,
       "health": "ok",
       "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
@@ -3522,7 +3522,7 @@
         }
       ],
       "stars": 93,
-      "pushedAt": "2026-07-28T22:50:44Z",
+      "pushedAt": "2026-07-30T06:59:57Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
