@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T03:49:23.224Z",
+  "generatedAt": "2026-07-31T09:16:19.961Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 42452,
+      "stars": 42484,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2646,7 +2646,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 236299,
+      "stars": 236441,
       "pushedAt": "2026-07-29T18:11:01Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -2662,97 +2662,78 @@
       "name": "ai-plugins",
       "tier": "A",
       "listable": true,
-      "publishSha": "350353a785f50f75b5d36470a0f7b531ee7433ff",
-      "headSha": "350353a785f50f75b5d36470a0f7b531ee7433ff",
+      "publishSha": "3fb6880b0f5de7a0530947dfd070087bc613079e",
+      "headSha": "3fb6880b0f5de7a0530947dfd070087bc613079e",
       "servingStale": false,
       "health": "ok",
-      "description": "Public distribution repository for Endor Labs Agent Kit packages across Claude",
+      "description": "Endor Labs workflow agents and setup for Claude Code.",
       "counts": {
-        "skill": 58,
-        "agent": 67,
+        "skill": 62,
+        "agent": 57,
         "command": 0,
         "hook": 4,
         "mcp": 1
       },
-      "componentTotal": 130,
-      "rawFileCount": 143,
+      "componentTotal": 124,
+      "rawFileCount": 148,
       "droppedMirror": 0,
       "warnings": [],
       "rejectReasons": [],
       "components": [
         {
-          "kind": "mcp",
-          "name": "mcp"
+          "kind": "agent",
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
         },
         {
           "kind": "agent",
-          "name": "endor-agent-kit-setup-agent",
-          "description": "Use when setting up Endor Labs Agent Kit for Cursor, checking readiness, verifying Endor auth, choosing namespaces, or diagnosing missing endorctl, gh, Endor MCP, or workflow prerequisites."
+          "name": "cicd-posture",
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
         },
         {
           "kind": "agent",
-          "name": "endor-ai-sast-triage-agent",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
         },
         {
           "kind": "agent",
-          "name": "endor-cicd-posture-agent",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
         },
         {
           "kind": "agent",
-          "name": "endor-dependency-decision-helper-agent",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
+          "name": "findings-browser",
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
         },
         {
           "kind": "agent",
-          "name": "endor-findings-browser-agent",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
         },
         {
           "kind": "agent",
-          "name": "endor-malware-response-agent",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
         },
         {
           "kind": "agent",
-          "name": "endor-package-risk-summary-agent",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
         },
         {
           "kind": "agent",
-          "name": "endor-probe-droid-agent",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
+          "name": "sca-remediation",
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
         },
         {
           "kind": "agent",
-          "name": "endor-remediation-planner-agent",
-          "description": "Preview safe remediation options without opening PRs."
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
         },
         {
           "kind": "agent",
-          "name": "endor-repository-dependency-reviewer-agent",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
-        },
-        {
-          "kind": "agent",
-          "name": "endor-sca-remediation-agent",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
-        },
-        {
-          "kind": "agent",
-          "name": "endor-troubleshooter-agent",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
-        },
-        {
-          "kind": "agent",
-          "name": "endor-upgrade-impact-analysis-agent",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
-        },
-        {
-          "kind": "agent",
-          "name": "endor-vulnerability-explainer-agent",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
+          "name": "vulnerability-explainer",
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
         },
         {
           "kind": "hook",
@@ -2764,7 +2745,7 @@
         },
         {
           "kind": "agent",
-          "name": "endor-ai-sast-triage-agent"
+          "name": "endor-ai-sast-remediation-agent"
         },
         {
           "kind": "agent",
@@ -2772,7 +2753,11 @@
         },
         {
           "kind": "agent",
-          "name": "endor-dependency-decision-helper-agent"
+          "name": "endor-configuration-automation-agent"
+        },
+        {
+          "kind": "agent",
+          "name": "endor-dependency-reviewer-agent"
         },
         {
           "kind": "agent",
@@ -2780,23 +2765,15 @@
         },
         {
           "kind": "agent",
-          "name": "endor-malware-response-agent"
+          "name": "endor-malware-responder-agent"
         },
         {
           "kind": "agent",
-          "name": "endor-package-risk-summary-agent"
+          "name": "endor-oss-upgrade-investigator-agent"
         },
         {
           "kind": "agent",
-          "name": "endor-probe-droid-agent"
-        },
-        {
-          "kind": "agent",
-          "name": "endor-remediation-planner-agent"
-        },
-        {
-          "kind": "agent",
-          "name": "endor-repository-dependency-reviewer-agent"
+          "name": "endor-remediation-planning-agent"
         },
         {
           "kind": "agent",
@@ -2804,11 +2781,7 @@
         },
         {
           "kind": "agent",
-          "name": "endor-troubleshooter-agent"
-        },
-        {
-          "kind": "agent",
-          "name": "endor-upgrade-impact-analysis-agent"
+          "name": "endor-troubleshooting-agent"
         },
         {
           "kind": "agent",
@@ -2816,207 +2789,131 @@
         },
         {
           "kind": "skill",
-          "name": "ai-sast-triage",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
-        },
-        {
-          "kind": "skill",
-          "name": "cicd-posture",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
-        },
-        {
-          "kind": "skill",
-          "name": "dependency-decision-helper",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
-        },
-        {
-          "kind": "skill",
           "name": "endor-agent-kit-setup",
+          "description": "Use when setting up Endor Labs Agent Kit for Claude Code, checking readiness, verifying Endor auth, choosing namespaces, or diagnosing missing endorctl, gh, Endor MCP, or workflow prerequisites."
+        },
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        },
+        {
+          "kind": "agent",
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
+        },
+        {
+          "kind": "agent",
+          "name": "cicd-posture",
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
+        },
+        {
+          "kind": "agent",
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
+        },
+        {
+          "kind": "agent",
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
+        },
+        {
+          "kind": "agent",
+          "name": "findings-browser",
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
+        },
+        {
+          "kind": "agent",
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
+        },
+        {
+          "kind": "agent",
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
+        },
+        {
+          "kind": "agent",
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
+        },
+        {
+          "kind": "agent",
+          "name": "sca-remediation",
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
+        },
+        {
+          "kind": "agent",
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
+        },
+        {
+          "kind": "agent",
+          "name": "vulnerability-explainer",
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
+        },
+        {
+          "kind": "hook",
+          "name": "hooks"
+        },
+        {
+          "kind": "agent",
+          "name": "endor-agent-kit-setup-agent",
           "description": "Use when setting up Endor Labs Agent Kit for Cursor, checking readiness, verifying Endor auth, choosing namespaces, or diagnosing missing endorctl, gh, Endor MCP, or workflow prerequisites."
         },
         {
-          "kind": "skill",
-          "name": "endor-troubleshooter",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
-        },
-        {
-          "kind": "skill",
-          "name": "findings-browser",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
-        },
-        {
-          "kind": "skill",
-          "name": "malware-response",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
-        },
-        {
-          "kind": "skill",
-          "name": "package-risk-summary",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
-        },
-        {
-          "kind": "skill",
-          "name": "probe-droid",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
-        },
-        {
-          "kind": "skill",
-          "name": "remediation-planner",
-          "description": "Preview safe remediation options without opening PRs."
-        },
-        {
-          "kind": "skill",
-          "name": "repository-dependency-reviewer",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
-        },
-        {
-          "kind": "skill",
-          "name": "sca-remediation",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
-        },
-        {
-          "kind": "skill",
-          "name": "upgrade-impact-analysis",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
-        },
-        {
-          "kind": "skill",
-          "name": "vulnerability-explainer",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
+          "kind": "agent",
+          "name": "endor-ai-sast-remediation-agent",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
         },
         {
           "kind": "agent",
-          "name": "ai-sast-triage",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
+          "name": "endor-cicd-posture-agent",
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
         },
         {
           "kind": "agent",
-          "name": "cicd-posture",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
+          "name": "endor-configuration-automation-agent",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
         },
         {
           "kind": "agent",
-          "name": "dependency-decision-helper",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
+          "name": "endor-dependency-reviewer-agent",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
         },
         {
           "kind": "agent",
-          "name": "endor-troubleshooter",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
+          "name": "endor-findings-browser-agent",
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
         },
         {
           "kind": "agent",
-          "name": "findings-browser",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
+          "name": "endor-malware-responder-agent",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
         },
         {
           "kind": "agent",
-          "name": "malware-response",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
+          "name": "endor-oss-upgrade-investigator-agent",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
         },
         {
           "kind": "agent",
-          "name": "package-risk-summary",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
+          "name": "endor-remediation-planning-agent",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
         },
         {
           "kind": "agent",
-          "name": "probe-droid",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
+          "name": "endor-sca-remediation-agent",
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
         },
         {
           "kind": "agent",
-          "name": "remediation-planner",
-          "description": "Preview safe remediation options without opening PRs."
+          "name": "endor-troubleshooting-agent",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
         },
         {
           "kind": "agent",
-          "name": "repository-dependency-reviewer",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
-        },
-        {
-          "kind": "agent",
-          "name": "sca-remediation",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
-        },
-        {
-          "kind": "agent",
-          "name": "upgrade-impact-analysis",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
-        },
-        {
-          "kind": "agent",
-          "name": "vulnerability-explainer",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
-        },
-        {
-          "kind": "agent",
-          "name": "ai-sast-triage",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
-        },
-        {
-          "kind": "agent",
-          "name": "cicd-posture",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
-        },
-        {
-          "kind": "agent",
-          "name": "dependency-decision-helper",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
-        },
-        {
-          "kind": "agent",
-          "name": "endor-troubleshooter",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
-        },
-        {
-          "kind": "agent",
-          "name": "findings-browser",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
-        },
-        {
-          "kind": "agent",
-          "name": "malware-response",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
-        },
-        {
-          "kind": "agent",
-          "name": "package-risk-summary",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
-        },
-        {
-          "kind": "agent",
-          "name": "probe-droid",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
-        },
-        {
-          "kind": "agent",
-          "name": "remediation-planner",
-          "description": "Preview safe remediation options without opening PRs."
-        },
-        {
-          "kind": "agent",
-          "name": "repository-dependency-reviewer",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
-        },
-        {
-          "kind": "agent",
-          "name": "sca-remediation",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
-        },
-        {
-          "kind": "agent",
-          "name": "upgrade-impact-analysis",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
-        },
-        {
-          "kind": "agent",
-          "name": "vulnerability-explainer",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
-        },
-        {
-          "kind": "hook",
-          "name": "hooks"
+          "name": "endor-vulnerability-explainer-agent",
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
         },
         {
           "kind": "hook",
@@ -3024,68 +2921,58 @@
         },
         {
           "kind": "agent",
-          "name": "ai-sast-triage",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
         },
         {
           "kind": "agent",
           "name": "cicd-posture",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
         },
         {
           "kind": "agent",
-          "name": "dependency-decision-helper",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
         },
         {
           "kind": "agent",
-          "name": "endor-troubleshooter",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
         },
         {
           "kind": "agent",
           "name": "findings-browser",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
         },
         {
           "kind": "agent",
-          "name": "malware-response",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
         },
         {
           "kind": "agent",
-          "name": "package-risk-summary",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
         },
         {
           "kind": "agent",
-          "name": "probe-droid",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
-        },
-        {
-          "kind": "agent",
-          "name": "remediation-planner",
-          "description": "Preview safe remediation options without opening PRs."
-        },
-        {
-          "kind": "agent",
-          "name": "repository-dependency-reviewer",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
         },
         {
           "kind": "agent",
           "name": "sca-remediation",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
         },
         {
           "kind": "agent",
-          "name": "upgrade-impact-analysis",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
         },
         {
           "kind": "agent",
           "name": "vulnerability-explainer",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
         },
         {
           "kind": "hook",
@@ -3093,18 +2980,23 @@
         },
         {
           "kind": "skill",
-          "name": "ai-sast-triage",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
         },
         {
           "kind": "skill",
           "name": "cicd-posture",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
         },
         {
           "kind": "skill",
-          "name": "dependency-decision-helper",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
+        },
+        {
+          "kind": "skill",
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
         },
         {
           "kind": "skill",
@@ -3113,53 +3005,38 @@
         },
         {
           "kind": "skill",
-          "name": "endor-troubleshooter",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
-        },
-        {
-          "kind": "skill",
           "name": "findings-browser",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
         },
         {
           "kind": "skill",
-          "name": "malware-response",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
         },
         {
           "kind": "skill",
-          "name": "package-risk-summary",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
         },
         {
           "kind": "skill",
-          "name": "probe-droid",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
-        },
-        {
-          "kind": "skill",
-          "name": "remediation-planner",
-          "description": "Preview safe remediation options without opening PRs."
-        },
-        {
-          "kind": "skill",
-          "name": "repository-dependency-reviewer",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
         },
         {
           "kind": "skill",
           "name": "sca-remediation",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
         },
         {
           "kind": "skill",
-          "name": "upgrade-impact-analysis",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
         },
         {
           "kind": "skill",
           "name": "vulnerability-explainer",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
         },
         {
           "kind": "skill",
@@ -3168,23 +3045,118 @@
         },
         {
           "kind": "skill",
-          "name": "endor-agent-kit-setup",
-          "description": "Use when setting up Endor Labs Agent Kit for Claude Code, checking readiness, verifying Endor auth, choosing namespaces, or diagnosing missing endorctl, gh, Endor MCP, or workflow prerequisites."
-        },
-        {
-          "kind": "skill",
-          "name": "ai-sast-triage",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
         },
         {
           "kind": "skill",
           "name": "cicd-posture",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
         },
         {
           "kind": "skill",
-          "name": "dependency-decision-helper",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
+        },
+        {
+          "kind": "skill",
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
+        },
+        {
+          "kind": "skill",
+          "name": "endor-agent-kit-setup",
+          "description": "Use when checking Endor Agent Kit readiness in Codex, verifying the\nlocal Endor CLI, authentication, namespace, GitHub, or toolchain prerequisites."
+        },
+        {
+          "kind": "skill",
+          "name": "findings-browser",
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
+        },
+        {
+          "kind": "skill",
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
+        },
+        {
+          "kind": "skill",
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
+        },
+        {
+          "kind": "skill",
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
+        },
+        {
+          "kind": "skill",
+          "name": "sca-remediation",
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
+        },
+        {
+          "kind": "skill",
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
+        },
+        {
+          "kind": "skill",
+          "name": "vulnerability-explainer",
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
+        },
+        {
+          "kind": "skill",
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
+        },
+        {
+          "kind": "skill",
+          "name": "cicd-posture",
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
+        },
+        {
+          "kind": "skill",
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
+        },
+        {
+          "kind": "skill",
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
+        },
+        {
+          "kind": "skill",
+          "name": "findings-browser",
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
+        },
+        {
+          "kind": "skill",
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
+        },
+        {
+          "kind": "skill",
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
+        },
+        {
+          "kind": "skill",
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
+        },
+        {
+          "kind": "skill",
+          "name": "sca-remediation",
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
+        },
+        {
+          "kind": "skill",
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
+        },
+        {
+          "kind": "skill",
+          "name": "vulnerability-explainer",
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
         },
         {
           "kind": "skill",
@@ -3193,68 +3165,83 @@
         },
         {
           "kind": "skill",
-          "name": "endor-troubleshooter",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
-        },
-        {
-          "kind": "skill",
-          "name": "findings-browser",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
-        },
-        {
-          "kind": "skill",
-          "name": "malware-response",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
-        },
-        {
-          "kind": "skill",
-          "name": "package-risk-summary",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
-        },
-        {
-          "kind": "skill",
-          "name": "probe-droid",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
-        },
-        {
-          "kind": "skill",
-          "name": "remediation-planner",
-          "description": "Preview safe remediation options without opening PRs."
-        },
-        {
-          "kind": "skill",
-          "name": "repository-dependency-reviewer",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
-        },
-        {
-          "kind": "skill",
-          "name": "sca-remediation",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
-        },
-        {
-          "kind": "skill",
-          "name": "upgrade-impact-analysis",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
-        },
-        {
-          "kind": "skill",
-          "name": "vulnerability-explainer",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
-        },
-        {
-          "kind": "skill",
-          "name": "ai-sast-triage",
-          "description": "Parse Endor AI SAST findings, use exploit reproduction and remediation guidance as patch context, fetch source at the pinned commit, and open change requests when requested."
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
         },
         {
           "kind": "skill",
           "name": "cicd-posture",
-          "description": "Use this agent when the user wants a read-only CI/CD and supply chain\nposture assessment for an Endor namespace, GitHub organization, repository\nset, or current repository. The agent combines existing Endor SCPM, CI/CD,\nGitHub Actions, and supply-chain findings with read-only GitHub configuration\nevidence and optional local CI file inspection, then returns deterministic\nscores, critical overrides, evidence queries, and data gaps without mutating\nEndor, GitHub, or repository state."
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
         },
         {
           "kind": "skill",
-          "name": "dependency-decision-helper",
-          "description": "Use this agent when the user asks whether to add, upgrade, or use a specific\npackage version. Examples: \"Is lodash 4.17.20 safe?\", \"Should I use requests\n2.28.0?\", \"Check log4j-core 2.14.1 before I add it.\" Returns a dependency\nverdict with evidence, conditions, alternatives, and any data gaps."
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
+        },
+        {
+          "kind": "skill",
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
+        },
+        {
+          "kind": "skill",
+          "name": "endor-agent-kit-setup",
+          "description": "Use when setting up Endor Labs Agent Kit for Cursor, checking readiness, verifying Endor auth, choosing namespaces, or diagnosing missing endorctl, gh, Endor MCP, or workflow prerequisites."
+        },
+        {
+          "kind": "skill",
+          "name": "findings-browser",
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
+        },
+        {
+          "kind": "skill",
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
+        },
+        {
+          "kind": "skill",
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
+        },
+        {
+          "kind": "skill",
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
+        },
+        {
+          "kind": "skill",
+          "name": "sca-remediation",
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
+        },
+        {
+          "kind": "skill",
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
+        },
+        {
+          "kind": "skill",
+          "name": "vulnerability-explainer",
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
+        },
+        {
+          "kind": "skill",
+          "name": "ai-sast-remediation",
+          "description": "Triages Endor AI SAST findings using exploit-reproduction evidence,\ndata-flow context, and remediation guidance to distinguish actionable\nvulnerabilities from noise. It can prepare targeted code fixes and, after\nexplicit approval, edit files and open change requests. For exception\nworkflows, it can create or update scoped Endor exception policies only\nafter verified AppSec approval and explicit user confirmation."
+        },
+        {
+          "kind": "skill",
+          "name": "cicd-posture",
+          "description": "Assesses CI/CD and software supply-chain security across an Endor namespace,\nGitHub organization, selected repositories, or the current repository. It\ncombines existing Endor SCPM, CI/CD, GitHub Actions, and supply-chain\nfindings with read-only repository configuration evidence and optional local\nCI inspection to produce deterministic scores, critical overrides,\nprioritized improvements, and explicit data gaps. It does not modify Endor,\nGitHub, or repository state."
+        },
+        {
+          "kind": "skill",
+          "name": "configuration-automation",
+          "description": "Compares GitHub repository inventory with Endor projects, GitHub App\ncoverage, monitored branches, scan profiles, package-manager integrations,\ndependency resolution, and reachability evidence. It identifies onboarding\nand configuration gaps and provides targeted setup instructions without\nchanging GitHub, Endor, or source repositories."
+        },
+        {
+          "kind": "skill",
+          "name": "dependency-reviewer",
+          "description": "Evaluates an exact package version, summarizes package risk, or reviews\ndependencies declared by a repository through one focused workflow. It uses\navailable vulnerability, malware, package-health, license, policy, and Endor\nevidence to provide a read-only recommendation and clearly identify missing\ninformation."
         },
         {
           "kind": "skill",
@@ -3263,57 +3250,42 @@
         },
         {
           "kind": "skill",
-          "name": "endor-troubleshooter",
-          "description": "Use this agent when the user needs help diagnosing and fixing Endor Labs\nerrors, warnings, missing integrations, scan failures, slow scans, or\nunhealthy configuration. Endor Troubleshooter gathers the smallest useful\nread-only Endor evidence, classifies the issue across scan, integration,\nauthentication, dependency resolution, container, reachability, policy, and\nworkflow lanes, then returns low-friction repair guidance without mutating\nEndor, source-provider, or repository state."
-        },
-        {
-          "kind": "skill",
           "name": "findings-browser",
-          "description": "Use this agent when the user wants to browse, filter, summarize, or inspect\nexisting Endor Labs findings. Findings Browser uses read-only Endor evidence\nto list matching findings, explain applied filters, surface pagination and\ntruncation limits, and identify data gaps without starting new scans or\nperforming remediation actions."
+          "description": "Browses, filters, and summarizes existing Endor findings without starting\nnew scans or performing remediation. It shows the applied scope and filters,\nrelevant severity and reachability context, pagination or truncation limits,\nand any evidence gaps affecting the results."
         },
         {
           "kind": "skill",
-          "name": "malware-response",
-          "description": "Use this agent when a customer needs rapid read-only response to a software\nsupply-chain malware incident. It gathers or ingests current malware\nintelligence, normalizes affected package and version evidence, and\ncorrelates that evidence against Endor Labs tenant package inventory across a\nnamespace and child namespaces. It reports confirmed exposure, possible\nexposure, unaffected scope, indicators of compromise, remediation guidance,\nand future action contracts without mutating Endor Labs or source systems."
+          "name": "malware-responder",
+          "description": "Correlates current software supply-chain malware intelligence for affected\npackages and versions with Endor inventory across a namespace and its child\nnamespaces. It distinguishes confirmed exposure, possible exposure,\nnot-observed exposure, and insufficient data using exact package, version,\nand inventory evidence. It reports affected projects, indicators of\ncompromise, containment guidance, and recommended follow-up actions without\nmodifying Endor or source systems."
         },
         {
           "kind": "skill",
-          "name": "package-risk-summary",
-          "description": "Use this agent when the user wants a concise risk profile for a specific\npackage version without asking for a yes/no dependency decision. Examples:\n\"Summarize npm lodash 4.17.20 risk\", \"Give me the risk picture for\nlog4j-core 2.14.1\", \"What should I know about this package version before I\nreview it?\" Returns an evidence-backed package risk summary with\nvulnerabilities, malware or typosquat signals, package scores, license notes,\nrecommended next checks, and any data gaps."
+          "name": "oss-upgrade-investigator",
+          "description": "Evaluates candidate dependency upgrades using Endor VersionUpgrade data,\nCode Impact Analysis, findings, breaking-change information, and\nEndor-provided manifest targets. It compares findings fixed or introduced\nand explains the safest available upgrade path, including whether to upgrade\nnow, proceed cautiously, defer, or gather more evidence."
         },
         {
           "kind": "skill",
-          "name": "probe-droid",
-          "description": "Use this agent when the user wants to assess GitHub repository onboarding\ngaps for Endor Labs monitored-branch coverage. Probe Droid compares\ngithub.com organization or repository inventory with Endor project, GitHub\nApp, package, scan, scan profile, package manager integration, dependency\nresolution, and reachability evidence, then returns human-readable setup\nactions without mutating source, GitHub, or Endor state."
-        },
-        {
-          "kind": "skill",
-          "name": "remediation-planner",
-          "description": "Preview safe remediation options without opening PRs."
-        },
-        {
-          "kind": "skill",
-          "name": "repository-dependency-reviewer",
-          "description": "Use this agent inside a source repository when the user wants a read-only\ndependency risk review based on local manifests. It inspects dependency files,\nresolves exact package coordinates when possible, checks those coordinates\nwith Endor MCP tools, and reports risky dependencies, unresolved versions,\nrecommended next checks, and data gaps."
+          "name": "remediation-planning",
+          "description": "Previews safe remediation options for existing Endor findings without\nchanging code or opening a pull request. It compares VersionUpgrade and\nUpgrade Impact Analysis candidates using findings fixed, upgrade risk,\ncompatibility evidence, and available data, then recommends the safest\nevidence-backed next step."
         },
         {
           "kind": "skill",
           "name": "sca-remediation",
-          "description": "Plan and remediate dependency vulnerabilities with Endor SCA findings, VersionUpgrade/UIA evidence, separate low-risk PR lanes, deterministic risk decisions, local validation, and approved PR/MR creation."
+          "description": "Plans and applies dependency-vulnerability fixes using Endor SCA findings,\nVersionUpgrade and Upgrade Impact Analysis evidence, deterministic risk\ndecisions, and local validation. It separates low-risk changes from upgrades\nrequiring deeper compatibility review and requires explicit approval before\nediting files, pushing branches, opening change requests, or creating\ntickets."
         },
         {
           "kind": "skill",
-          "name": "upgrade-impact-analysis",
-          "description": "Use this agent when the user asks for Endor Labs Upgrade Impact Analysis:\nsafe upgrade paths, upgrade risk, findings fixed or introduced, Code Impact\nAnalysis, breaking changes, manifest targeting, or whether a dependency\nupgrade should happen now. The artifact queries Endor's read-only\nVersionUpgrade workflow through documented Endor API or endorctl paths."
+          "name": "troubleshooting",
+          "description": "Diagnoses Endor setup, authentication, integration, scanning,\ndependency-resolution, container, reachability, policy, and workflow\nproblems. It gathers the smallest useful set of read-only evidence needed to\nidentify the likely root cause and recommend the lowest-friction repair\nwithout modifying Endor, source-provider, or repository state."
         },
         {
           "kind": "skill",
           "name": "vulnerability-explainer",
-          "description": "Use this agent when the user asks what a specific vulnerability means and how\nto reason about it. Examples: \"Explain CVE-2021-44228\", \"What does\nCVE-2021-45046 mean for log4j-core?\", \"Summarize this Endor\nvulnerability and tell me what to do next.\" Returns a concise vulnerability\nexplanation with severity, exploitability, affected context, remediation\nguidance, and any data gaps."
+          "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
         }
       ],
       "stars": 9,
-      "pushedAt": "2026-07-31T01:51:05Z",
+      "pushedAt": "2026-07-31T05:40:30Z",
       "createdAt": "2026-03-02T17:25:07Z",
       "license": "MIT",
       "isFork": false,
@@ -3390,6 +3362,65 @@
       "isDerivative": false,
       "stale": false,
       "score": 0.694
+    },
+    {
+      "slug": "apollo-mcp-plugin",
+      "repo": "apolloio/apollo-mcp-plugin",
+      "owner": "apolloio",
+      "name": "apollo-mcp-plugin",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "counts": {
+        "skill": 4,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 5,
+      "rawFileCount": 5,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        },
+        {
+          "kind": "skill",
+          "name": "analytics",
+          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
+        },
+        {
+          "kind": "skill",
+          "name": "enrich-lead",
+          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
+        },
+        {
+          "kind": "skill",
+          "name": "prospect",
+          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
+        },
+        {
+          "kind": "skill",
+          "name": "sequence-load",
+          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
+        }
+      ],
+      "stars": 18,
+      "pushedAt": "2026-07-20T19:26:54Z",
+      "createdAt": "2026-02-19T10:47:36Z",
+      "license": "MIT",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.653
     },
     {
       "slug": "agentforce-adlc",
@@ -3469,66 +3500,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.653
-    },
-    {
-      "slug": "apollo-mcp-plugin",
-      "repo": "apolloio/apollo-mcp-plugin",
-      "owner": "apolloio",
-      "name": "apollo-mcp-plugin",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "counts": {
-        "skill": 4,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 5,
-      "rawFileCount": 5,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        },
-        {
-          "kind": "skill",
-          "name": "analytics",
-          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
-        },
-        {
-          "kind": "skill",
-          "name": "enrich-lead",
-          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
-        },
-        {
-          "kind": "skill",
-          "name": "prospect",
-          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
-        },
-        {
-          "kind": "skill",
-          "name": "sequence-load",
-          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
-        }
-      ],
-      "stars": 18,
-      "pushedAt": "2026-07-20T19:26:54Z",
-      "createdAt": "2026-02-19T10:47:36Z",
-      "license": "MIT",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.653
+      "score": 0.652
     },
     {
       "slug": "alloydb-omni",
