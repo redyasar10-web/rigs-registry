@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T19:52:15.902Z",
+  "generatedAt": "2026-08-01T03:49:39.374Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 42541,
+      "stars": 42563,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2646,14 +2646,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 236598,
+      "stars": 236664,
       "pushedAt": "2026-07-29T18:11:01Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.866
+      "score": 0.865
     },
     {
       "slug": "ai-plugins",
@@ -2662,8 +2662,8 @@
       "name": "ai-plugins",
       "tier": "A",
       "listable": true,
-      "publishSha": "3fb6880b0f5de7a0530947dfd070087bc613079e",
-      "headSha": "3fb6880b0f5de7a0530947dfd070087bc613079e",
+      "publishSha": "e5376ac490db06f53016615088fdd9d64d6a1836",
+      "headSha": "e5376ac490db06f53016615088fdd9d64d6a1836",
       "servingStale": false,
       "health": "ok",
       "description": "Endor Labs workflow agents and setup for Claude Code.",
@@ -3285,7 +3285,7 @@
         }
       ],
       "stars": 9,
-      "pushedAt": "2026-07-31T14:27:54Z",
+      "pushedAt": "2026-07-31T22:38:36Z",
       "createdAt": "2026-03-02T17:25:07Z",
       "license": "MIT",
       "isFork": false,
@@ -3634,7 +3634,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.543
+      "score": 0.542
     }
   ]
 }
