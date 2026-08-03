@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T15:15:43.286Z",
+  "generatedAt": "2026-08-03T19:57:39.967Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 42836,
+      "stars": 42862,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2646,7 +2646,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 237245,
+      "stars": 237290,
       "pushedAt": "2026-08-03T04:55:19Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3355,13 +3355,13 @@
         }
       ],
       "stars": 22,
-      "pushedAt": "2026-07-24T05:25:40Z",
+      "pushedAt": "2026-08-03T18:33:29Z",
       "createdAt": "2025-09-12T15:32:54Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.693
+      "score": 0.698
     },
     {
       "slug": "agentforce-adlc",
@@ -3572,13 +3572,13 @@
         }
       ],
       "stars": 4,
-      "pushedAt": "2026-07-10T14:57:30Z",
+      "pushedAt": "2026-08-03T18:36:00Z",
       "createdAt": "2026-03-02T14:34:46Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.603
+      "score": 0.616
     },
     {
       "slug": "aikido-claude-plugin",
