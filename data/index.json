@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T14:33:00.568Z",
+  "generatedAt": "2026-08-05T19:54:33.747Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43071,
+      "stars": 43116,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2646,7 +2646,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 237915,
+      "stars": 237981,
       "pushedAt": "2026-08-05T02:29:09Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3300,8 +3300,8 @@
       "name": "alloydb",
       "tier": "A",
       "listable": true,
-      "publishSha": "3ce1fe143644c31c0ffeb904b31634f8cea06e0c",
-      "headSha": "3ce1fe143644c31c0ffeb904b31634f8cea06e0c",
+      "publishSha": "9521dbb4ea2d2236b36dc58bf58609d57a00a679",
+      "headSha": "9521dbb4ea2d2236b36dc58bf58609d57a00a679",
       "servingStale": false,
       "health": "ok",
       "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
@@ -3355,13 +3355,13 @@
         }
       ],
       "stars": 22,
-      "pushedAt": "2026-08-03T18:33:29Z",
+      "pushedAt": "2026-08-05T14:54:31Z",
       "createdAt": "2025-09-12T15:32:54Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.698
+      "score": 0.699
     },
     {
       "slug": "agentforce-adlc",
@@ -3509,8 +3509,8 @@
       "name": "alloydb-omni",
       "tier": "A",
       "listable": true,
-      "publishSha": "66a264765956d2b400c79044b8b92aed34688bf8",
-      "headSha": "66a264765956d2b400c79044b8b92aed34688bf8",
+      "publishSha": "60cd1c8d5659f2527c4f1b096ab73c490aca40a5",
+      "headSha": "60cd1c8d5659f2527c4f1b096ab73c490aca40a5",
       "servingStale": false,
       "health": "ok",
       "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
@@ -3572,13 +3572,13 @@
         }
       ],
       "stars": 4,
-      "pushedAt": "2026-08-03T18:36:00Z",
+      "pushedAt": "2026-08-05T14:54:40Z",
       "createdAt": "2026-03-02T14:34:46Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.615
+      "score": 0.616
     },
     {
       "slug": "aikido-claude-plugin",
@@ -3587,8 +3587,8 @@
       "name": "aikido-claude-plugin",
       "tier": "A",
       "listable": true,
-      "publishSha": "087fa99445cf34b2d23d184fbcf4b6ce7181bf81",
-      "headSha": "087fa99445cf34b2d23d184fbcf4b6ce7181bf81",
+      "publishSha": "1f40742cc1300986462e1160bfc2a8ef08e7cb54",
+      "headSha": "1f40742cc1300986462e1160bfc2a8ef08e7cb54",
       "servingStale": false,
       "health": "ok",
       "description": "Aikido Security for Claude Code: scan code (SAST, secrets, IaC) and list all issues from your Aikido feed powered by the Aikido MCP server.",
@@ -3628,7 +3628,7 @@
         }
       ],
       "stars": 11,
-      "pushedAt": "2026-08-05T14:13:28Z",
+      "pushedAt": "2026-08-05T15:43:13Z",
       "createdAt": "2026-02-27T14:09:04Z",
       "license": null,
       "isFork": false,

@@ -60,7 +60,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/gemini-cli-extensions/alloydb.git",
-        "sha": "3ce1fe143644c31c0ffeb904b31634f8cea06e0c"
+        "sha": "9521dbb4ea2d2236b36dc58bf58609d57a00a679"
       }
     },
     {
@@ -102,7 +102,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/gemini-cli-extensions/alloydb-omni.git",
-        "sha": "66a264765956d2b400c79044b8b92aed34688bf8"
+        "sha": "60cd1c8d5659f2527c4f1b096ab73c490aca40a5"
       }
     },
     {
@@ -116,7 +116,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
-        "sha": "087fa99445cf34b2d23d184fbcf4b6ce7181bf81"
+        "sha": "1f40742cc1300986462e1160bfc2a8ef08e7cb54"
       }
     }
   ]

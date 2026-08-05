@@ -223,14 +223,14 @@
     "AikidoSec/aikido-claude-plugin": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "087fa99445cf34b2d23d184fbcf4b6ce7181bf81",
-      "lastGoodAt": "2026-08-05T14:33:00.568Z",
-      "lastSeenPush": "2026-08-05T14:13:28Z",
+      "lastGoodSha": "1f40742cc1300986462e1160bfc2a8ef08e7cb54",
+      "lastGoodAt": "2026-08-05T19:54:33.747Z",
+      "lastSeenPush": "2026-08-05T15:43:13Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-08-05T14:33:00.568Z",
+      "lastCheckedAt": "2026-08-05T19:54:33.747Z",
       "goneAt": null,
       "componentHashes": [
-        "eadfedb72518a748284c6e4c4e855195d601e77626fa662a63d5ad28ee0ee0a0",
+        "2334b309ed7d5841b03f6c3e3681ea706d1ccee5071c0af48c69d9128106626b",
         "2d60170c91333f0b1cf15c3da495af8c759c937503ee9b31cf1fb1f5dac8facb",
         "9c30e88f0bf9626c621635dd5885ba27a0936a2f29e91f83da60cec452abd178",
         "bda9e4ae884ee167e8e904f5d122a27ce86e87f4e84620baf4884cf6d29925da"
@@ -239,11 +239,11 @@
     "gemini-cli-extensions/alloydb": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "3ce1fe143644c31c0ffeb904b31634f8cea06e0c",
-      "lastGoodAt": "2026-08-03T19:57:39.967Z",
-      "lastSeenPush": "2026-08-03T18:33:29Z",
+      "lastGoodSha": "9521dbb4ea2d2236b36dc58bf58609d57a00a679",
+      "lastGoodAt": "2026-08-05T19:54:33.747Z",
+      "lastSeenPush": "2026-08-05T14:54:31Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-08-03T19:57:39.967Z",
+      "lastCheckedAt": "2026-08-05T19:54:33.747Z",
       "goneAt": null,
       "componentHashes": [
         "d0e457cfe32242d9593607eb07e0e3433385f7852093e24f455089d6d2b731f9",
@@ -258,11 +258,11 @@
     "gemini-cli-extensions/alloydb-omni": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "66a264765956d2b400c79044b8b92aed34688bf8",
-      "lastGoodAt": "2026-08-03T19:57:39.967Z",
-      "lastSeenPush": "2026-08-03T18:36:00Z",
+      "lastGoodSha": "60cd1c8d5659f2527c4f1b096ab73c490aca40a5",
+      "lastGoodAt": "2026-08-05T19:54:33.747Z",
+      "lastSeenPush": "2026-08-05T14:54:40Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-08-03T19:57:39.967Z",
+      "lastCheckedAt": "2026-08-05T19:54:33.747Z",
       "goneAt": null,
       "componentHashes": [
         "9ff8e51bdca62264f6204d0c209574c357b9173c3b5ffbb151f190eda44a8170",
