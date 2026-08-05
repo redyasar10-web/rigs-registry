@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T19:56:24.281Z",
+  "generatedAt": "2026-08-05T03:32:07.438Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43000,
+      "stars": 43028,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,8 +293,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "2665d48ae604b585d0bafb69c3a8e8dca9a15be5",
-      "headSha": "2665d48ae604b585d0bafb69c3a8e8dca9a15be5",
+      "publishSha": "f1fec0e53934737d3b3b8388b0fd1651e8b62f4f",
+      "headSha": "f1fec0e53934737d3b3b8388b0fd1651e8b62f4f",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2646,8 +2646,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 237657,
-      "pushedAt": "2026-08-04T17:03:08Z",
+      "stars": 237745,
+      "pushedAt": "2026-08-05T02:29:09Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3434,7 +3434,7 @@
           "name": "README"
         }
       ],
-      "stars": 95,
+      "stars": 94,
       "pushedAt": "2026-07-30T06:59:57Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
@@ -3578,7 +3578,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.616
+      "score": 0.615
     },
     {
       "slug": "aikido-claude-plugin",
