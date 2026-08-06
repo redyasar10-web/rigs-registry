@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T19:54:33.747Z",
+  "generatedAt": "2026-08-06T03:36:00.922Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43116,
+      "stars": 43163,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,8 +293,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "f1fec0e53934737d3b3b8388b0fd1651e8b62f4f",
-      "headSha": "f1fec0e53934737d3b3b8388b0fd1651e8b62f4f",
+      "publishSha": "623f2c020f052319657674e4e6c29ab5d0ad566b",
+      "headSha": "623f2c020f052319657674e4e6c29ab5d0ad566b",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2646,8 +2646,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 237981,
-      "pushedAt": "2026-08-05T02:29:09Z",
+      "stars": 238054,
+      "pushedAt": "2026-08-05T22:17:10Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3361,7 +3361,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.699
+      "score": 0.698
     },
     {
       "slug": "agentforce-adlc",
