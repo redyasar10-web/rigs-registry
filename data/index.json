@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T13:38:38.221Z",
+  "generatedAt": "2026-08-07T19:14:52.641Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43420,
+      "stars": 43444,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "9aac8585ab887d9c51252730240b25d9cca180da",
-      "headSha": "9aac8585ab887d9c51252730240b25d9cca180da",
+      "publishSha": "d451f5100af57e33a73400b14b03e126ff49a3f9",
+      "headSha": "d451f5100af57e33a73400b14b03e126ff49a3f9",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 282 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 284 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 283,
+        "skill": 285,
         "agent": 72,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 467,
-      "rawFileCount": 1628,
+      "componentTotal": 469,
+      "rawFileCount": 1630,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -1893,12 +1893,17 @@
         {
           "kind": "skill",
           "name": "ito-compute",
-          "description": "Query live GPU inventory, submit an authenticated Itô fixed-rate RFQ, inspect RFQ or procurement status, and run explicitly gated node qualification through the separately installed canonical CLI. Use when a user asks to find H100/H200 capacity, request a fixed compute rate, check Itô compute status, or validate GPU nodes."
+          "description": "Query live GPU inventory, submit an authenticated Itô fixed-rate RFQ, inspect RFQ or procurement status, revoke device credentials, and run explicitly gated node qualification through the separately installed canonical CLI. Use when a user asks to find H100/H200 capacity, request a fixed compute rate, check Itô compute status, validate GPU nodes, revoke Itô access, or rent or purchase GPU compute and needs the supported boundary explained."
         },
         {
           "kind": "skill",
           "name": "ito-data-atlas-agent",
-          "description": "Design background Data Atlas style agents for Itô basket research, market discovery, parameter drafting, and human-in-the-loop editing. Use for architecture and workflow planning, not live order execution."
+          "description": "Design source-grounded Data Atlas style agents for Itô basket research, market discovery, parameter drafting, and human-in-the-loop editing. Use for architecture and read-only workflow planning, not live order execution."
+        },
+        {
+          "kind": "skill",
+          "name": "ito-inference",
+          "description": "Inspect the availability of model serving on a completed Itô compute booking and, when the canonical backend becomes available, hand off an explicitly confirmed serving manifest. Use after ito-compute has booked GPU nodes and the user asks for an OpenAI-compatible endpoint, ito-serve, hosted Kimi, or self-hosted open-weights inference. ECC implements no serving stack of its own."
         },
         {
           "kind": "skill",
@@ -1909,6 +1914,11 @@
           "kind": "skill",
           "name": "ito-trade-planner",
           "description": "Build a non-advisory prediction-market trade planning worksheet for Itô or venue workflows. Use to inspect venues, underliers, constraints, order prerequisites, and manual execution steps without placing trades or recommending positions."
+        },
+        {
+          "kind": "skill",
+          "name": "ito-training",
+          "description": "Run an ML training job on a completed Itô compute booking through the canonical Itô backend. Use after ito-compute has booked GPU nodes and the user wants pre-training, fine-tuning, or RL on that metal. Chains off a booking record; ECC implements no training stack of its own."
         },
         {
           "kind": "skill",
@@ -2651,14 +2661,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 238472,
-      "pushedAt": "2026-08-06T21:42:23Z",
+      "stars": 238539,
+      "pushedAt": "2026-08-07T19:13:18Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.867
+      "score": 0.868
     },
     {
       "slug": "ai-plugins",
@@ -3369,6 +3379,65 @@
       "score": 0.698
     },
     {
+      "slug": "apollo-mcp-plugin",
+      "repo": "apolloio/apollo-mcp-plugin",
+      "owner": "apolloio",
+      "name": "apollo-mcp-plugin",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "counts": {
+        "skill": 4,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 5,
+      "rawFileCount": 5,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        },
+        {
+          "kind": "skill",
+          "name": "analytics",
+          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
+        },
+        {
+          "kind": "skill",
+          "name": "enrich-lead",
+          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
+        },
+        {
+          "kind": "skill",
+          "name": "prospect",
+          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
+        },
+        {
+          "kind": "skill",
+          "name": "sequence-load",
+          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
+        }
+      ],
+      "stars": 18,
+      "pushedAt": "2026-07-20T19:26:54Z",
+      "createdAt": "2026-02-19T10:47:36Z",
+      "license": "MIT",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.65
+    },
+    {
       "slug": "agentforce-adlc",
       "repo": "SalesforceAIResearch/agentforce-adlc",
       "owner": "SalesforceAIResearch",
@@ -3446,66 +3515,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.65
-    },
-    {
-      "slug": "apollo-mcp-plugin",
-      "repo": "apolloio/apollo-mcp-plugin",
-      "owner": "apolloio",
-      "name": "apollo-mcp-plugin",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "counts": {
-        "skill": 4,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 5,
-      "rawFileCount": 5,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        },
-        {
-          "kind": "skill",
-          "name": "analytics",
-          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
-        },
-        {
-          "kind": "skill",
-          "name": "enrich-lead",
-          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
-        },
-        {
-          "kind": "skill",
-          "name": "prospect",
-          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
-        },
-        {
-          "kind": "skill",
-          "name": "sequence-load",
-          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
-        }
-      ],
-      "stars": 18,
-      "pushedAt": "2026-07-20T19:26:54Z",
-      "createdAt": "2026-02-19T10:47:36Z",
-      "license": "MIT",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.65
+      "score": 0.649
     },
     {
       "slug": "alloydb-omni",
@@ -3632,14 +3642,14 @@
           "description": "Configures the Aikido plugin by signing the user in through the MCP login tool and verifying the MCP server. Use when the user wants to set up or verify the Aikido plugin, after installing it, when aikido mcp tool call fails or is unavailable, or when the user wants to switch Aikido accounts or re-authenticate."
         }
       ],
-      "stars": 11,
+      "stars": 12,
       "pushedAt": "2026-08-05T15:43:13Z",
       "createdAt": "2026-02-27T14:09:04Z",
       "license": null,
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.546
+      "score": 0.55
     }
   ]
 }

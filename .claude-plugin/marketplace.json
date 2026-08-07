@@ -23,7 +23,7 @@
     },
     {
       "name": "everything-claude-code",
-      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 282 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 284 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "author": {
         "name": "affaan-m",
         "url": "https://github.com/affaan-m"
@@ -32,7 +32,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/affaan-m/ECC.git",
-        "sha": "9aac8585ab887d9c51252730240b25d9cca180da"
+        "sha": "d451f5100af57e33a73400b14b03e126ff49a3f9"
       }
     },
     {
@@ -64,20 +64,6 @@
       }
     },
     {
-      "name": "agentforce-adlc",
-      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
-      "author": {
-        "name": "SalesforceAIResearch",
-        "url": "https://github.com/SalesforceAIResearch"
-      },
-      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
-        "sha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8"
-      }
-    },
-    {
       "name": "apollo-mcp-plugin",
       "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
       "author": {
@@ -89,6 +75,20 @@
         "source": "url",
         "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
         "sha": "2adde980e45f421b7e9383d92870455627936bce"
+      }
+    },
+    {
+      "name": "agentforce-adlc",
+      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
+      "author": {
+        "name": "SalesforceAIResearch",
+        "url": "https://github.com/SalesforceAIResearch"
+      },
+      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
+        "sha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8"
       }
     },
     {
