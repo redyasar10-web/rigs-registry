@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T14:40:07.607Z",
+  "generatedAt": "2026-08-07T00:15:21.615Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,14 +277,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43259,
+      "stars": 43346,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.891
+      "score": 0.89
     },
     {
       "slug": "everything-claude-code",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "623f2c020f052319657674e4e6c29ab5d0ad566b",
-      "headSha": "623f2c020f052319657674e4e6c29ab5d0ad566b",
+      "publishSha": "9aac8585ab887d9c51252730240b25d9cca180da",
+      "headSha": "9aac8585ab887d9c51252730240b25d9cca180da",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 281 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 282 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 282,
+        "skill": 283,
         "agent": 72,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 466,
-      "rawFileCount": 1627,
+      "componentTotal": 467,
+      "rawFileCount": 1628,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -1443,7 +1443,7 @@
         {
           "kind": "skill",
           "name": "configure-ecc",
-          "description": "Interactive installer for Everything Claude Code — guides users through selecting and installing skills and rules to user-level or project-level directories, verifies paths, and optionally optimizes installed files."
+          "description": "Guide ECC installation, update, or reconfiguration from inside Claude Code, Codex, or Kimi while respecting each harness's real plugin, scope, and hook capabilities."
         },
         {
           "kind": "skill",
@@ -1613,7 +1613,7 @@
         {
           "kind": "skill",
           "name": "docker-patterns",
-          "description": "Docker and Docker Compose patterns for local development, container security, networking, volume strategies, and multi-service orchestration."
+          "description": "Docker and Docker Compose patterns for local development, hardened CLI installer harnesses, container security, networking, volumes, and multi-service orchestration. Use when creating or reviewing Dockerfiles and Compose services, testing installers across Linux distributions, or planning accurate native macOS and Windows validation."
         },
         {
           "kind": "skill",
@@ -2532,6 +2532,11 @@
         },
         {
           "kind": "skill",
+          "name": "terminal-opener",
+          "description": "Open an executable and its argument array in a visible terminal window through a reusable, shell-free launch plan with dry-run, JSON, capability detection, detached fallback, and standalone recovery modes. Use when Codex needs to open an interactive CLI, SSH session, local development process, sandbox, or other argv-based command in a new host terminal; diagnose whether a supported terminal is available; or provide an actionable plan when the requested terminal is unsupported."
+        },
+        {
+          "kind": "skill",
           "name": "terminal-ops",
           "description": "Evidence-first repo execution workflow for ECC. Use when the user wants a command run, a repo checked, a CI failure debugged, or a narrow fix pushed with exact proof of what was executed and verified."
         },
@@ -2646,8 +2651,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 238189,
-      "pushedAt": "2026-08-05T22:17:10Z",
+      "stars": 238302,
+      "pushedAt": "2026-08-06T21:42:23Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
