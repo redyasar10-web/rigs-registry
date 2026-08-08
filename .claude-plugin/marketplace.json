@@ -32,7 +32,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/affaan-m/ECC.git",
-        "sha": "d451f5100af57e33a73400b14b03e126ff49a3f9"
+        "sha": "59a99d669f5466d99d5be8b6fce8c5f2677766d0"
       }
     },
     {
@@ -64,20 +64,6 @@
       }
     },
     {
-      "name": "apollo-mcp-plugin",
-      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "author": {
-        "name": "apolloio",
-        "url": "https://github.com/apolloio"
-      },
-      "homepage": "https://github.com/apolloio/apollo-mcp-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
-        "sha": "2adde980e45f421b7e9383d92870455627936bce"
-      }
-    },
-    {
       "name": "agentforce-adlc",
       "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
       "author": {
@@ -89,6 +75,20 @@
         "source": "url",
         "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
         "sha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8"
+      }
+    },
+    {
+      "name": "apollo-mcp-plugin",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "author": {
+        "name": "apolloio",
+        "url": "https://github.com/apolloio"
+      },
+      "homepage": "https://github.com/apolloio/apollo-mcp-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
+        "sha": "2adde980e45f421b7e9383d92870455627936bce"
       }
     },
     {
