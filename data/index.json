@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T18:57:51.057Z",
+  "generatedAt": "2026-08-09T02:28:13.182Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43545,
+      "stars": 43572,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,8 +293,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "59a99d669f5466d99d5be8b6fce8c5f2677766d0",
-      "headSha": "59a99d669f5466d99d5be8b6fce8c5f2677766d0",
+      "publishSha": "51a6950bde756fe3ebc8879aa0c8ee49b9c53e78",
+      "headSha": "51a6950bde756fe3ebc8879aa0c8ee49b9c53e78",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 67 agents, 284 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -314,7 +314,7 @@
         "SEC-02 tests/hooks/governance-capture.test.js at line 54: possible github-token (40 chars) [test fixture]",
         "SEC-02 tests/hooks/pre-bash-commit-quality.test.js at line 216: possible github-token (40 chars) [test fixture]",
         "SEC-02 tests/hooks/pre-bash-commit-quality.test.js at line 220: possible aws-access-key (20 chars) [test fixture]",
-        "SEC-02 tests/lib/memory-vault.test.js at line 441: possible private-key-block (27 chars) [test fixture]"
+        "SEC-02 tests/lib/memory-vault.test.js at line 442: possible private-key-block (27 chars) [test fixture]"
       ],
       "rejectReasons": [],
       "components": [
@@ -2661,14 +2661,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 238780,
-      "pushedAt": "2026-08-08T00:11:29Z",
+      "stars": 238833,
+      "pushedAt": "2026-08-08T21:06:19Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.867
+      "score": 0.868
     },
     {
       "slug": "ai-plugins",
@@ -3649,7 +3649,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.553
+      "score": 0.552
     }
   ]
 }
