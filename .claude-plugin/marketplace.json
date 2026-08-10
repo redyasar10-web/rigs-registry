@@ -32,7 +32,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/affaan-m/ECC.git",
-        "sha": "2d46e80e0925c7be0907f18c1812311ac212a6c5"
+        "sha": "ae303fb6c19e3f7cb88cb9fd9f15ddcf235294b6"
       }
     },
     {
@@ -64,20 +64,6 @@
       }
     },
     {
-      "name": "agentforce-adlc",
-      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
-      "author": {
-        "name": "SalesforceAIResearch",
-        "url": "https://github.com/SalesforceAIResearch"
-      },
-      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
-        "sha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8"
-      }
-    },
-    {
       "name": "apollo-mcp-plugin",
       "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
       "author": {
@@ -89,6 +75,20 @@
         "source": "url",
         "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
         "sha": "2adde980e45f421b7e9383d92870455627936bce"
+      }
+    },
+    {
+      "name": "agentforce-adlc",
+      "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
+      "author": {
+        "name": "SalesforceAIResearch",
+        "url": "https://github.com/SalesforceAIResearch"
+      },
+      "homepage": "https://github.com/SalesforceAIResearch/agentforce-adlc",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
+        "sha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8"
       }
     },
     {
