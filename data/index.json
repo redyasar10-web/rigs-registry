@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T13:42:02.043Z",
+  "generatedAt": "2026-08-11T19:20:05.564Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,14 +277,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43896,
+      "stars": 43932,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.889
+      "score": 0.888
     },
     {
       "slug": "everything-claude-code",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "9b081280bc52ee6f22a2e0463761b318936dd980",
-      "headSha": "9b081280bc52ee6f22a2e0463761b318936dd980",
+      "publishSha": "a15c8e853309818e96fe495d373a7aea47b1298d",
+      "headSha": "a15c8e853309818e96fe495d373a7aea47b1298d",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 285 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 286,
+        "skill": 287,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 471,
-      "rawFileCount": 1632,
+      "componentTotal": 472,
+      "rawFileCount": 1633,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -1587,6 +1587,11 @@
         },
         {
           "kind": "skill",
+          "name": "dev-team",
+          "description": "Simulate a collaborative dev team session where multiple role-based personas (PM, Architect, Developer, QA) respond to the same problem together in one session. Use when designing a feature, reviewing a proposal, or onboarding a new initiative and you want multi-role perspective without switching agents manually."
+        },
+        {
+          "kind": "skill",
           "name": "django-celery",
           "description": "Django + Celery async task patterns — configuration, task design, beat scheduling, retries, canvas workflows, monitoring, and testing. Use when adding background jobs, scheduled tasks, or async processing to a Django app."
         },
@@ -2671,8 +2676,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 239374,
-      "pushedAt": "2026-08-11T04:46:24Z",
+      "stars": 239435,
+      "pushedAt": "2026-08-11T18:15:58Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
