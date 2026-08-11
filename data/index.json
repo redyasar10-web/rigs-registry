@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T19:16:27.980Z",
+  "generatedAt": "2026-08-11T02:27:20.156Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43793,
+      "stars": 43835,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "ae303fb6c19e3f7cb88cb9fd9f15ddcf235294b6",
-      "headSha": "ae303fb6c19e3f7cb88cb9fd9f15ddcf235294b6",
+      "publishSha": "0e0df5a6e76074fd8a1494aaa78c2ee229221484",
+      "headSha": "0e0df5a6e76074fd8a1494aaa78c2ee229221484",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 67 agents, 284 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 285 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 285,
-        "agent": 72,
+        "skill": 286,
+        "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 469,
-      "rawFileCount": 1630,
+      "componentTotal": 471,
+      "rawFileCount": 1632,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -581,6 +581,11 @@
           "kind": "agent",
           "name": "pytorch-build-resolver",
           "description": "PyTorch runtime, CUDA, and training error resolution specialist. Fixes tensor shape mismatches, device errors, gradient issues, DataLoader problems, and mixed precision failures with minimal changes. Use when PyTorch training or inference crashes."
+        },
+        {
+          "kind": "agent",
+          "name": "rag-pipeline-reviewer",
+          "description": "Reviews RAG (Retrieval-Augmented Generation) pipelines for retrieval quality, chunking strategy, embedding choices, and evaluation coverage. Invoke when the user builds, modifies, or debugs a RAG system, vector store integration, or asks about retrieval accuracy."
         },
         {
           "kind": "agent",
@@ -2012,6 +2017,11 @@
         },
         {
           "kind": "skill",
+          "name": "living-docs-governance",
+          "description": "Keep a long-lived project's documentation from rotting by assigning existing project docs clear constitution, map, status, and history roles, then wiring the active agent harness to those canonical sources. Use in the maintain phase when docs drift from code, agents lose context between sessions, or intentional removals keep being recreated. Prefer adopting the repository's current docs structure over creating new root files. 中文触发：文档治理、活文档、项目状态追踪、防文档漂移、项目地图、健康仪表盘、删除区、长期项目治理"
+        },
+        {
+          "kind": "skill",
           "name": "llm-trading-agent-security",
           "description": "Security patterns for autonomous trading agents with wallet or transaction authority. Covers prompt injection, spend limits, pre-send simulation, circuit breakers, MEV protection, and key handling."
         },
@@ -2661,8 +2671,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 239196,
-      "pushedAt": "2026-08-10T04:56:36Z",
+      "stars": 239261,
+      "pushedAt": "2026-08-11T02:08:48Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3376,7 +3386,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.697
+      "score": 0.696
     },
     {
       "slug": "agentforce-adlc",
