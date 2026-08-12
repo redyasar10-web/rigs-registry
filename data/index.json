@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T19:20:05.564Z",
+  "generatedAt": "2026-08-12T02:44:02.656Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 43932,
+      "stars": 43967,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "a15c8e853309818e96fe495d373a7aea47b1298d",
-      "headSha": "a15c8e853309818e96fe495d373a7aea47b1298d",
+      "publishSha": "fd1b11cfc765fc6f17af7085eb8915ef7d33cf17",
+      "headSha": "fd1b11cfc765fc6f17af7085eb8915ef7d33cf17",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 287 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 287,
+        "skill": 288,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 472,
-      "rawFileCount": 1633,
+      "componentTotal": 473,
+      "rawFileCount": 1634,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -1502,6 +1502,11 @@
         },
         {
           "kind": "skill",
+          "name": "council-multi-model",
+          "description": "Add one optional external Codex critique after the existing council has produced a decision draft. Use when an ambiguous, high-consequence decision would benefit from a separate model invocation's attempt to break the synthesis. Requires explicit consent before sending the compact draft and disagreement to OpenAI, labels same-provider reviews honestly, and marks the review absent when the adapter is unavailable."
+        },
+        {
+          "kind": "skill",
           "name": "council",
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         },
@@ -2676,8 +2681,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 239435,
-      "pushedAt": "2026-08-11T18:15:58Z",
+      "stars": 239502,
+      "pushedAt": "2026-08-11T23:36:48Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3321,7 +3326,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.717
+      "score": 0.716
     },
     {
       "slug": "alloydb",
