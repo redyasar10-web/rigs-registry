@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T19:19:49.176Z",
+  "generatedAt": "2026-08-13T02:46:46.578Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 44043,
+      "stars": 44065,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "569b1d5b32ebf4c32d0b965bb956b16713533e07",
-      "headSha": "569b1d5b32ebf4c32d0b965bb956b16713533e07",
+      "publishSha": "eb4970265169fec82371c92f615e2e133d875e27",
+      "headSha": "eb4970265169fec82371c92f615e2e133d875e27",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 287 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 284 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 288,
+        "skill": 284,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 473,
-      "rawFileCount": 1634,
+      "componentTotal": 469,
+      "rawFileCount": 1630,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -1902,8 +1902,8 @@
         },
         {
           "kind": "skill",
-          "name": "ito-basket-compare",
-          "description": "Compare Itô prediction-market baskets against a user's knowledge base, portfolio notes, financial context, watchlist, or research thesis. Use for read-only basket comparison and gap analysis without investment advice or live trading. Use when comparing an Itô prediction-market basket against a knowledge base, portfolio notes, or research thesis."
+          "name": "ito-baskets",
+          "description": "Read-only Itô basket and prediction-market data skill. Index the live basket catalog, compare a basket against user-supplied research or a watchlist, build a source-grounded market brief, or draft a non-executable planning worksheet. Use when a user asks to browse or index Itô baskets, compare a basket against notes or a thesis, research prediction-market events/venues/liquidity, or plan a basket or market idea without trading. Never advises, orders, trades, reserves, or executes."
         },
         {
           "kind": "skill",
@@ -1912,28 +1912,13 @@
         },
         {
           "kind": "skill",
-          "name": "ito-data-atlas-agent",
-          "description": "Design source-grounded Data Atlas style agents for Itô basket research, market discovery, parameter drafting, and human-in-the-loop editing. Use for architecture and read-only workflow planning, not live order execution."
-        },
-        {
-          "kind": "skill",
           "name": "ito-inference",
           "description": "Inspect the availability of model serving on a completed Itô compute booking and, when the canonical backend becomes available, hand off an explicitly confirmed serving manifest. Use after ito-compute has booked GPU nodes and the user asks for an OpenAI-compatible endpoint, ito-serve, hosted Kimi, or self-hosted open-weights inference. ECC implements no serving stack of its own."
         },
         {
           "kind": "skill",
-          "name": "ito-market-intelligence",
-          "description": "Research prediction-market events, venues, underliers, liquidity, and news context for Itô basket workflows. Use for read-only market intelligence, API-gated Itô exploration, and source-grounded prediction-market briefings without investment advice or live trading."
-        },
-        {
-          "kind": "skill",
-          "name": "ito-trade-planner",
-          "description": "Build a non-advisory prediction-market trade planning worksheet for Itô or venue workflows. Use to inspect venues, underliers, constraints, order prerequisites, and manual execution steps without placing trades or recommending positions. Use when building a non-advisory Itô trade planning worksheet or checking order prerequisites."
-        },
-        {
-          "kind": "skill",
           "name": "ito-training",
-          "description": "Run an ML training job on a completed Itô compute booking through the canonical Itô backend. Use after ito-compute has booked GPU nodes and the user wants pre-training, fine-tuning, or RL on that metal. Chains off a booking record; ECC implements no training stack of its own."
+          "description": "Inspect the availability of ML training on a completed Itô compute booking and, when the canonical backend becomes available, hand off an explicitly confirmed training manifest. Use after ito-compute has booked GPU nodes and the user wants pre-training, fine-tuning, or RL on that metal. ECC implements no training stack of its own."
         },
         {
           "kind": "skill",
@@ -2651,11 +2636,6 @@
           "description": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically."
         },
         {
-          "kind": "skill",
-          "name": "everything-claude-code-conventions",
-          "description": "Development conventions and patterns for everything-claude-code. JavaScript project with conventional commits."
-        },
-        {
           "kind": "agent",
           "name": "observer",
           "description": "Background agent that analyzes session observations to detect patterns and create instincts. Uses Haiku for cost-efficiency. v2.1 adds project-scoped instincts."
@@ -2681,8 +2661,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 239720,
-      "pushedAt": "2026-08-12T18:48:20Z",
+      "stars": 239772,
+      "pushedAt": "2026-08-12T22:45:12Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3399,65 +3379,6 @@
       "score": 0.696
     },
     {
-      "slug": "apollo-mcp-plugin",
-      "repo": "apolloio/apollo-mcp-plugin",
-      "owner": "apolloio",
-      "name": "apollo-mcp-plugin",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "counts": {
-        "skill": 4,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 5,
-      "rawFileCount": 5,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        },
-        {
-          "kind": "skill",
-          "name": "analytics",
-          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
-        },
-        {
-          "kind": "skill",
-          "name": "enrich-lead",
-          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
-        },
-        {
-          "kind": "skill",
-          "name": "prospect",
-          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
-        },
-        {
-          "kind": "skill",
-          "name": "sequence-load",
-          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
-        }
-      ],
-      "stars": 18,
-      "pushedAt": "2026-07-20T19:26:54Z",
-      "createdAt": "2026-02-19T10:47:36Z",
-      "license": "MIT",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.648
-    },
-    {
       "slug": "agentforce-adlc",
       "repo": "SalesforceAIResearch/agentforce-adlc",
       "owner": "SalesforceAIResearch",
@@ -3532,6 +3453,65 @@
       "pushedAt": "2026-07-30T06:59:57Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.647
+    },
+    {
+      "slug": "apollo-mcp-plugin",
+      "repo": "apolloio/apollo-mcp-plugin",
+      "owner": "apolloio",
+      "name": "apollo-mcp-plugin",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "counts": {
+        "skill": 4,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 5,
+      "rawFileCount": 5,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        },
+        {
+          "kind": "skill",
+          "name": "analytics",
+          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
+        },
+        {
+          "kind": "skill",
+          "name": "enrich-lead",
+          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
+        },
+        {
+          "kind": "skill",
+          "name": "prospect",
+          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
+        },
+        {
+          "kind": "skill",
+          "name": "sequence-load",
+          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
+        }
+      ],
+      "stars": 18,
+      "pushedAt": "2026-07-20T19:26:54Z",
+      "createdAt": "2026-02-19T10:47:36Z",
+      "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,

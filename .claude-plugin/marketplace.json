@@ -23,7 +23,7 @@
     },
     {
       "name": "everything-claude-code",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 287 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 284 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "author": {
         "name": "affaan-m",
         "url": "https://github.com/affaan-m"
@@ -32,7 +32,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/affaan-m/ECC.git",
-        "sha": "569b1d5b32ebf4c32d0b965bb956b16713533e07"
+        "sha": "eb4970265169fec82371c92f615e2e133d875e27"
       }
     },
     {
@@ -64,20 +64,6 @@
       }
     },
     {
-      "name": "apollo-mcp-plugin",
-      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "author": {
-        "name": "apolloio",
-        "url": "https://github.com/apolloio"
-      },
-      "homepage": "https://github.com/apolloio/apollo-mcp-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
-        "sha": "2adde980e45f421b7e9383d92870455627936bce"
-      }
-    },
-    {
       "name": "agentforce-adlc",
       "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
       "author": {
@@ -89,6 +75,20 @@
         "source": "url",
         "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
         "sha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8"
+      }
+    },
+    {
+      "name": "apollo-mcp-plugin",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "author": {
+        "name": "apolloio",
+        "url": "https://github.com/apolloio"
+      },
+      "homepage": "https://github.com/apolloio/apollo-mcp-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
+        "sha": "2adde980e45f421b7e9383d92870455627936bce"
       }
     },
     {
