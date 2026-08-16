@@ -296,11 +296,11 @@
     "affaan-m/ECC": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "d0366ea8e8d21649d8e98d3e87e851f87bffc9be",
-      "lastGoodAt": "2026-08-16T01:57:05.484Z",
-      "lastSeenPush": "2026-08-16T01:48:12Z",
+      "lastGoodSha": "50743cec75852e32d6517c9894a3339a2462a713",
+      "lastGoodAt": "2026-08-16T06:58:38.160Z",
+      "lastSeenPush": "2026-08-16T06:22:24Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-08-16T01:57:05.484Z",
+      "lastCheckedAt": "2026-08-16T06:58:38.160Z",
       "goneAt": null,
       "componentHashes": [
         "a9437c236ad7b2e87676b496128b50cc6807beaade723868ca9bb17f746e54a3",
