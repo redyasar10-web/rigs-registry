@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T18:47:34.471Z",
+  "generatedAt": "2026-08-16T01:57:05.484Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 44391,
+      "stars": 44409,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "63040e29b52f51709d0255a461a7a762edced8bb",
-      "headSha": "63040e29b52f51709d0255a461a7a762edced8bb",
+      "publishSha": "d0366ea8e8d21649d8e98d3e87e851f87bffc9be",
+      "headSha": "d0366ea8e8d21649d8e98d3e87e851f87bffc9be",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 284 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 285 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 284,
+        "skill": 285,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 469,
-      "rawFileCount": 1630,
+      "componentTotal": 470,
+      "rawFileCount": 1631,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -2107,6 +2107,11 @@
         },
         {
           "kind": "skill",
+          "name": "nasiko-control-plane",
+          "description": "Install, detect, and operate the optional Nasiko agent control plane through ECC with pinned artifacts, explicit consent, and telemetry and secrets boundaries."
+        },
+        {
+          "kind": "skill",
           "name": "nestjs-patterns",
           "description": "NestJS architecture patterns for modules, controllers, providers, DTO validation, guards, interceptors, config, and production-grade TypeScript backends. Use when building or reviewing a NestJS backend — modules, providers, DTO validation, guards, or interceptors."
         },
@@ -2661,8 +2666,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 240259,
-      "pushedAt": "2026-08-15T18:43:17Z",
+      "stars": 240307,
+      "pushedAt": "2026-08-16T01:48:12Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3376,7 +3381,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.695
+      "score": 0.694
     },
     {
       "slug": "agentforce-adlc",
@@ -3649,7 +3654,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.555
+      "score": 0.554
     }
   ]
 }
