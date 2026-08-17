@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T18:46:23.802Z",
+  "generatedAt": "2026-08-17T01:54:43.686Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 44492,
+      "stars": 44529,
       "pushedAt": "2026-07-29T05:41:15Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,8 +293,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "50743cec75852e32d6517c9894a3339a2462a713",
-      "headSha": "50743cec75852e32d6517c9894a3339a2462a713",
+      "publishSha": "06c5e118c4d3e6c3b7f9445f973a2194c82de193",
+      "headSha": "06c5e118c4d3e6c3b7f9445f973a2194c82de193",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 285 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2666,8 +2666,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 240443,
-      "pushedAt": "2026-08-16T06:22:24Z",
+      "stars": 240502,
+      "pushedAt": "2026-08-17T00:42:27Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3311,7 +3311,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.715
+      "score": 0.714
     },
     {
       "slug": "alloydb",
