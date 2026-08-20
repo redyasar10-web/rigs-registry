@@ -296,11 +296,11 @@
     "affaan-m/ECC": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "06c5e118c4d3e6c3b7f9445f973a2194c82de193",
-      "lastGoodAt": "2026-08-19T01:53:04.170Z",
-      "lastSeenPush": "2026-08-18T20:07:38Z",
+      "lastGoodSha": "d8409a4b0813771235555e32e3d8046a73988bfa",
+      "lastGoodAt": "2026-08-20T01:51:29.001Z",
+      "lastSeenPush": "2026-08-19T23:31:56Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-08-19T01:53:04.170Z",
+      "lastCheckedAt": "2026-08-20T01:51:29.001Z",
       "goneAt": null,
       "componentHashes": [
         "a9437c236ad7b2e87676b496128b50cc6807beaade723868ca9bb17f746e54a3",
@@ -747,6 +747,7 @@
         "f6392405a713cc0d9d4dd3b0711f1a8ed9c1a1f9cffcd816ab27d04b05873885",
         "54453ed4f7d6d90ac428c72bf0c543c71b23f7f401833328d6232b75135aeff9",
         "a577c7ebfd2aa6186614521d06fa3c89e4d1ddd49c86c8e953d53728e3db6427",
+        "61314d97714e4e7c5cdddd2335a42e4e8c116282406755bb43449fcd61adf931",
         "0a96cb56bf2b1f2917b75cd9f8a622df09f67654a2a30577665dfd994552aaf4",
         "24b714bc143ea3d649428cc98a62a5d99d4b3515210be334f4e093a47f673e3e",
         "5afac4a534c5e223baa4c4d758927ec98a4e39f2e5c9753638d0f7e4904d86ce",

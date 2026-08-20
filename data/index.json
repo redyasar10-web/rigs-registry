@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T18:52:52.478Z",
+  "generatedAt": "2026-08-20T01:51:29.001Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -277,7 +277,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 44900,
+      "stars": 44942,
       "pushedAt": "2026-08-19T18:16:52Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -293,20 +293,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "06c5e118c4d3e6c3b7f9445f973a2194c82de193",
-      "headSha": "06c5e118c4d3e6c3b7f9445f973a2194c82de193",
+      "publishSha": "d8409a4b0813771235555e32e3d8046a73988bfa",
+      "headSha": "d8409a4b0813771235555e32e3d8046a73988bfa",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 285 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 285,
+        "skill": 286,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 470,
-      "rawFileCount": 1631,
+      "componentTotal": 471,
+      "rawFileCount": 1632,
       "droppedMirror": 1161,
       "warnings": [
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -2537,6 +2537,11 @@
         },
         {
           "kind": "skill",
+          "name": "tasteforge-video",
+          "description": "Use for file-driven multimodal image, video, and 3D-asset discovery; taste interviews; distill or apply workflows; style-pack validation; editable EDL/FCPXML export; provenance audits; and offline planning that must fail closed before provider generation."
+        },
+        {
+          "kind": "skill",
           "name": "tdd-workflow",
           "description": "Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development with 80%+ coverage including unit, integration, and E2E tests."
         },
@@ -2666,8 +2671,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 241142,
-      "pushedAt": "2026-08-18T20:07:38Z",
+      "stars": 241201,
+      "pushedAt": "2026-08-19T23:31:56Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3454,14 +3459,14 @@
           "name": "README"
         }
       ],
-      "stars": 98,
+      "stars": 99,
       "pushedAt": "2026-07-30T06:59:57Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.646
+      "score": 0.647
     },
     {
       "slug": "apollo-mcp-plugin",
