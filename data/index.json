@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T18:55:31.250Z",
+  "generatedAt": "2026-08-22T01:50:06.409Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -11,8 +11,8 @@
       "name": "marketingskills",
       "tier": "A",
       "listable": true,
-      "publishSha": "c6ea12834be62bdc4180a1385f6455cde84ae60c",
-      "headSha": "c6ea12834be62bdc4180a1385f6455cde84ae60c",
+      "publishSha": "3df87f97621e18fbed7f6aa684edba54f49779a7",
+      "headSha": "3df87f97621e18fbed7f6aa684edba54f49779a7",
       "servingStale": false,
       "health": "ok",
       "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
@@ -49,7 +49,7 @@
         {
           "kind": "skill",
           "name": "ai-seo",
-          "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' 'optimize for Claude/Gemini,' 'llms.txt,' 'OKF,' 'Open Knowledge Format,' 'knowledge bundle,' or 'agent-readable site.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema."
+          "description": "When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers. Also use when the user mentions 'AI SEO,' 'AEO,' 'GEO,' 'LLMO,' 'answer engine optimization,' 'generative engine optimization,' 'LLM optimization,' 'AI Overviews,' 'optimize for ChatGPT,' 'optimize for Perplexity,' 'AI citations,' 'AI visibility,' 'zero-click search,' 'how do I show up in AI answers,' 'LLM mentions,' 'optimize for Claude/Gemini,' 'llms.txt,' 'llms-full.txt,' 'OKF,' 'Open Knowledge Format,' 'knowledge bundle,' 'agent-readable site,' 'agent readiness,' 'is my site agent-ready,' or 'WebMCP.' Use this whenever someone wants their content to be cited or surfaced by AI assistants and AI search engines. For traditional technical and on-page SEO audits, see seo-audit. For structured data implementation, see schema."
         },
         {
           "kind": "skill",
@@ -277,14 +277,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 45165,
-      "pushedAt": "2026-08-19T18:16:52Z",
+      "stars": 45199,
+      "pushedAt": "2026-08-22T01:36:39Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.896
+      "score": 0.897
     },
     {
       "slug": "everything-claude-code",
@@ -2671,7 +2671,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 241705,
+      "stars": 241807,
       "pushedAt": "2026-08-21T03:02:03Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3316,7 +3316,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.713
+      "score": 0.712
     },
     {
       "slug": "alloydb",
