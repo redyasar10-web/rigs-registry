@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T18:48:07.807Z",
+  "generatedAt": "2026-08-24T01:57:37.302Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -11,20 +11,20 @@
       "name": "marketingskills",
       "tier": "A",
       "listable": true,
-      "publishSha": "f2512687a44f11adf07ff7ec0ac5f36e1bc70e30",
-      "headSha": "f2512687a44f11adf07ff7ec0ac5f36e1bc70e30",
+      "publishSha": "f557c546c8b1a6f81022a038925ecbe032358b1d",
+      "headSha": "f557c546c8b1a6f81022a038925ecbe032358b1d",
       "servingStale": false,
       "health": "ok",
       "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
       "counts": {
-        "skill": 49,
+        "skill": 50,
         "agent": 0,
         "command": 0,
         "hook": 0,
         "mcp": 0
       },
-      "componentTotal": 49,
-      "rawFileCount": 49,
+      "componentTotal": 50,
+      "rawFileCount": 50,
       "droppedMirror": 0,
       "warnings": [
         "VAL-02 missing version or author metadata"
@@ -39,7 +39,7 @@
         {
           "kind": "skill",
           "name": "ad-creative",
-          "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' 'static ads,' 'ad templates,' 'iMessage ad,' 'chat reveal ad,' 'ChatGPT ad,' 'Apple Notes ad,' 'AirDrop ad,' 'creative strategy,' 'creative roadmap,' 'creative retro,' 'hook writing,' 'creative review page,' 'present ad creative for approval,' 'motion video ad,' 'faceless video ad,' 'UGC ad,' 'reaction ad,' 'greenscreen ad,' 'no yapping split-screen video,' 'TikTok/Reels ad format,' or 'I need more ad variations.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see ads. For landing page copy, see copywriting."
+          "description": "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'ad iterations,' 'creative testing,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' 'static ads,' 'ad templates,' 'iMessage ad,' 'chat reveal ad,' 'ChatGPT ad,' 'Apple Notes ad,' 'AirDrop ad,' 'creative strategy,' 'creative roadmap,' 'creative retro,' 'hook writing,' 'creative review page,' 'present ad creative for approval,' 'motion video ad,' 'faceless video ad,' 'UGC ad,' 'greenscreen ad,' 'TikTok/Reels ad format,' 'which ad format to make,' 'Meta ad format tier list,' or 'creative format taxonomy.' Use this whenever someone needs to produce ad copy at scale or iterate on existing ads. For campaign strategy and targeting, see ads. For landing page copy, see copywriting."
         },
         {
           "kind": "skill",
@@ -119,7 +119,7 @@
         {
           "kind": "skill",
           "name": "customer-research",
-          "description": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysis,\" \"support ticket analysis,\" \"voice of customer,\" \"VOC,\" \"build personas,\" \"customer personas,\" \"jobs to be done,\" \"JTBD,\" \"what do customers say,\" \"what are customers struggling with,\" \"Reddit mining,\" \"G2 reviews,\" \"review mining,\" \"digital watering holes,\" \"community research,\" \"forum research,\" \"competitor reviews,\" \"customer sentiment,\" or \"find out why customers churn/convert/buy.\" Use for both analyzing existing research assets AND gathering new research from online sources. For writing copy informed by research, see copywriting. For acting on research to improve pages, see cro."
+          "description": "When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions \"customer research,\" \"ICP research,\" \"talk to customers,\" \"analyze transcripts,\" \"customer interviews,\" \"survey analysis,\" \"support ticket analysis,\" \"voice of customer,\" \"VOC,\" \"build personas,\" \"customer personas,\" \"jobs to be done,\" \"JTBD,\" \"what do customers say,\" \"what are customers struggling with,\" \"Reddit mining,\" \"G2 reviews,\" \"review mining,\" \"digital watering holes,\" \"community research,\" \"forum research,\" \"competitor reviews,\" \"customer sentiment,\" \"PMF survey,\" \"product/market fit survey,\" \"customer interview questions,\" \"interview outreach,\" \"Sales Safari,\" or \"find out why customers churn/convert/buy.\" Use for analyzing existing research assets, mining online sources, AND running primary research (interviews and surveys). For writing copy informed by research, see copywriting. For acting on research to improve pages, see cro."
         },
         {
           "kind": "skill",
@@ -130,6 +130,11 @@
           "kind": "skill",
           "name": "emails",
           "description": "When the user wants to create or optimize an email sequence, drip campaign, automated email flow, or lifecycle email program. Also use when the user mentions \"email sequence,\" \"drip campaign,\" \"nurture sequence,\" \"onboarding emails,\" \"welcome sequence,\" \"re-engagement emails,\" \"email automation,\" \"lifecycle emails,\" \"trigger-based emails,\" \"email funnel,\" \"email workflow,\" \"what emails should I send,\" \"welcome series,\" or \"email cadence.\" Use this for any multi-email automated flow. For cold outreach emails, see cold-email. For in-app onboarding, see onboarding."
+        },
+        {
+          "kind": "skill",
+          "name": "events",
+          "description": "When the user wants to plan, run, sponsor, speak at, or get pipeline from events — webinars, conferences, trade shows, meetups, dinners, workshops, virtual summits, or user conferences. Also use when the user mentions 'event marketing,' 'field marketing,' 'run a webinar,' 'webinar funnel,' 'show-up rate,' 'should we sponsor,' 'sponsor a conference,' 'trade show booth,' 'booth strategy,' 'event ROI,' 'badge scans,' 'event follow-up,' 'speaking slot,' 'CFP,' 'conference talk,' 'host a dinner,' 'user conference,' or 'virtual summit.' Covers all four roles: hosting, sponsoring/exhibiting, speaking, and attending. For product launch moments, see launch. For the partnership side of joint webinars, see co-marketing. For ongoing community programs, see community-marketing. For podcast appearances, see public-relations. For the email sequences themselves, see emails."
         },
         {
           "kind": "skill",
@@ -277,8 +282,8 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 45356,
-      "pushedAt": "2026-08-23T17:36:52Z",
+      "stars": 45381,
+      "pushedAt": "2026-08-23T22:08:07Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
@@ -2671,7 +2676,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 242467,
+      "stars": 242579,
       "pushedAt": "2026-08-21T03:02:03Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3466,7 +3471,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.646
+      "score": 0.645
     },
     {
       "slug": "apollo-mcp-plugin",
