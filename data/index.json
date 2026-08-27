@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T20:03:21.094Z",
+  "generatedAt": "2026-08-27T09:48:05.610Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -11,8 +11,8 @@
       "name": "marketingskills",
       "tier": "A",
       "listable": true,
-      "publishSha": "becd60ee9df07f7d595c26e092253ba49f7a9ffc",
-      "headSha": "becd60ee9df07f7d595c26e092253ba49f7a9ffc",
+      "publishSha": "b1aaa3619e747f4a836c61e03084c4a531de1262",
+      "headSha": "b1aaa3619e747f4a836c61e03084c4a531de1262",
       "servingStale": false,
       "health": "ok",
       "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
@@ -282,8 +282,8 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 45746,
-      "pushedAt": "2026-08-24T19:30:37Z",
+      "stars": 45820,
+      "pushedAt": "2026-08-27T00:05:43Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
@@ -2676,14 +2676,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 243452,
+      "stars": 243605,
       "pushedAt": "2026-08-25T21:27:27Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.87
+      "score": 0.869
     },
     {
       "slug": "ai-plugins",
@@ -3523,14 +3523,14 @@
           "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
         }
       ],
-      "stars": 18,
+      "stars": 19,
       "pushedAt": "2026-07-20T19:26:54Z",
       "createdAt": "2026-02-19T10:47:36Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.642
+      "score": 0.644
     },
     {
       "slug": "alloydb-omni",
@@ -3608,7 +3608,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.608
+      "score": 0.607
     },
     {
       "slug": "aikido-claude-plugin",
