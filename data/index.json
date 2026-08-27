@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T09:48:05.610Z",
+  "generatedAt": "2026-08-27T22:15:37.394Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 45820,
+      "stars": 45873,
       "pushedAt": "2026-08-27T00:05:43Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,8 +298,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "d8409a4b0813771235555e32e3d8046a73988bfa",
-      "headSha": "d8409a4b0813771235555e32e3d8046a73988bfa",
+      "publishSha": "5eddf1a3ffd311423be2d4ba7d26f7209c91b033",
+      "headSha": "5eddf1a3ffd311423be2d4ba7d26f7209c91b033",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2113,7 +2113,7 @@
         {
           "kind": "skill",
           "name": "nasiko-control-plane",
-          "description": "Install, detect, and operate the optional Nasiko agent control plane through ECC with pinned artifacts, explicit consent, and telemetry and secrets boundaries."
+          "description": "Use the experimental Nasiko CLI lifecycle bridge for pinned installation, read-only status, and qualified uninstall with explicit consent and telemetry and secrets boundaries."
         },
         {
           "kind": "skill",
@@ -2676,14 +2676,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 243605,
-      "pushedAt": "2026-08-25T21:27:27Z",
+      "stars": 243736,
+      "pushedAt": "2026-08-27T21:29:02Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.869
+      "score": 0.87
     },
     {
       "slug": "ai-plugins",
@@ -2692,8 +2692,8 @@
       "name": "ai-plugins",
       "tier": "A",
       "listable": true,
-      "publishSha": "adc5aa4a357cbfdc666fd3771e799ec58cae1871",
-      "headSha": "adc5aa4a357cbfdc666fd3771e799ec58cae1871",
+      "publishSha": "2de00883bd2be8b8578b46ab09baf2c8731376de",
+      "headSha": "2de00883bd2be8b8578b46ab09baf2c8731376de",
       "servingStale": false,
       "health": "ok",
       "description": "Endor Labs workflow agents and setup for Claude Code.",
@@ -3315,13 +3315,13 @@
         }
       ],
       "stars": 9,
-      "pushedAt": "2026-08-01T14:03:13Z",
+      "pushedAt": "2026-08-27T17:04:37Z",
       "createdAt": "2026-03-02T17:25:07Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.71
+      "score": 0.724
     },
     {
       "slug": "alloydb",
@@ -3385,13 +3385,13 @@
         }
       ],
       "stars": 22,
-      "pushedAt": "2026-08-05T14:54:31Z",
+      "pushedAt": "2026-08-27T21:14:06Z",
       "createdAt": "2025-09-12T15:32:54Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.69
+      "score": 0.702
     },
     {
       "slug": "agentforce-adlc",
@@ -3464,7 +3464,7 @@
           "name": "README"
         }
       ],
-      "stars": 100,
+      "stars": 101,
       "pushedAt": "2026-07-30T06:59:57Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
@@ -3602,13 +3602,13 @@
         }
       ],
       "stars": 4,
-      "pushedAt": "2026-08-05T14:54:40Z",
+      "pushedAt": "2026-08-27T21:13:15Z",
       "createdAt": "2026-03-02T14:34:46Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.607
+      "score": 0.619
     },
     {
       "slug": "aikido-claude-plugin",
