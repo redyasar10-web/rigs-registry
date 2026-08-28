@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T11:22:58.666Z",
+  "generatedAt": "2026-08-28T22:19:44.686Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,14 +282,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 45940,
-      "pushedAt": "2026-08-27T00:05:43Z",
+      "stars": 45985,
+      "pushedAt": "2026-08-28T19:16:40Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.898
+      "score": 0.899
     },
     {
       "slug": "everything-claude-code",
@@ -298,8 +298,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "5eddf1a3ffd311423be2d4ba7d26f7209c91b033",
-      "headSha": "5eddf1a3ffd311423be2d4ba7d26f7209c91b033",
+      "publishSha": "96c4dc4a74e28f860ecfb341d531ab70b2d97920",
+      "headSha": "96c4dc4a74e28f860ecfb341d531ab70b2d97920",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -420,7 +420,7 @@
         {
           "kind": "agent",
           "name": "doc-updater",
-          "description": "Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Runs /update-codemaps and /update-docs, generates docs/CODEMAPS/*, updates READMEs and guides."
+          "description": "Documentation and codemap specialist. Use PROACTIVELY for updating codemaps and documentation. Generates docs/CODEMAPS/*, updates READMEs and guides. Backs the /update-codemaps and /update-docs commands."
         },
         {
           "kind": "agent",
@@ -2676,14 +2676,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 243855,
-      "pushedAt": "2026-08-28T01:14:39Z",
+      "stars": 243958,
+      "pushedAt": "2026-08-28T22:06:02Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.87
+      "score": 0.871
     },
     {
       "slug": "ai-plugins",
@@ -3391,7 +3391,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.702
+      "score": 0.701
     },
     {
       "slug": "agentforce-adlc",
