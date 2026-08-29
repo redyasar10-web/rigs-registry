@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T16:42:51.480Z",
+  "generatedAt": "2026-08-29T20:55:05.548Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 46049,
+      "stars": 46063,
       "pushedAt": "2026-08-28T22:23:47Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,8 +298,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "656d4b5746413e4e78f9c62cb34d686515931f4f",
-      "headSha": "656d4b5746413e4e78f9c62cb34d686515931f4f",
+      "publishSha": "d8e6a51755c6971a65eef73419076d449df0f490",
+      "headSha": "d8e6a51755c6971a65eef73419076d449df0f490",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2676,14 +2676,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 244115,
-      "pushedAt": "2026-08-29T04:22:27Z",
+      "stars": 244170,
+      "pushedAt": "2026-08-29T20:30:55Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.87
+      "score": 0.871
     },
     {
       "slug": "ai-plugins",
@@ -3321,7 +3321,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.724
+      "score": 0.723
     },
     {
       "slug": "alloydb",
@@ -3471,7 +3471,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.644
+      "score": 0.643
     },
     {
       "slug": "apollo-mcp-plugin",
