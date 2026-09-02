@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T11:17:47.530Z",
+  "generatedAt": "2026-09-02T16:34:30.062Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 46562,
+      "stars": 46589,
       "pushedAt": "2026-09-02T07:43:12Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2676,14 +2676,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 245974,
-      "pushedAt": "2026-08-31T22:18:39Z",
+      "stars": 246107,
+      "pushedAt": "2026-09-02T11:43:12Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.87
+      "score": 0.871
     },
     {
       "slug": "ai-plugins",
@@ -3314,14 +3314,14 @@
           "description": "Explains a CVE, GHSA, or Endor vulnerability, optionally in the context of a\nsupplied package and version. It summarizes severity, exploitability\nsignals, affected and fixed versions, recommended remediation, and relevant\nreachability or repository context when supported by exact Endor evidence.\nIt clearly identifies missing information rather than inferring package or\nproject applicability."
         }
       ],
-      "stars": 9,
+      "stars": 10,
       "pushedAt": "2026-08-27T17:04:37Z",
       "createdAt": "2026-03-02T17:25:07Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.722
+      "score": 0.726
     },
     {
       "slug": "alloydb",
