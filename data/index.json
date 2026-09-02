@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T21:01:57.415Z",
+  "generatedAt": "2026-09-02T04:33:11.348Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -11,8 +11,8 @@
       "name": "marketingskills",
       "tier": "A",
       "listable": true,
-      "publishSha": "e55de886fe7580ec75cdb7ded5092b33f7d4ed58",
-      "headSha": "e55de886fe7580ec75cdb7ded5092b33f7d4ed58",
+      "publishSha": "d4ff28a9c8d56c06809860bf2800d4f5224b52db",
+      "headSha": "d4ff28a9c8d56c06809860bf2800d4f5224b52db",
       "servingStale": false,
       "health": "ok",
       "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
@@ -282,14 +282,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 46458,
-      "pushedAt": "2026-08-28T22:23:47Z",
+      "stars": 46497,
+      "pushedAt": "2026-09-02T02:33:16Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.897
+      "score": 0.899
     },
     {
       "slug": "everything-claude-code",
@@ -2676,14 +2676,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 245695,
+      "stars": 245827,
       "pushedAt": "2026-08-31T22:18:39Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.871
+      "score": 0.87
     },
     {
       "slug": "ai-plugins",
@@ -3530,7 +3530,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.642
+      "score": 0.641
     },
     {
       "slug": "alloydb-omni",
@@ -3664,7 +3664,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.554
+      "score": 0.553
     }
   ]
 }
