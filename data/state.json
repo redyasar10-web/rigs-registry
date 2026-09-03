@@ -5,11 +5,11 @@
     "coreyhaines31/marketingskills": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "d4ff28a9c8d56c06809860bf2800d4f5224b52db",
-      "lastGoodAt": "2026-09-02T11:17:47.530Z",
-      "lastSeenPush": "2026-09-02T07:43:12Z",
+      "lastGoodSha": "5cd4a7eae3a9a7b5d2aceb0613f7d1f7c4b65968",
+      "lastGoodAt": "2026-09-03T21:02:07.019Z",
+      "lastSeenPush": "2026-09-03T17:18:27Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-02T11:17:47.530Z",
+      "lastCheckedAt": "2026-09-03T21:02:07.019Z",
       "goneAt": null,
       "componentHashes": [
         "e9c2e58d6baf6c5786dec8b7ae3381ec74c06d81340ab085c7a2abbffa237f51",
@@ -297,11 +297,11 @@
     "affaan-m/ECC": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "22e8cf01d0b54719b3a49002fab2ccbda4ff5b9e",
-      "lastGoodAt": "2026-09-03T04:33:08.993Z",
-      "lastSeenPush": "2026-09-03T00:48:58Z",
+      "lastGoodSha": "e04ea0b9cc8248686edf5ac751cadff550e162b8",
+      "lastGoodAt": "2026-09-03T21:02:07.019Z",
+      "lastSeenPush": "2026-09-03T20:51:23Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-03T04:33:08.993Z",
+      "lastCheckedAt": "2026-09-03T21:02:07.019Z",
       "goneAt": null,
       "componentHashes": [
         "a9437c236ad7b2e87676b496128b50cc6807beaade723868ca9bb17f746e54a3",
