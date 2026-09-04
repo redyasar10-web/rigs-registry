@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T21:02:07.019Z",
+  "generatedAt": "2026-09-04T04:32:47.644Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 46768,
+      "stars": 46802,
       "pushedAt": "2026-09-03T17:18:27Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2676,7 +2676,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 247045,
+      "stars": 247348,
       "pushedAt": "2026-09-03T20:51:23Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3321,7 +3321,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.726
+      "score": 0.725
     },
     {
       "slug": "alloydb",
@@ -3394,65 +3394,6 @@
       "score": 0.699
     },
     {
-      "slug": "apollo-mcp-plugin",
-      "repo": "apolloio/apollo-mcp-plugin",
-      "owner": "apolloio",
-      "name": "apollo-mcp-plugin",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "counts": {
-        "skill": 4,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 5,
-      "rawFileCount": 5,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        },
-        {
-          "kind": "skill",
-          "name": "analytics",
-          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
-        },
-        {
-          "kind": "skill",
-          "name": "enrich-lead",
-          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
-        },
-        {
-          "kind": "skill",
-          "name": "prospect",
-          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
-        },
-        {
-          "kind": "skill",
-          "name": "sequence-load",
-          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
-        }
-      ],
-      "stars": 20,
-      "pushedAt": "2026-07-20T19:26:54Z",
-      "createdAt": "2026-02-19T10:47:36Z",
-      "license": "MIT",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.643
-    },
-    {
       "slug": "agentforce-adlc",
       "repo": "SalesforceAIResearch/agentforce-adlc",
       "owner": "SalesforceAIResearch",
@@ -3523,14 +3464,73 @@
           "name": "README"
         }
       ],
-      "stars": 103,
+      "stars": 104,
       "pushedAt": "2026-07-30T06:59:57Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.642
+      "score": 0.643
+    },
+    {
+      "slug": "apollo-mcp-plugin",
+      "repo": "apolloio/apollo-mcp-plugin",
+      "owner": "apolloio",
+      "name": "apollo-mcp-plugin",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "headSha": "2adde980e45f421b7e9383d92870455627936bce",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "counts": {
+        "skill": 4,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 5,
+      "rawFileCount": 5,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        },
+        {
+          "kind": "skill",
+          "name": "analytics",
+          "description": "Instant sales analytics. Ask any performance question — emails, calls, meetings, tasks, opportunities, sequences, conversation intelligence — and get formatted tables with real Apollo data."
+        },
+        {
+          "kind": "skill",
+          "name": "enrich-lead",
+          "description": "Instant lead enrichment. Drop a name, company, LinkedIn URL, or email and get the full contact card with email, phone, title, company intel, and next actions."
+        },
+        {
+          "kind": "skill",
+          "name": "prospect",
+          "description": "Full ICP-to-leads pipeline. Describe your ideal customer in plain English and get a ranked table of enriched decision-maker leads with emails and phone numbers."
+        },
+        {
+          "kind": "skill",
+          "name": "sequence-load",
+          "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
+        }
+      ],
+      "stars": 20,
+      "pushedAt": "2026-07-20T19:26:54Z",
+      "createdAt": "2026-02-19T10:47:36Z",
+      "license": "MIT",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.643
     },
     {
       "slug": "alloydb-omni",
