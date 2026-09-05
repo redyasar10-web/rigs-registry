@@ -240,41 +240,29 @@
     "gemini-cli-extensions/alloydb": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "9521dbb4ea2d2236b36dc58bf58609d57a00a679",
-      "lastGoodAt": "2026-08-27T22:15:37.394Z",
-      "lastSeenPush": "2026-08-27T21:14:06Z",
+      "lastGoodSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
+      "lastGoodAt": "2026-09-05T04:28:25.261Z",
+      "lastSeenPush": "2026-09-05T00:17:26Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-08-27T22:15:37.394Z",
+      "lastCheckedAt": "2026-09-05T04:28:25.261Z",
       "goneAt": null,
       "componentHashes": [
-        "d0e457cfe32242d9593607eb07e0e3433385f7852093e24f455089d6d2b731f9",
-        "0d3f434790186a4f8eabf6bd2af9994fbae5a94167af339f9970b2c0c247da2b",
-        "10d077dbd7432a628da29fc45cf0f3f3aec6861a24af7394214258ee3c32bb3e",
-        "b51af0cf16e918a0559f91372343c99310d08e646d44204ebdc9072dfd3eb2b6",
-        "9aa2b557cc5560dfdaa96d86d6dc982c7f32464c978b722ac99358f8237c1bf2",
-        "651e10483feb3ae543c18c754763cbf00c444d5c773e713101d72ccaaeaee14f",
-        "2d8656ed589c620531943aa9328ff503bc957017eccd6ea1840aa143a100c440"
+        "facd5518ce097e3ce8eee8511773eff3212ffcfab6d01dcbe43d718feebc53d4"
       ]
     },
     "gemini-cli-extensions/alloydb-omni": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "60cd1c8d5659f2527c4f1b096ab73c490aca40a5",
-      "lastGoodAt": "2026-08-27T22:15:37.394Z",
-      "lastSeenPush": "2026-08-27T21:13:15Z",
+      "lastGoodSha": "ae7e42c4e428e303adcc96942f4fc35cb6b27d61",
+      "lastGoodAt": "2026-09-05T04:28:25.261Z",
+      "lastSeenPush": "2026-09-04T21:23:02Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-08-27T22:15:37.394Z",
+      "lastCheckedAt": "2026-09-05T04:28:25.261Z",
       "goneAt": null,
       "componentHashes": [
-        "9ff8e51bdca62264f6204d0c209574c357b9173c3b5ffbb151f190eda44a8170",
+        "aadd6e2ac91fd69ff3da526d9bceef286d11f5198393af0ddb91224476f59dac",
         "dc9a92a45cf88d7351a3ecf3f2ccdbd2f4733b4f5ba09fd9386ffef71b628694",
-        "c2a1b49b8ae7ecb320dc90af82c39c738cf3be43dfc484d443540bde8e2c7bc7",
-        "efac243825f1092614e785c140dff49a0126e8f52f930d20cee13d902ad0ae0d",
-        "0ff9460537d49e6a40ac5f26e88296c965a3f99e93ac483b4b68f6247ffb3fa2",
-        "eedc3fe367d15e93b12d7b0438c0c1ffbbb601c3cee3eb29130afd5b5b25a6eb",
-        "438cbf89f6dbc6968542257e4d17a7f9bfa870b4c2539e792312535dd54cae36",
-        "5b68524cb287e13b48a9ba71b94adf0b7d5b707ca0d5c81c6c6dfe95260e76d2",
-        "419f6c8e8f3669709dedb970fcbf3f441e102fa9e5ac1c4b057101da8057addb"
+        "0ff9460537d49e6a40ac5f26e88296c965a3f99e93ac483b4b68f6247ffb3fa2"
       ]
     },
     "apolloio/apollo-mcp-plugin": {

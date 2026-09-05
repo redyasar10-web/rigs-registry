@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T20:45:06.449Z",
+  "generatedAt": "2026-09-05T04:28:25.261Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 46881,
+      "stars": 46919,
       "pushedAt": "2026-09-03T17:18:27Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2676,7 +2676,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 248342,
+      "stars": 248635,
       "pushedAt": "2026-09-04T19:02:58Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3330,68 +3330,37 @@
       "name": "alloydb",
       "tier": "A",
       "listable": true,
-      "publishSha": "9521dbb4ea2d2236b36dc58bf58609d57a00a679",
-      "headSha": "9521dbb4ea2d2236b36dc58bf58609d57a00a679",
+      "publishSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
+      "headSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
       "servingStale": false,
       "health": "ok",
       "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
       "counts": {
-        "skill": 7,
+        "skill": 0,
         "agent": 0,
         "command": 0,
         "hook": 0,
-        "mcp": 0
+        "mcp": 1
       },
-      "componentTotal": 7,
-      "rawFileCount": 7,
+      "componentTotal": 1,
+      "rawFileCount": 1,
       "droppedMirror": 0,
       "warnings": [],
       "rejectReasons": [],
       "components": [
         {
-          "kind": "skill",
-          "name": "alloydb-postgres-access-management",
-          "description": "Use these skills when you need to manage database users, inspect permissions and roles, and verify global configuration parameters related to security and access control."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-postgres-admin",
-          "description": "Use these skills when you need to provision new AlloyDB clusters and instances, monitor their creation status, and retrieve high-level configuration or health data for the environment."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-postgres-data",
-          "description": "Use these skills when you need to explore the database schema, identify objects like views and triggers, and execute custom SQL queries to interact with your data."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-postgres-health",
-          "description": "Use these skills when you need to optimize storage, identify index issues, analyze table statistics, or manage autovacuum and tablespace configurations to maintain peak database health."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-postgres-monitor",
-          "description": "Use these skills when you need to troubleshoot slow performance, analyze query execution plans, identify resource-heavy processes, and monitor system-level PromQL metrics."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-postgres-optimize",
-          "description": "Use these skills when you need to discover and manage PostgreSQL extensions or fine-tune engine-level settings such as memory allocation and server configuration parameters."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-postgres-replication",
-          "description": "Use these skills when you need to monitor replication health, manage sync states between nodes, and ensure the high availability and data distribution of your AlloyDB cluster."
+          "kind": "mcp",
+          "name": "mcp"
         }
       ],
       "stars": 23,
-      "pushedAt": "2026-08-27T21:14:06Z",
+      "pushedAt": "2026-09-05T00:17:26Z",
       "createdAt": "2025-09-12T15:32:54Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.7
+      "score": 0.659
     },
     {
       "slug": "agentforce-adlc",
@@ -3539,28 +3508,27 @@
       "name": "alloydb-omni",
       "tier": "A",
       "listable": true,
-      "publishSha": "60cd1c8d5659f2527c4f1b096ab73c490aca40a5",
-      "headSha": "60cd1c8d5659f2527c4f1b096ab73c490aca40a5",
+      "publishSha": "ae7e42c4e428e303adcc96942f4fc35cb6b27d61",
+      "headSha": "ae7e42c4e428e303adcc96942f4fc35cb6b27d61",
       "servingStale": false,
       "health": "ok",
       "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
       "counts": {
-        "skill": 9,
+        "skill": 2,
         "agent": 0,
         "command": 0,
         "hook": 0,
-        "mcp": 0
+        "mcp": 1
       },
-      "componentTotal": 9,
-      "rawFileCount": 9,
+      "componentTotal": 3,
+      "rawFileCount": 3,
       "droppedMirror": 0,
       "warnings": [],
       "rejectReasons": [],
       "components": [
         {
-          "kind": "skill",
-          "name": "alloydb-omni-access-control",
-          "description": "Use these skills when you need to manage user roles, inspect permissions, and verify security-related configuration parameters."
+          "kind": "mcp",
+          "name": "mcp"
         },
         {
           "kind": "skill",
@@ -3568,47 +3536,17 @@
         },
         {
           "kind": "skill",
-          "name": "alloydb-omni-data",
-          "description": "Use these skills when you need to explore the database structure, identify schema objects like views and triggers, and execute SQL queries to interact with your data."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-omni-health",
-          "description": "Use these skills when you need to audit database health, identify storage bloat, find broken indexes, and verify tablespace or maintenance configurations."
-        },
-        {
-          "kind": "skill",
           "name": "alloydb-omni-kubernetes"
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-omni-monitor",
-          "description": "Use these skills when you need to troubleshoot production issues by identifying locks, tracking long-running transactions, and getting a high-level view of server state."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-omni-optimize",
-          "description": "Use these skills when you need to fine-tune the database engine settings, manage extensions, or optimize the columnar engine for better analytical performance."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-omni-performance",
-          "description": "Use these skills when you need to analyze query performance, generate execution plans, check table/column statistics, and monitor overall database activity."
-        },
-        {
-          "kind": "skill",
-          "name": "alloydb-omni-replication",
-          "description": "Use these skills when you need to monitor the health of database replication, manage sync states between nodes, and audit publication tables for distributed setups."
         }
       ],
       "stars": 4,
-      "pushedAt": "2026-08-27T21:13:15Z",
+      "pushedAt": "2026-09-04T21:23:02Z",
       "createdAt": "2026-03-02T14:34:46Z",
       "license": "Apache-2.0",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.616
+      "score": 0.59
     },
     {
       "slug": "aikido-claude-plugin",
