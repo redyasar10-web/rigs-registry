@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T04:40:51.450Z",
+  "generatedAt": "2026-09-07T12:32:06.464Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 47623,
+      "stars": 47832,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2676,14 +2676,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 251667,
-      "pushedAt": "2026-09-05T21:47:27Z",
+      "stars": 252317,
+      "pushedAt": "2026-09-07T12:14:52Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.871
+      "score": 0.872
     },
     {
       "slug": "ai-plugins",
@@ -3433,14 +3433,14 @@
           "name": "README"
         }
       ],
-      "stars": 104,
+      "stars": 105,
       "pushedAt": "2026-07-30T06:59:57Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.641
+      "score": 0.642
     },
     {
       "slug": "apollo-mcp-plugin",
@@ -3546,7 +3546,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.59
+      "score": 0.589
     },
     {
       "slug": "aikido-claude-plugin",
@@ -3555,8 +3555,8 @@
       "name": "aikido-claude-plugin",
       "tier": "A",
       "listable": true,
-      "publishSha": "1353c9d54b387f259f0c04f0ed3408842203c29e",
-      "headSha": "1353c9d54b387f259f0c04f0ed3408842203c29e",
+      "publishSha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704",
+      "headSha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704",
       "servingStale": false,
       "health": "ok",
       "description": "Aikido Security for Claude Code: scan code (SAST, secrets, IaC) and list all issues from your Aikido feed powered by the Aikido MCP server.",
@@ -3596,13 +3596,13 @@
         }
       ],
       "stars": 13,
-      "pushedAt": "2026-08-25T14:25:04Z",
+      "pushedAt": "2026-09-07T11:40:03Z",
       "createdAt": "2026-02-27T14:09:04Z",
       "license": null,
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.551
+      "score": 0.558
     }
   ]
 }
