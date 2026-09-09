@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T11:22:38.311Z",
+  "generatedAt": "2026-09-09T16:38:04.412Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 49118,
+      "stars": 49187,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,8 +298,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "5064474d4d762dc9640234a41617cccb79185cec",
-      "headSha": "5064474d4d762dc9640234a41617cccb79185cec",
+      "publishSha": "2cb58a0b3c76dff9deac27851677e115a5b0f290",
+      "headSha": "2cb58a0b3c76dff9deac27851677e115a5b0f290",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2676,8 +2676,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 254718,
-      "pushedAt": "2026-09-09T07:58:39Z",
+      "stars": 254919,
+      "pushedAt": "2026-09-09T14:20:47Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3602,7 +3602,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.558
+      "score": 0.557
     }
   ]
 }
