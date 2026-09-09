@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T16:38:04.412Z",
+  "generatedAt": "2026-09-09T20:55:34.693Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 49187,
+      "stars": 49218,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,8 +298,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "2cb58a0b3c76dff9deac27851677e115a5b0f290",
-      "headSha": "2cb58a0b3c76dff9deac27851677e115a5b0f290",
+      "publishSha": "cc91c24f9a35dc79811f2326b6cbf4a74739009a",
+      "headSha": "cc91c24f9a35dc79811f2326b6cbf4a74739009a",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -1015,7 +1015,7 @@
         {
           "kind": "command",
           "name": "prp-pr",
-          "description": "Create a GitHub PR from current branch with unpushed commits — discovers templates, analyzes changes, pushes"
+          "description": "Alias of /pr for the PRP workflow series. Use when creating a pull request mid-PRP workflow; otherwise use /pr."
         },
         {
           "kind": "command",
@@ -2676,8 +2676,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 254919,
-      "pushedAt": "2026-09-09T14:20:47Z",
+      "stars": 255066,
+      "pushedAt": "2026-09-09T19:00:49Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
