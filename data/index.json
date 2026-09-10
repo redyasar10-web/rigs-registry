@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T11:18:57.645Z",
+  "generatedAt": "2026-09-10T16:23:51.591Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 49357,
+      "stars": 49390,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,21 +298,21 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "d2b352c20275b643f0966857a89bff5d925345aa",
-      "headSha": "d2b352c20275b643f0966857a89bff5d925345aa",
+      "publishSha": "928c1dea72f5c330442fc1f595563398b8f389f7",
+      "headSha": "928c1dea72f5c330442fc1f595563398b8f389f7",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 291 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 286,
+        "skill": 291,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 471,
-      "rawFileCount": 1632,
-      "droppedMirror": 1161,
+      "componentTotal": 476,
+      "rawFileCount": 1636,
+      "droppedMirror": 1160,
       "warnings": [
         "SEC-02 examples/unified-memory/conformance.cjs at line 212: possible private-key-block (27 chars) [test fixture]",
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
@@ -1334,7 +1334,7 @@
         {
           "kind": "skill",
           "name": "benchmark-methodology",
-          "description": "Use after competitive-platform-analysis has produced a tiered competitor set. Scores each competitor across nine weighted dimensions (positioning, voice, visual craft, offer packaging, evidence, enterprise-readiness, thought leadership, pricing, client's strategic tension) with explicit 1–5 rubrics and a tension-plot. Precedes competitive-report-structure."
+          "description": "Use after competitive-platform-analysis has produced a tiered competitor set. Scores each competitor across nine weighted dimensions (positioning, voice, visual craft, offer packaging, evidence, enterprise-readiness, thought leadership, pricing, client's strategic tension) with explicit 1 to 5 rubrics and a tension-plot. Precedes competitive-report-structure."
         },
         {
           "kind": "skill",
@@ -1518,6 +1518,11 @@
         },
         {
           "kind": "skill",
+          "name": "counterparty-channel-discipline",
+          "description": "Per-channel strict prompts, mention gating, silent observation, and a communication autonomy policy for agents that sit in shared channels with external counterparties. Use when an agent joins group chats, shared channels, or DMs where outsiders can read every message and you need it to speak only when addressed, never leak internal context, and route risky content to draft-only approval."
+        },
+        {
+          "kind": "skill",
           "name": "cpp-coding-standards",
           "description": "C++ coding standards based on the C++ Core Guidelines (isocpp.github.io). Use when writing, reviewing, or refactoring C++ code to enforce modern, safe, and idiomatic practices."
         },
@@ -1690,6 +1695,11 @@
           "kind": "skill",
           "name": "error-handling",
           "description": "Patterns for robust error handling across TypeScript, Python, and Go. Covers typed errors, error boundaries, retries, circuit breakers, and user-facing error messages. Use when designing error types, retries, circuit breakers, or user-facing failure messages in TypeScript, Python, or Go."
+        },
+        {
+          "kind": "skill",
+          "name": "esign-field-placement",
+          "description": "Deterministic method for placing signature, date, and text fields in a web e-signature composer through a browser automation session, using a fixed signature page, numeric Location panel coordinates instead of drag, and a save-as-draft default. Use when automating envelope preparation for generated agreements and you need repeatable field positions, correct per-recipient ownership, and a hard gate before anything is sent or signed."
         },
         {
           "kind": "skill",
@@ -2063,6 +2073,11 @@
         },
         {
           "kind": "skill",
+          "name": "master-agreement-generator",
+          "description": "Generate review drafts of counterparty master agreements from one template plus a JSON spec, with role-selected clauses and a Schedule A workflow limited to the executed agreement's notice authority. Use when you need reproducible drafting and separately reviewed execution preparation."
+        },
+        {
+          "kind": "skill",
           "name": "mcp-server-patterns",
           "description": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API. Use when building or debugging an MCP server — tools, resources, prompts, validation, or transport choice."
         },
@@ -2095,11 +2110,6 @@
           "kind": "skill",
           "name": "motion-patterns",
           "description": "Production-ready animation patterns for React / Next.js — button, modal, toast, stagger, page transitions, exit animations, scroll, and layout — built on motion-foundations tokens and springs. Use when animating a specific UI element in React or Next.js — button, modal, toast, stagger, page transition, or scroll."
-        },
-        {
-          "kind": "skill",
-          "name": "motion-ui",
-          "description": "Production-ready UI motion system for React/Next.js. Use when implementing animations, transitions, or motion patterns."
         },
         {
           "kind": "skill",
@@ -2170,6 +2180,11 @@
           "kind": "skill",
           "name": "opensource-pipeline",
           "description": "Open-source pipeline: fork, sanitize, and package private projects for safe public release. Chains 3 agents (forker, sanitizer, packager). Triggers: '/opensource', 'open source this', 'make this public', 'prepare for open source'. Use when a private project must be forked, stripped of secrets, and packaged for public release."
+        },
+        {
+          "kind": "skill",
+          "name": "operator-approval-loop",
+          "description": "Operator approval contract with internal filing notices for agent-drafted outbound messages, hashed drafts, epoch-keyed decisions, durable delivery claims and receipts, and a pre-draft baseline gate. Use when an agent drafts messages to external counterparties and a human operator must approve, reject, or steer each send before it leaves."
         },
         {
           "kind": "skill",
@@ -2538,6 +2553,16 @@
         },
         {
           "kind": "skill",
+          "name": "taste-application",
+          "description": "Generate new video against a distilled style pack and cut it into a finished piece - plan takes from the reference's cut rhythm, generate on fal, grade with the pack's measured LUT, cut at the measured cadence, weave in existing footage, composite overlay plates, mint 3D props, and verify the result numerically. Use when the user wants to make a video in a captured style, supplement existing footage, or assemble generated clips into a real edit."
+        },
+        {
+          "kind": "skill",
+          "name": "taste-distillation",
+          "description": "Measure a set of reference videos into a reusable style pack - colour grade as a 3D LUT, cut rhythm as a shot-length distribution, hero stills, screen-blend overlay plates, and a text spec for a generative model. Use when the user wants to capture the look of reference footage, build a repeatable look, mint assets from references, or reproduce someone's grade and pacing."
+        },
+        {
+          "kind": "skill",
           "name": "taste",
           "description": "A creative-direction (taste) layer for music videos and short-form edits in the angelcore / cloud-trance / hyperpop visual family. Distills a named-genre aesthetic vocabulary, a mood + color + light system, and a beat-synced editing grammar, then chains ECC's video skills (video-editing, fal-ai-media, remotion-video-creation, motion-*, content-engine) into one production pipeline. Use when the work is not just making a video function but making it feel intentional, when building a music video, a fancam/edit, a moodboard-driven reel, or when choosing a coherent visual direction for AI-generated b-roll."
         },
@@ -2677,8 +2702,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 255525,
-      "pushedAt": "2026-09-10T11:13:08Z",
+      "stars": 255691,
+      "pushedAt": "2026-09-10T14:31:38Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,

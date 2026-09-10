@@ -23,7 +23,7 @@
     },
     {
       "name": "everything-claude-code",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 286 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 291 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "author": {
         "name": "affaan-m",
         "url": "https://github.com/affaan-m"
@@ -32,7 +32,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/affaan-m/ECC.git",
-        "sha": "d2b352c20275b643f0966857a89bff5d925345aa"
+        "sha": "928c1dea72f5c330442fc1f595563398b8f389f7"
       }
     },
     {
