@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T20:55:34.693Z",
+  "generatedAt": "2026-09-10T04:42:02.749Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 49218,
+      "stars": 49291,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2676,7 +2676,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 255066,
+      "stars": 255304,
       "pushedAt": "2026-09-09T19:00:49Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3324,53 +3324,14 @@
       "score": 0.723
     },
     {
-      "slug": "alloydb",
-      "repo": "gemini-cli-extensions/alloydb",
-      "owner": "gemini-cli-extensions",
-      "name": "alloydb",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
-      "headSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
-      "counts": {
-        "skill": 0,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 1,
-      "rawFileCount": 1,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        }
-      ],
-      "stars": 23,
-      "pushedAt": "2026-09-05T00:17:26Z",
-      "createdAt": "2025-09-12T15:32:54Z",
-      "license": "Apache-2.0",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.658
-    },
-    {
       "slug": "agentforce-adlc",
       "repo": "SalesforceAIResearch/agentforce-adlc",
       "owner": "SalesforceAIResearch",
       "name": "agentforce-adlc",
       "tier": "A",
       "listable": true,
-      "publishSha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8",
-      "headSha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8",
+      "publishSha": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a",
+      "headSha": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a",
       "servingStale": false,
       "health": "ok",
       "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
@@ -3416,12 +3377,12 @@
         {
           "kind": "skill",
           "name": "agentforce-generate",
-          "description": "Build, modify, optimize, debug, and deploy agents with Agentforce Agent Script. TRIGGER when: user creates, modifies, optimizes, or asks about .agent files or aiAuthoringBundle metadata; changes agent behavior, responses, or conversation logic; designs agent actions, tools, subagents, or flow control; writes or reviews an Agent Spec; wants to optimize, improve, or refactor an agent; previews, debugs, deploys, publishes, or tests agents; uses Agent Script CLI commands (sf agent generate/preview/publish/test); registers/creates/lists/updates/deletes MCP servers, whitelists/approves MCP tools, fetches MCP assets, or configures MCP authentication (sf agent mcp). DO NOT TRIGGER when: Apex development, Flow building, Prompt Template authoring, Experience Cloud configuration, or general Salesforce CLI tasks unrelated to Agent Script."
+          "description": "Build, modify, audit, repair, optimize, debug, and deploy agents with Agentforce Agent Script. TRIGGER when: user creates, reviews, or changes .agent files or aiAuthoringBundle metadata; asks to fix AgentScript, audit an existing agent, run an AgentScript health check, common-pitfall review, or baseline-versus-candidate repair loop; changes a response, action, subagent, route, state flow, or Agent Spec; previews, debugs, deploys, publishes, or tests agents; uses sf agent generate/preview/publish/test; or manages Agentforce MCP servers, tools, assets, or authentication. DO NOT TRIGGER when: Apex, Flow, Prompt Template, Experience Cloud, or general Salesforce CLI work is unrelated to Agent Script; or the primary input is a production session or trace ID rather than an agent artifact."
         },
         {
           "kind": "skill",
           "name": "agentforce-observe",
-          "description": "Analyze production Agentforce agent behavior using session traces and Data Cloud. TRIGGER when: user queries STDM session data or Data Cloud trace records; investigates production agent failures, regressions, or performance issues; asks about session traces, conversation logs, or agent metrics; wants to reproduce a reported production issue in preview; runs findSessions or trace analysis queries. DO NOT TRIGGER when: user creates, modifies, or debugs .agent files during development (use agentforce-generate); writes or runs test specs (use agentforce-test); uses sf agent preview for local development iteration; deploys or publishes agents."
+          "description": "Analyze production Agentforce agent behavior using session traces and Data Cloud, and manage Agent Health Monitoring (AHM) alerts. TRIGGER when: user queries STDM session data or Data Cloud trace records; investigates production agent failures, regressions, or performance issues; asks about session traces, conversation logs, or agent metrics; wants to reproduce a reported production issue in preview; runs findSessions or trace analysis queries; creates, lists, updates, or deletes an AHM data alert on an agent metric (escalation rate, deflection, etc.); asks why an alert is not firing or wants to check whether alerts have fired (notification counts, or the per-alert Incidents view). DO NOT TRIGGER when: user creates, modifies, or debugs .agent files during development (use agentforce-generate); writes or runs test specs (use agentforce-test); uses sf agent preview for local development iteration; deploys or publishes agents."
         },
         {
           "kind": "skill",
@@ -3434,13 +3395,52 @@
         }
       ],
       "stars": 105,
-      "pushedAt": "2026-07-30T06:59:57Z",
+      "pushedAt": "2026-09-10T01:09:06Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.641
+      "score": 0.663
+    },
+    {
+      "slug": "alloydb",
+      "repo": "gemini-cli-extensions/alloydb",
+      "owner": "gemini-cli-extensions",
+      "name": "alloydb",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
+      "headSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "counts": {
+        "skill": 0,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 1,
+      "rawFileCount": 1,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        }
+      ],
+      "stars": 23,
+      "pushedAt": "2026-09-05T00:17:26Z",
+      "createdAt": "2025-09-12T15:32:54Z",
+      "license": "Apache-2.0",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.657
     },
     {
       "slug": "apollo-mcp-plugin",
@@ -3546,7 +3546,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.589
+      "score": 0.588
     },
     {
       "slug": "aikido-claude-plugin",

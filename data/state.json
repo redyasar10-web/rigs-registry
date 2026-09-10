@@ -67,11 +67,11 @@
     "SalesforceAIResearch/agentforce-adlc": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "d16d14ac7f817336e21bf9392cf51b6cac6194d8",
-      "lastGoodAt": "2026-07-30T08:49:56.276Z",
-      "lastSeenPush": "2026-07-30T06:59:57Z",
+      "lastGoodSha": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a",
+      "lastGoodAt": "2026-09-10T04:42:02.749Z",
+      "lastSeenPush": "2026-09-10T01:09:06Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-07-30T08:49:56.276Z",
+      "lastCheckedAt": "2026-09-10T04:42:02.749Z",
       "goneAt": null,
       "componentHashes": [
         "6686ed12a227f993ea26a497aa4ec6f0fecb08ac6bf1b5cd67990341e1839ef9",
@@ -79,9 +79,9 @@
         "41be30a6cbb50e598431ffd6046e0ce748657df521cf1f661c9a24951d3ab140",
         "9305225395e7e4264c75bcb178b24522f6e0b5fd9d5fe8b62e8edce760cec22d",
         "7db1aebdbbe32ae2093e9781e80bfb1d56377ded47663288f6b88d15787c6b52",
-        "a12ee4cd43445b4714deeb3a8171008d682fccfdb0bd004f991fb3cf7f60d32c",
-        "6d4092da44f016b4fc7579f821c02b6e011b120b95cdd2d6c076e06acfe477d3",
-        "b4095310a39b6936a4d021043105a44dd715758bc66d8e3721223d1c4094085c",
+        "5c3ea776165affa7b387b7a71821daefbcb395ebad1cbe5995ebd503a6f37b80",
+        "442bc289ca9a50255fc2a64fd69159151e1e0167d61b36771fcca61922774b7f",
+        "c556c88fdd360a85865afb5a1b2ee9d5735b3e48bd7b8fcf6c8bda838f8185fd",
         "df454e6ac1b28919101093738dbc4f180706cdccef643a4a048a7ed62e1bbd04"
       ]
     },
