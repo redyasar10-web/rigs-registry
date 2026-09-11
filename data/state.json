@@ -225,10 +225,10 @@
       "health": "ok",
       "consecutiveFailures": 0,
       "lastGoodSha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704",
-      "lastGoodAt": "2026-09-07T12:32:06.464Z",
-      "lastSeenPush": "2026-09-07T11:40:03Z",
+      "lastGoodAt": "2026-09-11T11:20:41.629Z",
+      "lastSeenPush": "2026-09-11T09:21:00Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-07T12:32:06.464Z",
+      "lastCheckedAt": "2026-09-11T11:20:41.629Z",
       "goneAt": null,
       "componentHashes": [
         "663cf91732adde0635471cfb3c5f89a82a07fb2093e9b50116e97408299fe1a7",
