@@ -50,6 +50,20 @@
       }
     },
     {
+      "name": "apollo-mcp-plugin",
+      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
+      "author": {
+        "name": "apolloio",
+        "url": "https://github.com/apolloio"
+      },
+      "homepage": "https://github.com/apolloio/apollo-mcp-plugin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
+        "sha": "2adde980e45f421b7e9383d92870455627936bce"
+      }
+    },
+    {
       "name": "agentforce-adlc",
       "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
       "author": {
@@ -78,20 +92,6 @@
       }
     },
     {
-      "name": "apollo-mcp-plugin",
-      "description": "Prospect, enrich leads, load outreach sequences, and query sales analytics with Apollo.io — one-click MCP server integration for Claude Code and Cowork.",
-      "author": {
-        "name": "apolloio",
-        "url": "https://github.com/apolloio"
-      },
-      "homepage": "https://github.com/apolloio/apollo-mcp-plugin",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/apolloio/apollo-mcp-plugin.git",
-        "sha": "2adde980e45f421b7e9383d92870455627936bce"
-      }
-    },
-    {
       "name": "alloydb-omni",
       "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
       "author": {
@@ -116,7 +116,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/AikidoSec/aikido-claude-plugin.git",
-        "sha": "5db259bac62bf0c3a37bfd0fee6e22cc25bdb704"
+        "sha": "02f018ad4da175a2a5ad6ca9451c3d309d105fab"
       }
     }
   ]
