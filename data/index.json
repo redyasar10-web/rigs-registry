@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T20:58:12.062Z",
+  "generatedAt": "2026-09-12T04:33:37.495Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 49611,
+      "stars": 49658,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,28 +298,28 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "c9148d0bb239ed01a95724a5928b98cdf9c30658",
-      "headSha": "c9148d0bb239ed01a95724a5928b98cdf9c30658",
+      "publishSha": "c4904e3f6381df934fc00bffb0afa7a1f8dae0e3",
+      "headSha": "c4904e3f6381df934fc00bffb0afa7a1f8dae0e3",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 291 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 292 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 291,
+        "skill": 292,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 476,
-      "rawFileCount": 1636,
+      "componentTotal": 477,
+      "rawFileCount": 1637,
       "droppedMirror": 1160,
       "warnings": [
         "SEC-02 examples/unified-memory/conformance.cjs at line 212: possible private-key-block (27 chars) [test fixture]",
         "SEC-02 tests/hooks/governance-capture.test.js at line 42: possible openai-project (28 chars) [test fixture]",
         "SEC-02 tests/hooks/governance-capture.test.js at line 48: possible private-key-block (31 chars) [test fixture]",
         "SEC-02 tests/hooks/governance-capture.test.js at line 54: possible github-token (40 chars) [test fixture]",
-        "SEC-02 tests/hooks/pre-bash-commit-quality.test.js at line 216: possible github-token (40 chars) [test fixture]",
-        "SEC-02 tests/hooks/pre-bash-commit-quality.test.js at line 220: possible aws-access-key (20 chars) [test fixture]",
+        "SEC-02 tests/hooks/pre-bash-commit-quality.test.js at line 217: possible github-token (40 chars) [test fixture]",
+        "SEC-02 tests/hooks/pre-bash-commit-quality.test.js at line 221: possible aws-access-key (20 chars) [test fixture]",
         "SEC-02 tests/lib/memory-vault.test.js at line 442: possible private-key-block (27 chars) [test fixture]"
       ],
       "rejectReasons": [],
@@ -2343,6 +2343,11 @@
         },
         {
           "kind": "skill",
+          "name": "rails-patterns",
+          "description": "Ruby on Rails framework patterns for Rails 7.1+ and 8.x apps. Covers the directory contract, skinny controllers with service objects, form objects, query objects, idiomatic ActiveRecord, background jobs, ViewComponent, Hotwire, and the Rails 8 Solid stack. Use when building or reviewing Rails apps, controllers, models, services, jobs, or views."
+        },
+        {
+          "kind": "skill",
           "name": "ralphinho-rfc-pipeline",
           "description": "RFC-driven multi-agent DAG execution pattern with quality gates, merge queues, and work unit orchestration. Use when running RFC-driven multi-agent execution with quality gates and a merge queue."
         },
@@ -2702,8 +2707,8 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 256451,
-      "pushedAt": "2026-09-10T20:57:26Z",
+      "stars": 256606,
+      "pushedAt": "2026-09-12T03:45:33Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
