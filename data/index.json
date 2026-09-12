@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T04:33:37.495Z",
+  "generatedAt": "2026-09-12T10:46:01.510Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 49658,
+      "stars": 49701,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,8 +298,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "c4904e3f6381df934fc00bffb0afa7a1f8dae0e3",
-      "headSha": "c4904e3f6381df934fc00bffb0afa7a1f8dae0e3",
+      "publishSha": "90ef62cb1d637f97e0c7f06f2e51a168c853ac7e",
+      "headSha": "90ef62cb1d637f97e0c7f06f2e51a168c853ac7e",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 292 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2707,14 +2707,14 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 256606,
-      "pushedAt": "2026-09-12T03:45:33Z",
+      "stars": 256764,
+      "pushedAt": "2026-09-12T09:52:30Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.862
+      "score": 0.863
     },
     {
       "slug": "ai-plugins",
@@ -3491,7 +3491,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.663
+      "score": 0.662
     },
     {
       "slug": "alloydb",
@@ -3530,7 +3530,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.657
+      "score": 0.656
     },
     {
       "slug": "alloydb-omni",
@@ -3577,7 +3577,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.588
+      "score": 0.587
     },
     {
       "slug": "aikido-claude-plugin",
