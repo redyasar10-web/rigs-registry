@@ -67,11 +67,11 @@
     "SalesforceAIResearch/agentforce-adlc": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "b280f6346fa70aaf4fbd0e0bc5d18582c1fb039a",
-      "lastGoodAt": "2026-09-10T04:42:02.749Z",
-      "lastSeenPush": "2026-09-10T01:09:06Z",
+      "lastGoodSha": "09bf1539d41f9ff355ba3eb5d05d4a75813423bb",
+      "lastGoodAt": "2026-09-13T04:47:02.451Z",
+      "lastSeenPush": "2026-09-12T23:48:39Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-10T04:42:02.749Z",
+      "lastCheckedAt": "2026-09-13T04:47:02.451Z",
       "goneAt": null,
       "componentHashes": [
         "6686ed12a227f993ea26a497aa4ec6f0fecb08ac6bf1b5cd67990341e1839ef9",
