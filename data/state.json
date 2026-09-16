@@ -268,16 +268,17 @@
     "apolloio/apollo-mcp-plugin": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "2adde980e45f421b7e9383d92870455627936bce",
-      "lastGoodAt": "2026-09-11T16:28:02.974Z",
-      "lastSeenPush": "2026-09-11T14:30:24Z",
+      "lastGoodSha": "bd0513c961f02105492fcff0d7d29c9cccf1ed23",
+      "lastGoodAt": "2026-09-16T16:54:43.303Z",
+      "lastSeenPush": "2026-09-16T16:45:19Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-11T16:28:02.974Z",
+      "lastCheckedAt": "2026-09-16T16:54:43.303Z",
       "goneAt": null,
       "componentHashes": [
         "79d024c4a6968d9ee39ba5cc0c1ad48cd91ea304c7383ce77a8f5b7da7f56020",
         "0914768f7f3c9c1b8d7b2accf48fd197dba12dbd2bf0ac168a37d5920f0304a8",
         "ec6ecf6de2defad28a23ccfc04631d2b44a0383f42c29ef3de3bb8fb92551026",
+        "da3840f3bca2b3a091b7cebc17d3f2a580c780c7770f2b8af807662d5f5424e5",
         "9e8c4686b3d7b0addfa7dffc651034cd0547680a4cb7f2384994036b89c4474c",
         "36ed5ed325a14d40910aa64da873c6cbe9b8f536de80ecb1f89d061edf3f5a80"
       ]
