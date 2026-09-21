@@ -241,10 +241,10 @@
       "health": "ok",
       "consecutiveFailures": 0,
       "lastGoodSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
-      "lastGoodAt": "2026-09-05T04:28:25.261Z",
-      "lastSeenPush": "2026-09-05T00:17:26Z",
+      "lastGoodAt": "2026-09-21T21:58:27.844Z",
+      "lastSeenPush": "2026-09-21T17:12:59Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-05T04:28:25.261Z",
+      "lastCheckedAt": "2026-09-21T21:58:27.844Z",
       "goneAt": null,
       "componentHashes": [
         "facd5518ce097e3ce8eee8511773eff3212ffcfab6d01dcbe43d718feebc53d4"
@@ -254,10 +254,10 @@
       "health": "ok",
       "consecutiveFailures": 0,
       "lastGoodSha": "ae7e42c4e428e303adcc96942f4fc35cb6b27d61",
-      "lastGoodAt": "2026-09-05T04:28:25.261Z",
-      "lastSeenPush": "2026-09-04T21:23:02Z",
+      "lastGoodAt": "2026-09-21T21:58:27.844Z",
+      "lastSeenPush": "2026-09-21T17:13:02Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-05T04:28:25.261Z",
+      "lastCheckedAt": "2026-09-21T21:58:27.844Z",
       "goneAt": null,
       "componentHashes": [
         "aadd6e2ac91fd69ff3da526d9bceef286d11f5198393af0ddb91224476f59dac",
@@ -286,11 +286,11 @@
     "affaan-m/ECC": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "2b6e839771e53096d8451a213d40dc64ec8acac0",
-      "lastGoodAt": "2026-09-21T12:47:38.101Z",
-      "lastSeenPush": "2026-09-21T04:55:15Z",
+      "lastGoodSha": "bf70150eb2df8070024e5bdf08e4aa08959e2735",
+      "lastGoodAt": "2026-09-21T21:58:27.844Z",
+      "lastSeenPush": "2026-09-21T19:00:51Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-21T12:47:38.101Z",
+      "lastCheckedAt": "2026-09-21T21:58:27.844Z",
       "goneAt": null,
       "componentHashes": [
         "a9437c236ad7b2e87676b496128b50cc6807beaade723868ca9bb17f746e54a3",
