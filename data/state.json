@@ -240,11 +240,11 @@
     "gemini-cli-extensions/alloydb": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "00ee6ce2bcf88b46da4bf298a3ad8c0ad85877c8",
-      "lastGoodAt": "2026-09-21T21:58:27.844Z",
-      "lastSeenPush": "2026-09-21T17:12:59Z",
+      "lastGoodSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
+      "lastGoodAt": "2026-09-23T16:57:43.716Z",
+      "lastSeenPush": "2026-09-23T16:24:36Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-21T21:58:27.844Z",
+      "lastCheckedAt": "2026-09-23T16:57:43.716Z",
       "goneAt": null,
       "componentHashes": [
         "facd5518ce097e3ce8eee8511773eff3212ffcfab6d01dcbe43d718feebc53d4"
@@ -253,11 +253,11 @@
     "gemini-cli-extensions/alloydb-omni": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "ae7e42c4e428e303adcc96942f4fc35cb6b27d61",
-      "lastGoodAt": "2026-09-21T21:58:27.844Z",
-      "lastSeenPush": "2026-09-21T17:13:02Z",
+      "lastGoodSha": "37101e3f9aaf0bd4d0acaeee540a0da2fd773d00",
+      "lastGoodAt": "2026-09-23T16:57:43.716Z",
+      "lastSeenPush": "2026-09-23T16:56:07Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-21T21:58:27.844Z",
+      "lastCheckedAt": "2026-09-23T16:57:43.716Z",
       "goneAt": null,
       "componentHashes": [
         "aadd6e2ac91fd69ff3da526d9bceef286d11f5198393af0ddb91224476f59dac",
