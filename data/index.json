@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T04:49:53.216Z",
+  "generatedAt": "2026-09-24T11:45:20.401Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 51350,
+      "stars": 51382,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2707,7 +2707,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 266274,
+      "stars": 266454,
       "pushedAt": "2026-09-22T23:09:59Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3419,6 +3419,45 @@
       "score": 0.68
     },
     {
+      "slug": "alloydb",
+      "repo": "gemini-cli-extensions/alloydb",
+      "owner": "gemini-cli-extensions",
+      "name": "alloydb",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
+      "headSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "counts": {
+        "skill": 0,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 1,
+      "rawFileCount": 1,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        }
+      ],
+      "stars": 23,
+      "pushedAt": "2026-09-23T16:24:36Z",
+      "createdAt": "2025-09-12T15:32:54Z",
+      "license": "Apache-2.0",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.662
+    },
+    {
       "slug": "agentforce-adlc",
       "repo": "SalesforceAIResearch/agentforce-adlc",
       "owner": "SalesforceAIResearch",
@@ -3496,46 +3535,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.662
-    },
-    {
-      "slug": "alloydb",
-      "repo": "gemini-cli-extensions/alloydb",
-      "owner": "gemini-cli-extensions",
-      "name": "alloydb",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
-      "headSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
-      "counts": {
-        "skill": 0,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 1,
-      "rawFileCount": 1,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        }
-      ],
-      "stars": 23,
-      "pushedAt": "2026-09-23T16:24:36Z",
-      "createdAt": "2025-09-12T15:32:54Z",
-      "license": "Apache-2.0",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.662
+      "score": 0.661
     },
     {
       "slug": "alloydb-omni",
