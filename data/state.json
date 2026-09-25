@@ -224,15 +224,16 @@
     "AikidoSec/aikido-claude-plugin": {
       "health": "ok",
       "consecutiveFailures": 0,
-      "lastGoodSha": "02f018ad4da175a2a5ad6ca9451c3d309d105fab",
-      "lastGoodAt": "2026-09-24T17:10:29.366Z",
-      "lastSeenPush": "2026-09-24T16:29:22Z",
+      "lastGoodSha": "124ba147f53a38fdcb74595d59ceaadae022bf60",
+      "lastGoodAt": "2026-09-25T11:50:25.438Z",
+      "lastSeenPush": "2026-09-25T09:37:16Z",
       "firstIndexedAt": "2026-07-26T23:33:45.359Z",
-      "lastCheckedAt": "2026-09-24T17:10:29.366Z",
+      "lastCheckedAt": "2026-09-25T11:50:25.438Z",
       "goneAt": null,
       "componentHashes": [
-        "8c7dce93f8bd9fdbbf80625725bbb925fb1c9832796e09dd540158b51ccfd998",
+        "58b1b38095a862f9ad9e94e4047c146f90b3f0dc0bcbf0733ec67ba3cce92839",
         "4e8ae5b399337836b99a04c760dbf2d8ec02f9af37f9c06d86aec4aa9413770a",
+        "270ff28a67c252db5de9fbfceae5caa0ab41e5d6b869b9a99c1fb4bc3959553c",
         "ba898de64eb400fad63875503bb0be54ffef2c7a4ed7e3910e9528d60313d72a",
         "bda9e4ae884ee167e8e904f5d122a27ce86e87f4e84620baf4884cf6d29925da"
       ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T04:57:02.254Z",
+  "generatedAt": "2026-09-25T11:50:25.438Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 51442,
+      "stars": 51463,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2707,7 +2707,7 @@
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
         }
       ],
-      "stars": 267026,
+      "stars": 267198,
       "pushedAt": "2026-09-24T16:52:48Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3582,7 +3582,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.593
+      "score": 0.592
     },
     {
       "slug": "aikido-claude-plugin",
@@ -3591,20 +3591,20 @@
       "name": "aikido-claude-plugin",
       "tier": "A",
       "listable": true,
-      "publishSha": "02f018ad4da175a2a5ad6ca9451c3d309d105fab",
-      "headSha": "02f018ad4da175a2a5ad6ca9451c3d309d105fab",
+      "publishSha": "124ba147f53a38fdcb74595d59ceaadae022bf60",
+      "headSha": "124ba147f53a38fdcb74595d59ceaadae022bf60",
       "servingStale": false,
       "health": "ok",
       "description": "Aikido Security for Claude Code: scan code (SAST, secrets, IaC) and list all issues from your Aikido feed powered by the Aikido MCP server.",
       "counts": {
-        "skill": 3,
+        "skill": 4,
         "agent": 0,
         "command": 0,
         "hook": 0,
         "mcp": 1
       },
-      "componentTotal": 4,
-      "rawFileCount": 4,
+      "componentTotal": 5,
+      "rawFileCount": 5,
       "droppedMirror": 0,
       "warnings": [
         "LIC-01 no LICENSE file"
@@ -3622,6 +3622,11 @@
         },
         {
           "kind": "skill",
+          "name": "pr-comments",
+          "description": "Fetches comments already posted on a GitHub/GitLab/Azure DevOps pull or merge request (e.g. CI bot results, review feedback, Aikido's own scan-result comment). Use when the user asks what CI/CD said, wants to read/check/summarize PR or MR comments, mentions \"pipeline comments\", or asks about \"Aikido comments\"/\"Aikido feedback\"/what Aikido said or found on a PR — this reads via the native SCM CLI (gh/glab/az), not the Aikido MCP server."
+        },
+        {
+          "kind": "skill",
           "name": "scan",
           "description": "Runs an Aikido security scan on generated, added, or modified code files to detect SAST vulnerabilities and exposed secrets. Use when the user wants to scan code for security issues, after writing or modifying code, or when they mention Aikido, security scan, or SAST. Always run an Aikido scan after generating code to verify the generated code is free of security issues."
         },
@@ -3632,13 +3637,13 @@
         }
       ],
       "stars": 13,
-      "pushedAt": "2026-09-24T16:29:22Z",
+      "pushedAt": "2026-09-25T09:37:16Z",
       "createdAt": "2026-02-27T14:09:04Z",
       "license": null,
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.56
+      "score": 0.567
     }
   ]
 }
