@@ -64,20 +64,6 @@
       }
     },
     {
-      "name": "alloydb",
-      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
-      "author": {
-        "name": "gemini-cli-extensions",
-        "url": "https://github.com/gemini-cli-extensions"
-      },
-      "homepage": "https://github.com/gemini-cli-extensions/alloydb",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/gemini-cli-extensions/alloydb.git",
-        "sha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b"
-      }
-    },
-    {
       "name": "agentforce-adlc",
       "description": "Agentforce Agent Development Life Cycle — author, discover, scaffold, deploy, test, secure, and optimize .agent files",
       "author": {
@@ -89,6 +75,20 @@
         "source": "url",
         "url": "https://github.com/SalesforceAIResearch/agentforce-adlc.git",
         "sha": "09bf1539d41f9ff355ba3eb5d05d4a75813423bb"
+      }
+    },
+    {
+      "name": "alloydb",
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "author": {
+        "name": "gemini-cli-extensions",
+        "url": "https://github.com/gemini-cli-extensions"
+      },
+      "homepage": "https://github.com/gemini-cli-extensions/alloydb",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/gemini-cli-extensions/alloydb.git",
+        "sha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b"
       }
     },
     {
