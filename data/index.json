@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T22:14:36.767Z",
+  "generatedAt": "2026-09-30T05:31:57.634Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 51924,
+      "stars": 51947,
       "pushedAt": "2026-09-05T04:48:10Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -298,20 +298,20 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "bd9402f774511f682f6a6d9a8c5dcc38a4c5536c",
-      "headSha": "bd9402f774511f682f6a6d9a8c5dcc38a4c5536c",
+      "publishSha": "c70874fae9eb0e5ad0365beb7e2955899fd1d30f",
+      "headSha": "c70874fae9eb0e5ad0365beb7e2955899fd1d30f",
       "servingStale": false,
       "health": "ok",
-      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 292 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
+      "description": "Harness-native ECC plugin for engineering teams - 68 agents, 293 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
       "counts": {
-        "skill": 292,
+        "skill": 294,
         "agent": 73,
         "command": 109,
         "hook": 2,
         "mcp": 1
       },
-      "componentTotal": 477,
-      "rawFileCount": 1637,
+      "componentTotal": 479,
+      "rawFileCount": 1785,
       "droppedMirror": 1160,
       "warnings": [
         "SEC-02 examples/unified-memory/conformance.cjs at line 212: possible private-key-block (27 chars) [test fixture]",
@@ -691,12 +691,12 @@
         {
           "kind": "command",
           "name": "code-review",
-          "description": "Code review — local uncommitted changes or GitHub PR (pass PR number/URL for PR mode)"
+          "description": "Code review — local uncommitted changes or GitHub PR (pass PR number/URL for PR mode). Use for a step-by-step PRP-style checklist review; for a multi-agent pass use /review-pr, and for the adversarially-verified Workflow pass use /orch-review."
         },
         {
           "kind": "command",
           "name": "cost-report",
-          "description": "Generate a local Claude Code cost report from the ECC cost-tracker metrics log."
+          "description": "Generate a local Claude Code cost report from the ECC cost-tracker metrics log. Use for a terminal summary or CSV export of tracked spend; the cost-tracking skill covers the same metrics log for on-demand cost/budget questions asked in conversation."
         },
         {
           "kind": "command",
@@ -716,7 +716,7 @@
         {
           "kind": "command",
           "name": "ecc-guide",
-          "description": "Navigate ECC's current agents, skills, commands, hooks, install profiles, and docs from the live repository surface."
+          "description": "Navigate ECC's current agents, skills, commands, hooks, install profiles, and docs from the live repository surface. This is the slash-command entrypoint for that navigation; the ecc-guide skill covers the same map for on-demand use in conversation."
         },
         {
           "kind": "command",
@@ -816,7 +816,7 @@
         {
           "kind": "command",
           "name": "harness-audit",
-          "description": "Run a deterministic repository harness audit and return a prioritized scorecard."
+          "description": "Run a deterministic repository harness audit and return a prioritized scorecard. Use for a deterministic overall repo-readiness scorecard; for a security-specific audit use the security-scan command."
         },
         {
           "kind": "command",
@@ -836,7 +836,7 @@
         {
           "kind": "command",
           "name": "hookify",
-          "description": "Create hooks to prevent unwanted behaviors from conversation analysis or explicit instructions"
+          "description": "Create hooks to prevent unwanted behaviors from conversation analysis or explicit instructions. Use to generate a new hook rule file from conversation analysis or a described behavior; the hookify-rules skill covers hookify rule syntax and patterns for authoring or editing rules directly."
         },
         {
           "kind": "command",
@@ -881,12 +881,12 @@
         {
           "kind": "command",
           "name": "learn",
-          "description": "Extract reusable patterns from the current session and save them as candidate skills or guidance."
+          "description": "Extract reusable patterns from the current session and save them as candidate skills or guidance. Use to review a session on demand and persist an approved skill file; continuous-learning-v2 is a separate, configurable Stop/PreToolUse/PostToolUse hook-observation and instinct-evolution system (background observer disabled by default) and is not an automatic equivalent of this command."
         },
         {
           "kind": "command",
           "name": "loop-start",
-          "description": "Start a managed autonomous loop pattern with safety defaults and explicit stop conditions."
+          "description": "Prepare a managed autonomous loop pattern with safety defaults and explicit stop conditions, then print the commands to launch and monitor it. Use to set up sequential, continuous-pr, rfc-dag, or infinite loop patterns with safety gates before starting one; the continuous-agent-loop skill covers the same pattern selection and quality-gate guidance for in-conversation use (supersedes the deprecated autonomous-loops skill)."
         },
         {
           "kind": "command",
@@ -896,7 +896,7 @@
         {
           "kind": "command",
           "name": "marketing-campaign",
-          "description": "Plan and execute a full marketing campaign. Accepts a product brief and returns positioning, landing page copy, email sequence, social posts, ad variants, video scripts, and a content calendar. Can also review existing copy for conversion quality."
+          "description": "Plan and execute a full marketing campaign. Accepts a product brief and returns positioning, landing page copy, email sequence, social posts, ad variants, video scripts, and a content calendar. Can also review existing copy for conversion quality. This is the slash-command entrypoint that delegates to the marketing-agent; prefer the marketing-campaign skill for the same end-to-end workflow in conversation."
         },
         {
           "kind": "command",
@@ -921,7 +921,7 @@
         {
           "kind": "command",
           "name": "multi-plan",
-          "description": "Create a multi-model implementation plan without modifying production code."
+          "description": "Create a multi-model (Codex + Antigravity) implementation plan without modifying production code. Requires the external ccg-workflow runtime, not part of the base ECC install (see Prerequisite below). Use when the user explicitly wants dual-model plan drafts; for a single-model plan with no extra runtime use /plan."
         },
         {
           "kind": "command",
@@ -956,12 +956,12 @@
         {
           "kind": "command",
           "name": "orch-review",
-          "description": "Run the orch-review native Workflow over a diff (local changes or a GitHub PR) and report blocking vs advisory findings. Surface for the orch-review workflow."
+          "description": "Run the orch-review native Workflow over a diff (local changes or a GitHub PR) and report blocking vs advisory findings. Surface for the orch-review workflow. Use for a native-Workflow, adversarially-verified multi-dimension review with fan-out and dedup; for the step-by-step checklist pass use /code-review, and for the multi-agent pass use /review-pr."
         },
         {
           "kind": "command",
           "name": "plan-canvas",
-          "description": "Open a plan or HTML artifact in the browser Plan Canvas for annotate-and-approve review"
+          "description": "Open a plan or HTML artifact in the browser Plan Canvas for annotate-and-approve review. This is a thin slash-command entrypoint over the plan-canvas skill, which covers the full workflow and rules."
         },
         {
           "kind": "command",
@@ -971,7 +971,7 @@
         {
           "kind": "command",
           "name": "plan",
-          "description": "Restate requirements, assess risks, and create step-by-step implementation plan. WAIT for user CONFIRM before touching any code."
+          "description": "Restate requirements, assess risks, and create step-by-step implementation plan. WAIT for user CONFIRM before touching any code. Use for a single-model inline or PRD-driven implementation plan; for a dual-model (Codex/Antigravity) plan use /multi-plan, and for visual annotate-and-approve review of the resulting plan use /plan-canvas."
         },
         {
           "kind": "command",
@@ -986,7 +986,7 @@
         {
           "kind": "command",
           "name": "project-init",
-          "description": "Detect a project's stack and produce a dry-run ECC onboarding plan using the repository's install manifests and stack mappings."
+          "description": "Detect a project's stack and produce a dry-run ECC onboarding plan using the repository's install manifests and stack mappings. Use to onboard ECC into a target project via a reviewable dry-run plan; for general feature discovery and navigation use the ecc-guide skill or /ecc-guide command instead."
         },
         {
           "kind": "command",
@@ -1026,7 +1026,7 @@
         {
           "kind": "command",
           "name": "prune",
-          "description": "Delete pending instincts older than 30 days that were never promoted"
+          "description": "Delete pending instincts older than 30 days that were never promoted. Thin CLI wrapper for continuous-learning-v2's instinct-cli.py prune command; use to clean up stale pending instincts that were never reviewed or promoted."
         },
         {
           "kind": "command",
@@ -1066,7 +1066,7 @@
         {
           "kind": "command",
           "name": "review-pr",
-          "description": "Comprehensive PR review using specialized agents"
+          "description": "Comprehensive PR review using specialized agents (code-reviewer, comment-analyzer, pr-test-analyzer, silent-failure-hunter, type-design-analyzer, code-simplifier). Use for a multi-agent PR review pass; for the adversarially-verified Workflow pass use /orch-review, and for the standalone step-by-step checklist review use /code-review."
         },
         {
           "kind": "command",
@@ -1086,7 +1086,7 @@
         {
           "kind": "command",
           "name": "santa-loop",
-          "description": "Adversarial dual-review convergence loop — two independent model reviewers must both approve before code ships."
+          "description": "Adversarial dual-review convergence loop — two independent model reviewers must both approve before code ships. Use for the CLI-driven version of this loop; wraps the santa-method skill."
         },
         {
           "kind": "command",
@@ -1096,7 +1096,7 @@
         {
           "kind": "command",
           "name": "security-scan",
-          "description": "Run AgentShield against agent, hook, MCP, permission, and secret surfaces."
+          "description": "Run AgentShield against agent, hook, MCP, permission, and secret surfaces. This is the slash-command entrypoint for that audit; prefer the security-scan skill for the same AgentShield audit in conversation."
         },
         {
           "kind": "command",
@@ -1111,12 +1111,12 @@
         {
           "kind": "command",
           "name": "skill-create",
-          "description": "Analyze local git history to extract coding patterns and generate SKILL.md files. Local version of the Skill Creator GitHub App."
+          "description": "Analyze local git history to extract coding patterns and generate SKILL.md files. Local version of the Skill Creator GitHub App. Use to generate new skills from local git history on demand; check the skill-scout skill first to avoid duplicating an existing local, marketplace, or GitHub skill."
         },
         {
           "kind": "command",
           "name": "skill-health",
-          "description": "Show skill portfolio health dashboard with charts and analytics"
+          "description": "Show skill portfolio health dashboard with charts and analytics. Use for the quantitative usage/success-rate dashboard; for a qualitative compliance or quality audit use the skill-stocktake skill."
         },
         {
           "kind": "command",
@@ -1883,6 +1883,11 @@
         },
         {
           "kind": "skill",
+          "name": "i18n-sync",
+          "description": "Translate and synchronize application JSON locale files using source-key usage, project terminology, and focused validation. Use when adding keys or languages, updating source copy, or reviewing missing and stale translations."
+        },
+        {
+          "kind": "skill",
           "name": "inherit-legacy-style",
           "description": "Prevent AI style drift on legacy projects by scanning the codebase for implicit conventions, resolving conflicts with the operator one at a time, and writing an enforceable .ai-style-rules.md (Golden Files, naming rules, DONTs) plus an optional CLAUDE.md hook. Use when onboarding an AI agent onto a hand-written legacy codebase or extracting a project's unwritten coding rules."
         },
@@ -2438,27 +2443,27 @@
         },
         {
           "kind": "skill",
-          "name": "pubmed-database",
+          "name": "scientific-db-pubmed-database",
           "description": "Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring. Use when a task needs biomedical literature from PubMed rather than general web search."
         },
         {
           "kind": "skill",
-          "name": "uspto-database",
+          "name": "scientific-db-uspto-database",
           "description": "USPTO patent and trademark data workflow for official record lookup, PatentSearch queries, TSDR checks, assignment data, and reproducible IP research logs. Use when a task needs official United States patent or trademark records from USPTO systems."
         },
         {
           "kind": "skill",
-          "name": "gget",
+          "name": "scientific-pkg-gget",
           "description": "gget CLI and Python workflow for quick genomic database queries, sequence lookup, BLAST-style searches, enrichment checks, and reproducible bioinformatics evidence logs. Use when a task needs quick bioinformatics lookup across genomic reference databases with the gget CLI or Python package."
         },
         {
           "kind": "skill",
-          "name": "literature-review",
+          "name": "scientific-thinking-literature-review",
           "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging. Use when the task is to find, screen, synthesize, and cite a body of academic or technical literature."
         },
         {
           "kind": "skill",
-          "name": "scholar-evaluation",
+          "name": "scientific-thinking-scholar-evaluation",
           "description": "Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback. Use when evaluating academic or scientific work — papers, proposals, methods sections, or evidence quality — against a repeatable rubric."
         },
         {
@@ -2705,10 +2710,15 @@
           "kind": "agent",
           "name": "signal-scorer",
           "description": "Searches and ranks prospects by relevance signals across X, Exa, and LinkedIn. Assigns weighted scores based on role, industry, activity, influence, and location."
+        },
+        {
+          "kind": "skill",
+          "name": "ecc-council",
+          "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 269597,
-      "pushedAt": "2026-09-29T22:13:54Z",
+      "stars": 269741,
+      "pushedAt": "2026-09-30T01:24:05Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
@@ -3419,45 +3429,6 @@
       "score": 0.678
     },
     {
-      "slug": "alloydb",
-      "repo": "gemini-cli-extensions/alloydb",
-      "owner": "gemini-cli-extensions",
-      "name": "alloydb",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
-      "headSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
-      "counts": {
-        "skill": 0,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 1,
-      "rawFileCount": 1,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        }
-      ],
-      "stars": 23,
-      "pushedAt": "2026-09-23T16:24:36Z",
-      "createdAt": "2025-09-12T15:32:54Z",
-      "license": "Apache-2.0",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.66
-    },
-    {
       "slug": "agentforce-adlc",
       "repo": "SalesforceAIResearch/agentforce-adlc",
       "owner": "SalesforceAIResearch",
@@ -3538,6 +3509,45 @@
       "score": 0.659
     },
     {
+      "slug": "alloydb",
+      "repo": "gemini-cli-extensions/alloydb",
+      "owner": "gemini-cli-extensions",
+      "name": "alloydb",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
+      "headSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "counts": {
+        "skill": 0,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 1,
+      "rawFileCount": 1,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        }
+      ],
+      "stars": 23,
+      "pushedAt": "2026-09-23T16:24:36Z",
+      "createdAt": "2025-09-12T15:32:54Z",
+      "license": "Apache-2.0",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.659
+    },
+    {
       "slug": "alloydb-omni",
       "repo": "gemini-cli-extensions/alloydb-omni",
       "owner": "gemini-cli-extensions",
@@ -3582,7 +3592,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.591
+      "score": 0.59
     },
     {
       "slug": "aikido-claude-plugin",
