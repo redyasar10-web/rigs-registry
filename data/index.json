@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T22:40:54.158Z",
+  "generatedAt": "2026-10-02T05:36:24.173Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,14 +282,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 52158,
+      "stars": 52189,
       "pushedAt": "2026-10-01T21:23:28Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.904
+      "score": 0.903
     },
     {
       "slug": "everything-claude-code",
@@ -298,8 +298,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "c70874fae9eb0e5ad0365beb7e2955899fd1d30f",
-      "headSha": "c70874fae9eb0e5ad0365beb7e2955899fd1d30f",
+      "publishSha": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "headSha": "ef648e01899ba3e8dc6371642deaaf64b4477775",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 293 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -1145,17 +1145,17 @@
         {
           "kind": "command",
           "name": "add-language-rules",
-          "description": "Workflow command scaffold for add-language-rules in everything-claude-code."
+          "description": "Workflow command scaffold for add-language-rules in ECC."
         },
         {
           "kind": "command",
           "name": "database-migration",
-          "description": "Workflow command scaffold for database-migration in everything-claude-code."
+          "description": "Workflow command scaffold for database-migration in ECC."
         },
         {
           "kind": "command",
           "name": "feature-development",
-          "description": "Workflow command scaffold for feature-development in everything-claude-code."
+          "description": "Workflow command scaffold for feature-development in ECC."
         },
         {
           "kind": "hook",
@@ -1664,7 +1664,7 @@
         {
           "kind": "skill",
           "name": "ecc-guide",
-          "description": "Answer questions about Everything Claude Code by reading the live repo surface — agents, skills, commands, hooks, rules, install profiles, and docs — instead of memory. Use when the user asks what ECC includes, how to install or reset it, which skill or command fits a task, or how project onboarding works."
+          "description": "Answer questions about ECC by reading the live repo surface — agents, skills, commands, hooks, rules, install profiles, and docs — instead of memory. Use when the user asks what ECC includes, how to install or reset it, which skill or command fits a task, or how project onboarding works."
         },
         {
           "kind": "skill",
@@ -2717,8 +2717,8 @@
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 270679,
-      "pushedAt": "2026-10-01T21:55:49Z",
+      "stars": 270791,
+      "pushedAt": "2026-10-02T02:01:14Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
