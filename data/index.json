@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T05:36:24.173Z",
+  "generatedAt": "2026-10-02T12:34:06.928Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 52189,
+      "stars": 52234,
       "pushedAt": "2026-10-01T21:23:28Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2717,7 +2717,7 @@
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 270791,
+      "stars": 270950,
       "pushedAt": "2026-10-02T02:01:14Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3538,14 +3538,14 @@
           "name": "README"
         }
       ],
-      "stars": 111,
+      "stars": 112,
       "pushedAt": "2026-09-12T23:48:39Z",
       "createdAt": "2026-04-10T17:11:28Z",
       "license": "NOASSERTION",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.658
+      "score": 0.659
     },
     {
       "slug": "alloydb-omni",
