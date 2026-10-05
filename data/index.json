@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T05:38:57.955Z",
+  "generatedAt": "2026-10-05T14:37:16.624Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'record a product demo,' 'feature demo video,' 'in-app demo,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 53180,
+      "stars": 53319,
       "pushedAt": "2026-10-03T01:51:50Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2717,14 +2717,14 @@
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 273084,
+      "stars": 273350,
       "pushedAt": "2026-10-05T04:55:16Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.866
+      "score": 0.865
     },
     {
       "slug": "ai-plugins",
@@ -3419,14 +3419,14 @@
           "description": "Find leads matching criteria and bulk-add them to an Apollo outreach sequence. Handles enrichment, contact creation, deduplication, and enrollment in one flow."
         }
       ],
-      "stars": 27,
+      "stars": 28,
       "pushedAt": "2026-09-16T16:45:19Z",
       "createdAt": "2026-02-19T10:47:36Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.679
+      "score": 0.681
     },
     {
       "slug": "alloydb",
