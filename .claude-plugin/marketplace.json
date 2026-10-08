@@ -18,7 +18,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/coreyhaines31/marketingskills.git",
-        "sha": "b9ba399dd88b082b926e261e8ccfb843d20aa066"
+        "sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
       }
     },
     {
@@ -67,13 +67,13 @@
       "name": "alloydb",
       "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
       "author": {
-        "name": "gemini-cli-extensions",
-        "url": "https://github.com/gemini-cli-extensions"
+        "name": "GoogleCloudPlatform",
+        "url": "https://github.com/GoogleCloudPlatform"
       },
-      "homepage": "https://github.com/gemini-cli-extensions/alloydb",
+      "homepage": "https://github.com/GoogleCloudPlatform/alloydb-plugin",
       "source": {
         "source": "url",
-        "url": "https://github.com/gemini-cli-extensions/alloydb.git",
+        "url": "https://github.com/GoogleCloudPlatform/alloydb-plugin.git",
         "sha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b"
       }
     },
@@ -95,13 +95,13 @@
       "name": "alloydb-omni",
       "description": "Create, connect, and interact with an AlloyDB Omni database and data.",
       "author": {
-        "name": "gemini-cli-extensions",
-        "url": "https://github.com/gemini-cli-extensions"
+        "name": "GoogleCloudPlatform",
+        "url": "https://github.com/GoogleCloudPlatform"
       },
-      "homepage": "https://github.com/gemini-cli-extensions/alloydb-omni",
+      "homepage": "https://github.com/GoogleCloudPlatform/alloydb-omni-plugin",
       "source": {
         "source": "url",
-        "url": "https://github.com/gemini-cli-extensions/alloydb-omni.git",
+        "url": "https://github.com/GoogleCloudPlatform/alloydb-omni-plugin.git",
         "sha": "37101e3f9aaf0bd4d0acaeee540a0da2fd773d00"
       }
     },

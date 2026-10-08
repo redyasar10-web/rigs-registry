@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T13:28:26.593Z",
+  "generatedAt": "2026-10-08T23:20:34.641Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -11,8 +11,8 @@
       "name": "marketingskills",
       "tier": "A",
       "listable": true,
-      "publishSha": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
-      "headSha": "b9ba399dd88b082b926e261e8ccfb843d20aa066",
+      "publishSha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+      "headSha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
       "servingStale": false,
       "health": "ok",
       "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
@@ -27,6 +27,9 @@
       "rawFileCount": 50,
       "droppedMirror": 0,
       "warnings": [
+        "SEC-02 tests/clis/snov-prospect-search.test.cjs at line 17: possible bearer (27 chars) [test fixture]",
+        "SEC-02 tests/clis/zoominfo-auth.test.cjs at line 45: possible bearer (27 chars) [test fixture]",
+        "SEC-02 tests/clis/zoominfo-auth.test.cjs at line 52: possible bearer (27 chars) [test fixture]",
         "VAL-02 missing version or author metadata"
       ],
       "rejectReasons": [],
@@ -159,7 +162,7 @@
         {
           "kind": "skill",
           "name": "lead-magnets",
-          "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat sheet,\" \"checklist,\" \"template download,\" \"opt-in,\" \"freebie,\" \"PDF download,\" \"resource library,\" \"content offer,\" \"email capture content,\" \"Notion template,\" \"spreadsheet template,\" or \"what should I give away for emails.\" Use this for planning what to create and how to distribute it. For interactive tools as lead magnets, see free-tools. For writing the actual content, see copywriting. For the email sequence after capture, see emails."
+          "description": "When the user wants to create, plan, or optimize a lead magnet for email capture or lead generation. Also use when the user mentions \"lead magnet,\" \"gated content,\" \"content upgrade,\" \"downloadable,\" \"ebook,\" \"cheat sheet,\" \"checklist,\" \"template download,\" \"opt-in,\" \"freebie,\" \"PDF download,\" \"resource library,\" \"content offer,\" \"email capture content,\" \"Notion template,\" \"spreadsheet template,\" \"what should I give away for emails,\" \"course as a skill,\" or \"package our content as an agent skill.\" Use this for planning what to create and how to distribute it. For interactive tools as lead magnets, see free-tools. For writing the actual content, see copywriting. For the email sequence after capture, see emails."
         },
         {
           "kind": "skill",
@@ -234,7 +237,7 @@
         {
           "kind": "skill",
           "name": "referrals",
-          "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner program,' 'referral incentive,' 'how to get referrals,' 'customers referring customers,' or 'affiliate payout.' Use this whenever someone wants existing users or partners to bring in new customers. For launch-specific virality, see launch."
+          "description": "When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy. Also use when the user mentions 'referral,' 'affiliate,' 'ambassador,' 'word of mouth,' 'viral loop,' 'refer a friend,' 'partner program,' 'referral incentive,' 'how to get referrals,' 'customers referring customers,' 'affiliate payout,' 'get more reviews,' 'G2 reviews,' 'review campaign,' or 'respond to a bad review.' Use this whenever someone wants existing users or partners to bring in new customers. For launch-specific virality, see launch."
         },
         {
           "kind": "skill",
@@ -254,7 +257,7 @@
         {
           "kind": "skill",
           "name": "seo-audit",
-          "description": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO health check,\" \"my traffic dropped,\" \"lost rankings,\" \"not showing up in Google,\" \"site isn't ranking,\" \"Google update hit me,\" \"page speed,\" \"core web vitals,\" \"crawl errors,\" \"indexing issues,\" \"stuck on page 2,\" \"striking distance keywords,\" \"title tag rewrite,\" or \"low CTR.\" Use this even if the user just says something vague like \"my SEO is bad\" or \"help with SEO\" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo."
+          "description": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta tags review,\" \"SEO health check,\" \"my traffic dropped,\" \"lost rankings,\" \"not showing up in Google,\" \"site isn't ranking,\" \"Google update hit me,\" \"page speed,\" \"core web vitals,\" \"crawl errors,\" \"indexing issues,\" \"stuck on page 2,\" \"striking distance keywords,\" \"title tag rewrite,\" \"low CTR,\" \"local SEO,\" \"Google Business Profile,\" or \"map pack.\" Use this even if the user just says something vague like \"my SEO is bad\" or \"help with SEO\" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo."
         },
         {
           "kind": "skill",
@@ -282,14 +285,14 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'record a product demo,' 'feature demo video,' 'in-app demo,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 53684,
-      "pushedAt": "2026-10-08T00:15:39Z",
+      "stars": 53758,
+      "pushedAt": "2026-10-08T21:51:51Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.904
+      "score": 0.874
     },
     {
       "slug": "everything-claude-code",
@@ -2717,7 +2720,7 @@
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 275271,
+      "stars": 275371,
       "pushedAt": "2026-10-05T04:55:16Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3430,9 +3433,9 @@
     },
     {
       "slug": "alloydb",
-      "repo": "gemini-cli-extensions/alloydb",
-      "owner": "gemini-cli-extensions",
-      "name": "alloydb",
+      "repo": "GoogleCloudPlatform/alloydb-plugin",
+      "owner": "GoogleCloudPlatform",
+      "name": "alloydb-plugin",
       "tier": "A",
       "listable": true,
       "publishSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
@@ -3549,9 +3552,9 @@
     },
     {
       "slug": "alloydb-omni",
-      "repo": "gemini-cli-extensions/alloydb-omni",
-      "owner": "gemini-cli-extensions",
-      "name": "alloydb-omni",
+      "repo": "GoogleCloudPlatform/alloydb-omni-plugin",
+      "owner": "GoogleCloudPlatform",
+      "name": "alloydb-omni-plugin",
       "tier": "A",
       "listable": true,
       "publishSha": "37101e3f9aaf0bd4d0acaeee540a0da2fd773d00",
