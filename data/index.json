@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T06:03:16.820Z",
+  "generatedAt": "2026-10-08T13:28:26.593Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -282,7 +282,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'record a product demo,' 'feature demo video,' 'in-app demo,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 53621,
+      "stars": 53684,
       "pushedAt": "2026-10-08T00:15:39Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2717,7 +2717,7 @@
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 275059,
+      "stars": 275271,
       "pushedAt": "2026-10-05T04:55:16Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3601,8 +3601,8 @@
       "name": "aikido-claude-plugin",
       "tier": "A",
       "listable": true,
-      "publishSha": "124ba147f53a38fdcb74595d59ceaadae022bf60",
-      "headSha": "124ba147f53a38fdcb74595d59ceaadae022bf60",
+      "publishSha": "8fdc995a44102a30ad54164e0bdd249d158c725c",
+      "headSha": "8fdc995a44102a30ad54164e0bdd249d158c725c",
       "servingStale": false,
       "health": "ok",
       "description": "Aikido Security for Claude Code: scan code (SAST, secrets, IaC) and list all issues from your Aikido feed powered by the Aikido MCP server.",
@@ -3647,13 +3647,13 @@
         }
       ],
       "stars": 14,
-      "pushedAt": "2026-09-25T09:37:16Z",
+      "pushedAt": "2026-10-08T12:23:43Z",
       "createdAt": "2026-02-27T14:09:04Z",
       "license": null,
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.564
+      "score": 0.571
     }
   ]
 }
