@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T13:16:17.993Z",
+  "generatedAt": "2026-10-09T22:37:56.444Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -285,7 +285,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'record a product demo,' 'feature demo video,' 'in-app demo,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 53882,
+      "stars": 53929,
       "pushedAt": "2026-10-08T21:51:51Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -301,8 +301,8 @@
       "name": "ECC",
       "tier": "A",
       "listable": true,
-      "publishSha": "ef648e01899ba3e8dc6371642deaaf64b4477775",
-      "headSha": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "publishSha": "5cc14d7c3155c7dcd4059c94b89df4b6303b7cd6",
+      "headSha": "5cc14d7c3155c7dcd4059c94b89df4b6303b7cd6",
       "servingStale": false,
       "health": "ok",
       "description": "Harness-native ECC plugin for engineering teams - 68 agents, 293 skills, 94 legacy command shims, reusable hooks, rules, MCP conventions, and operator workflows for Claude Code plus adjacent agent harnesses",
@@ -2252,7 +2252,7 @@
         {
           "kind": "skill",
           "name": "plan-orchestrate",
-          "description": "Read a plan document, decompose it into steps, design a per-step agent chain from the ECC catalogue, and emit ready-to-paste /orchestrate custom prompts. Generative only — never invokes /orchestrate itself. Use when the user has a multi-step plan and wants to drive it through orchestrate without composing chains by hand."
+          "description": "Read a plan document, decompose it into steps, classify each step, and emit the ready-to-paste ECC slash command for that step, carrying the step identifier and scope in the command's own documented argument form. Generative only — never invokes commands itself and never claims to control what a command runs internally. Steps whose command cannot carry plan scope fail closed instead of being emitted. Use when the user has a multi-step plan and wants the right command for each step without picking it by hand."
         },
         {
           "kind": "skill",
@@ -2720,14 +2720,14 @@
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 275689,
-      "pushedAt": "2026-10-05T04:55:16Z",
+      "stars": 275941,
+      "pushedAt": "2026-10-09T21:54:02Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.864
+      "score": 0.866
     },
     {
       "slug": "ai-plugins",
@@ -3595,7 +3595,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.587
+      "score": 0.586
     },
     {
       "slug": "aikido-claude-plugin",
