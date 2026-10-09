@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T06:07:59.131Z",
+  "generatedAt": "2026-10-09T13:16:17.993Z",
   "marketplace": "rigs",
   "registryRepo": "redyasar10-web/rigs-registry",
   "topic": "claude-rig",
@@ -285,7 +285,7 @@
           "description": "When the user wants to create, generate, or produce video content using AI tools or programmatic frameworks. Also use when the user mentions 'video production,' 'AI video,' 'Remotion,' 'Hyperframes,' 'HeyGen,' 'Synthesia,' 'Veo,' 'Sora,' 'Runway,' 'Kling,' 'Seedance,' 'Hailuo,' 'MiniMax,' 'Pika,' 'Hunyuan,' 'Wan,' 'video generation,' 'AI avatar,' 'talking head video,' 'programmatic video,' 'video template,' 'explainer video,' 'product demo video,' 'record a product demo,' 'feature demo video,' 'in-app demo,' 'video pipeline,' 'copy this edit,' 'match this video style,' 'reverse-engineer this video,' 'edit like this reference,' or 'make me a video.' Use this for video creation, generation, and production workflows. For video content strategy and what to post, see social. For paid video ad creative, see ad-creative."
         }
       ],
-      "stars": 53815,
+      "stars": 53882,
       "pushedAt": "2026-10-08T21:51:51Z",
       "createdAt": "2026-01-15T19:45:23Z",
       "license": "MIT",
@@ -2720,7 +2720,7 @@
           "description": "Convene a four-voice council for ambiguous decisions, tradeoffs, and go/no-go calls. Use when multiple valid paths exist and you need structured disagreement before choosing."
         }
       ],
-      "stars": 275515,
+      "stars": 275689,
       "pushedAt": "2026-10-05T04:55:16Z",
       "createdAt": "2026-01-18T00:51:51Z",
       "license": "MIT",
@@ -3432,6 +3432,45 @@
       "score": 0.679
     },
     {
+      "slug": "alloydb",
+      "repo": "GoogleCloudPlatform/alloydb-plugin",
+      "owner": "GoogleCloudPlatform",
+      "name": "alloydb-plugin",
+      "tier": "A",
+      "listable": true,
+      "publishSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
+      "headSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
+      "servingStale": false,
+      "health": "ok",
+      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
+      "counts": {
+        "skill": 0,
+        "agent": 0,
+        "command": 0,
+        "hook": 0,
+        "mcp": 1
+      },
+      "componentTotal": 1,
+      "rawFileCount": 1,
+      "droppedMirror": 0,
+      "warnings": [],
+      "rejectReasons": [],
+      "components": [
+        {
+          "kind": "mcp",
+          "name": "mcp"
+        }
+      ],
+      "stars": 24,
+      "pushedAt": "2026-09-23T16:24:36Z",
+      "createdAt": "2025-09-12T15:32:54Z",
+      "license": "Apache-2.0",
+      "isFork": false,
+      "isDerivative": false,
+      "stale": false,
+      "score": 0.657
+    },
+    {
       "slug": "agentforce-adlc",
       "repo": "SalesforceAIResearch/agentforce-adlc",
       "owner": "SalesforceAIResearch",
@@ -3509,46 +3548,7 @@
       "isFork": false,
       "isDerivative": false,
       "stale": false,
-      "score": 0.657
-    },
-    {
-      "slug": "alloydb",
-      "repo": "GoogleCloudPlatform/alloydb-plugin",
-      "owner": "GoogleCloudPlatform",
-      "name": "alloydb-plugin",
-      "tier": "A",
-      "listable": true,
-      "publishSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
-      "headSha": "2954566c7f791d0cef47cabeae76f7a75dd42f2b",
-      "servingStale": false,
-      "health": "ok",
-      "description": "Create, connect, and interact with an AlloyDB for PostgreSQL database and data.",
-      "counts": {
-        "skill": 0,
-        "agent": 0,
-        "command": 0,
-        "hook": 0,
-        "mcp": 1
-      },
-      "componentTotal": 1,
-      "rawFileCount": 1,
-      "droppedMirror": 0,
-      "warnings": [],
-      "rejectReasons": [],
-      "components": [
-        {
-          "kind": "mcp",
-          "name": "mcp"
-        }
-      ],
-      "stars": 24,
-      "pushedAt": "2026-09-23T16:24:36Z",
-      "createdAt": "2025-09-12T15:32:54Z",
-      "license": "Apache-2.0",
-      "isFork": false,
-      "isDerivative": false,
-      "stale": false,
-      "score": 0.657
+      "score": 0.656
     },
     {
       "slug": "alloydb-omni",
